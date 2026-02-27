@@ -1,7 +1,10 @@
 #root {
-  background-color: var(--color-red);
+  background-color: var(--color-background);
   height: 200px;
   height: 100vh;
+  * {
+    box-sizing: border-box;
+  }
 }
 
 h1 {

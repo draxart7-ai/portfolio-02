@@ -1,8 +1,18 @@
 #root {
   /* Colors */
-  --color-red: #f00;
-  --color-green: #0f0;
-  --color-blue: rgb(0, 68, 255);
+  /* --color-red: #f00; */
+  /* --color-green: #0f0; */
+  /* --color-blue: rgb(0, 68, 255); */
+
+  /* Color Theme Swatches in RGBA */
+  --color-blue: rgba(2, 94, 114, 1);
+  --color-dark-blue: rgba(0, 31, 38, 1);
+  --color-dark-tan: rgba(165, 165, 145, 1);
+  --color-tan: rgba(191, 183, 143, 1);
+  --color-orange: rgba(242, 166, 26, 1);
+
+  --color-accent: var(--color-orange);
+  --color-background: var(--color-dark-tan);
 
   /* Font */
   /* -- Family --*/
@@ -16,6 +26,8 @@
   --font-1: "Audiowide", sans-serif;
   --font-2: "Sofia", sans-serif;
   --font-3: "Trirong", serif;
+
+  font-family: var(--font-1), var(--font-2), var(--font-3);
 
   /* Sizes */
   --size-1: 4px;
