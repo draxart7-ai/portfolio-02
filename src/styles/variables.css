@@ -1,0 +1,26 @@
+#root {
+  /* Colors */
+  --color-red: #f00;
+  --color-green: #0f0;
+  --color-blue: rgb(0, 68, 255);
+
+  /* Font */
+  /* -- Family --*/
+  /*  
+  --- import into the main "index.html" file  ---   
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"
+    />
+  */
+  --font-1: "Audiowide", sans-serif;
+  --font-2: "Sofia", sans-serif;
+  --font-3: "Trirong", serif;
+
+  /* Sizes */
+  --size-1: 4px;
+  --size-2: 8px;
+  --size-3: 10px;
+  --size-4: 16px;
+  --size-5: 20px;
+}

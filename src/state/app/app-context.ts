@@ -8,4 +8,4 @@ export const AppContext = createContext({
 });
 
 // Create a custom hook for easier consumption (optional but recommended)
-export const useTheme = () => useContext(AppContext);
+export const useAppContext = () => useContext(AppContext);

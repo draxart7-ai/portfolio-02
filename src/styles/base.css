@@ -1,0 +1,9 @@
+#root {
+  background-color: var(--color-red);
+  height: 200px;
+  height: 100vh;
+}
+
+h1 {
+  font-family: var(--font-1);
+}
