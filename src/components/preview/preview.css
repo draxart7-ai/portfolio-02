@@ -9,18 +9,27 @@
   grid-template-rows: 60px 1fr;
 
   .Header {
-    background-color: lightblue;
+    background-color: var(--color-dark-blue);
     grid-area: header;
     width: 100%;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    padding: var(--size-16);
   }
   .LeftRail {
-    background-color: lightgreen;
+    background-color: var(--color-dark-blue);
     grid-area: leftRail;
+    padding: var(--size-16);
+    color: var(--color-blue);
   }
   .Content {
-    background-color: lightsalmon;
+    background-color: var(--color-dark-tan);
     grid-area: content;
     .SectionButtons {
+      display: flex;
+    }
+    .SectionCards {
       display: flex;
     }
   }

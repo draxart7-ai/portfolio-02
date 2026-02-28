@@ -1,10 +1,6 @@
 #root {
   /* Colors */
-  /* --color-red: #f00; */
-  /* --color-green: #0f0; */
-  /* --color-blue: rgb(0, 68, 255); */
-
-  /* Color Theme Swatches in RGBA */
+  /* -- Color Theme Swatches in RGBA -- */
   --color-blue: rgba(2, 94, 114, 1);
   --color-blue--focus: rgb(5, 123, 150);
   --color-dark-blue: rgba(0, 31, 38, 1);
@@ -22,10 +18,12 @@
   --color-disabled-bg: rgb(141, 141, 141);
   --color-disabled-font: rgb(94, 94, 94);
 
+  /* -- Universal Messaging -- */
   --color-error: rgb(218, 22, 22);
   --color-success: rgb(4, 170, 4);
   --color-warning: rgb(231, 143, 27);
   --color-info: rgb(43, 168, 240);
+  --color-focus: rgb(66, 180, 247);
 
   /* Font */
   /* -- Family --*/
@@ -43,9 +41,14 @@
   font-family: var(--font-1), var(--font-2), var(--font-3);
 
   /* Sizes */
-  --size-1: 4px;
-  --size-2: 8px;
-  --size-3: 10px;
-  --size-4: 16px;
-  --size-5: 20px;
+  --size-4: 4px;
+  --size-8: 8px;
+  --size-10: 10px;
+  --size-16: 16px;
+  --size-18: 18px;
+  --size-20: 20px;
+  --size-24: 24px;
+  --size-32: 32px;
+  --size-40: 40px;
+  --size-48: 48px;
 }
