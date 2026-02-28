@@ -5,6 +5,11 @@ import { createContext, useContext } from "react";
 export const AppContext = createContext({
   theme: "light",
   toggleTheme: () => {},
+  screen: {
+    isMobile: false,
+    isTablet: false,
+    isDesktop: false,
+  },
 });
 
 // Create a custom hook for easier consumption (optional but recommended)
