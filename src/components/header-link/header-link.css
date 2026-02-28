@@ -1,0 +1,13 @@
+.HeaderLink {
+  font-size: 24px;
+  font-family: var(--font-1);
+  background-color: transparent;
+  color: var(--color-white);
+  border: none;
+  &:hover {
+    color: var(--color-blue--focus);
+  }
+  transition: all 0.2s ease-in-out;
+  border-radius: 12px;
+  margin: var(--size-8);
+}

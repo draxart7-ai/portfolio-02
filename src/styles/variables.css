@@ -24,6 +24,8 @@
   --color-warning: rgb(231, 143, 27);
   --color-info: rgb(43, 168, 240);
   --color-focus: rgb(66, 180, 247);
+  --color-white: white;
+  --color-black: black;
 
   /* Font */
   /* -- Family --*/
