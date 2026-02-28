@@ -1,3 +1,4 @@
+/* isDesktop */
 #root {
   /* Colors */
   /* -- Color Theme Swatches in RGBA -- */
@@ -13,7 +14,7 @@
   --color-orange--focus: rgb(252, 184, 58);
 
   --color-accent: var(--color-orange);
-  --color-background: var(--color-dark-tan);
+  --color-background: rgb(12, 12, 12);
 
   --color-disabled-bg: rgb(141, 141, 141);
   --color-disabled-font: rgb(94, 94, 94);
@@ -24,9 +25,12 @@
   --color-warning: rgb(231, 143, 27);
   --color-info: rgb(43, 168, 240);
   --color-focus: rgb(66, 180, 247);
-  --color-white: white;
-  --color-black: black;
+  --color-white: rgb(228, 228, 225);
+  --color-black: rgb(51, 51, 51);
 
+  /* text colors */
+  --color-text-subtle: rgb(126, 125, 125);
+  --color-text-main: rgb(228, 228, 225);
   /* Font */
   /* -- Family --*/
   /*  
@@ -39,8 +43,9 @@
   --font-1: "Audiowide", sans-serif;
   --font-2: "Sofia", sans-serif;
   --font-3: "Trirong", serif;
+  --font-4: "Open Sans";
 
-  font-family: var(--font-1), var(--font-2), var(--font-3);
+  font-family: var(--font-4), var(--font-2), var(--font-1);
 
   /* Sizes */
   --size-4: 4px;
@@ -53,4 +58,38 @@
   --size-32: 32px;
   --size-40: 40px;
   --size-48: 48px;
+}
+
+/* isDesktop */
+#root {
+  --text-size-1: 0.96rem;
+  --text-size-2: 1rem;
+  --text-size-3: 1.25rem;
+  --text-size-4: 1.5rem;
+  --text-size-5: 3rem;
+  --text-size-6: 6rem;
+}
+
+/* isTablet*/
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  #root {
+    --text-size-1: 0.96rem;
+    --text-size-2: 1rem;
+    --text-size-3: 1.15rem;
+    --text-size-4: 1.25rem;
+    --text-size-5: 2rem;
+    --text-size-6: 4rem;
+  }
+}
+
+/* isMobile*/
+@media screen and (max-width: 640px) {
+  #root {
+    --text-size-1: 0.96rem;
+    --text-size-2: 1rem;
+    --text-size-3: 1.1rem;
+    --text-size-4: 1.18rem;
+    --text-size-5: 1.75rem;
+    --text-size-6: 3rem;
+  }
 }

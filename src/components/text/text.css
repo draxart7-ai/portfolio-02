@@ -1,0 +1,23 @@
+.Text {
+  &.f1 {
+    font-size: var(--text-size-1);
+  }
+  &.f2 {
+    font-size: var(--text-size-2);
+  }
+  &.f3 {
+    font-size: var(--text-size-3);
+  }
+  &.f4 {
+    font-size: var(--text-size-4);
+  }
+  &.f5 {
+    font-size: var(--text-size-5);
+  }
+  &.f6 {
+    font-size: var(--text-size-6);
+  }
+  &.subtle {
+    color: var(--color-text-subtle);
+  }
+}

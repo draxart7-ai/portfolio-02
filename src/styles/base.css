@@ -1,14 +1,10 @@
 #root {
   background-color: var(--color-background);
-  height: 200px;
+  color: var(--color-text-main);
   height: 100vh;
   * {
     box-sizing: border-box;
   }
-}
-
-h1 {
-  font-family: var(--font-1);
 }
 
 *:focus-visible {

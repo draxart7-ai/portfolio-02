@@ -3,6 +3,7 @@ import { AppProvider } from "./state/app/app-provider";
 import { AppHeader } from "./components/app-header/app-header";
 import { Preview } from "./components/preview/preview";
 import { Intro } from "./components/intro/intro";
+import { About } from "./components/about/about";
 
 export const AppMain = () => {
   const previewMode = false;
@@ -13,7 +14,7 @@ export const AppMain = () => {
     <AppProvider>
       <div className="AppMain">
         <AppHeader />
-        <Intro>{"<Intro />"}</Intro>
+        <About />
         <Intro>{"<Intro />"}</Intro>
         <Intro>{"<Intro />"}</Intro>
         <Intro>{"<Intro />"}</Intro>
