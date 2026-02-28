@@ -6,13 +6,26 @@
 
   /* Color Theme Swatches in RGBA */
   --color-blue: rgba(2, 94, 114, 1);
+  --color-blue--focus: rgb(5, 123, 150);
   --color-dark-blue: rgba(0, 31, 38, 1);
+  --color-dark-blue--focus: rgb(5, 73, 88);
   --color-dark-tan: rgba(165, 165, 145, 1);
+  --color-dark-tan--focus: rgb(190, 190, 169);
   --color-tan: rgba(191, 183, 143, 1);
+  --color-tan--focus: rgb(221, 212, 168);
   --color-orange: rgba(242, 166, 26, 1);
+  --color-orange--focus: rgb(252, 184, 58);
 
   --color-accent: var(--color-orange);
   --color-background: var(--color-dark-tan);
+
+  --color-disabled-bg: rgb(141, 141, 141);
+  --color-disabled-font: rgb(94, 94, 94);
+
+  --color-error: rgb(218, 22, 22);
+  --color-success: rgb(4, 170, 4);
+  --color-warning: rgb(231, 143, 27);
+  --color-info: rgb(43, 168, 240);
 
   /* Font */
   /* -- Family --*/

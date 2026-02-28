@@ -1,0 +1,27 @@
+.Preview {
+  background-color: pink;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header      header"
+    "leftRail    content";
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 60px 1fr;
+
+  .Header {
+    background-color: lightblue;
+    grid-area: header;
+    width: 100%;
+  }
+  .LeftRail {
+    background-color: lightgreen;
+    grid-area: leftRail;
+  }
+  .Content {
+    background-color: lightsalmon;
+    grid-area: content;
+    .SectionButtons {
+      display: flex;
+    }
+  }
+}
