@@ -4,11 +4,13 @@
     font-family: var(--font-1);
     background-color: var(--color-tan);
     color: var(--color-dark-blue);
+    fill: var(--color-dark-blue);
     border: none;
     box-shadow: 0px 0px 0px 2px var(--color-dark-blue);
     &:hover {
       background-color: var(--color-tan--focus);
       color: var(--color-dark-blue--focus);
+      fill: var(--color-dark-blue--focus);
       box-shadow: 0px 0px 0px 2px var(--color-dark-blue--focus);
     }
   }
@@ -17,11 +19,13 @@
     font-family: var(--font-1);
     background-color: var(--color-orange);
     color: var(--color-dark-blue);
+    fill: var(--color-dark-blue);
     border: none;
     box-shadow: 0px 0px 0px 2px var(--color-dark-blue);
     &:hover {
       background-color: var(--color-orange--focus);
       color: var(--color-dark-blue--focus);
+      fill: var(--color-dark-blue--focus);
       box-shadow: 0px 0px 0px 2px var(--color-dark-blue--focus);
     }
   }
@@ -30,14 +34,26 @@
     font-family: var(--font-1);
     background-color: var(--color-disabled-bg);
     color: var(--color-disabled-font);
+    fill: var(--color-disabled-font);
     border: none;
     box-shadow: 0px 0px 0px 2px var(--color-disabled-font);
     &:hover {
       background-color: var(--color-disabled-bg);
       color: var(--color-disabled-font);
+      fill: var(--color-disabled-font);
       box-shadow: 0px 0px 0px 2px var(--color-disabled-font);
     }
   }
+  &.isQuiet {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+  display: flex;
   transition: all 0.2s ease-in-out;
   border-radius: 12px;
   padding: 2px 16px;

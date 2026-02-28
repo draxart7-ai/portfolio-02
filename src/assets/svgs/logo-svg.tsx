@@ -1,8 +1,8 @@
-interface LogoSVGProps {
+interface LogoSvgProps {
   className?: string;
   size?: string;
 }
-export const LogoSvg = ({ className, size = "32px" }: LogoSVGProps) => {
+export const LogoSvg = ({ className, size = "32px" }: LogoSvgProps) => {
   const width = size;
   const height = size;
   return (
