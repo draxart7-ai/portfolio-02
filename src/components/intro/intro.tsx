@@ -1,13 +1,19 @@
 import "./intro.css";
 import { Text } from "../text/text";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver/useIntersectionObeserver";
+import { useActiveElementContext } from "../../state/active-element/active-element-context";
 
 export const Intro = () => {
   const sectionRef = useRef(null);
   const isVisable = useIntersectionObserver({ sectionRef });
-
+  const { register } = useActiveElementContext();
   const visible = isVisable ? "visable" : "invisable";
+
+  useEffect(() => {
+    const unregister = register(sectionRef.current);
+    return unregister; // Cleanup on unmount
+  }, [register]);
 
   return (
     <div id="Intro" className={`Intro ${visible} section`} ref={sectionRef}>

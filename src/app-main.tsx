@@ -7,6 +7,7 @@ import { About } from "./components/about/about";
 import { Projects } from "./components/projects/projects";
 import { Contact } from "./components/contact/contact";
 import { Skills } from "./components/skills/skills";
+import { ActiveElementProvider } from "./state/active-element/active-element-provider";
 
 export const AppMain = () => {
   const previewMode = false;
@@ -15,14 +16,16 @@ export const AppMain = () => {
   }
   return (
     <AppProvider>
-      <div className="AppMain">
-        <AppHeader />
-        <Intro />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-      </div>
+      <ActiveElementProvider>
+        <div className="AppMain">
+          <AppHeader />
+          <Intro />
+          <About />
+          <Projects />
+          <Skills />
+          <Contact />
+        </div>
+      </ActiveElementProvider>
     </AppProvider>
   );
 };

@@ -1,19 +1,17 @@
 import "./header-link.css";
+import { useActiveElementContext } from "../../state/active-element/active-element-context";
+
 interface HeaderLinkProps {
   title?: string;
-  onClick?: () => void;
-  isActive?: boolean;
 }
-export const HeaderLink = ({
-  title = "",
-  onClick = () => {
-    console.log(title);
-  },
-  isActive = false,
-}: HeaderLinkProps) => {
-  const active = isActive ? "active" : "";
+
+export const HeaderLink = ({ title = "" }: HeaderLinkProps) => {
+  const { activeId } = useActiveElementContext();
+
+  const active = activeId === title ? "active" : "";
+
   return (
-    <a className={`HeaderLink ${active}`} href={`#${title}`} onClick={onClick}>
+    <a className={`HeaderLink ${active}`} href={`#${title}`}>
       {title}
     </a>
   );
