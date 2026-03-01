@@ -3,7 +3,7 @@ import { createContext, useContext } from "react";
 
 // Create the context with a default value (optional, but good practice)
 export const AppContext = createContext({
-  theme: "light",
+  theme: "dark",
   toggleTheme: () => {},
   screen: {
     isMobile: false,

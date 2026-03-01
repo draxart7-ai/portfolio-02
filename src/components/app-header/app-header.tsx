@@ -14,7 +14,7 @@ export const AppHeader = () => {
   console.log({ theme, toggleTheme });
   return (
     <div className="AppHeader">
-      <div className="LeftActions">
+      <div className="LeftActions" onClick={toggleTheme}>
         <LogoSvg size="40px" />
         <div className="Name">
           <p>Alan Curtis</p>
