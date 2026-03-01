@@ -1,7 +1,7 @@
 import "./header-link-group-mobile.css";
 import { BurgerSvg } from "../../assets/svgs/burger-svg";
 import { Button } from "../button/button";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { HeaderLink } from "../header-link/header-link";
 
 export const HeaderLinkGroupMobile = () => {
