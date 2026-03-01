@@ -6,7 +6,10 @@
     box-sizing: border-box;
   }
 }
-
 *:focus-visible {
   outline: 4px solid var(--color-focus);
+}
+
+html {
+  scroll-behavior: smooth;
 }
