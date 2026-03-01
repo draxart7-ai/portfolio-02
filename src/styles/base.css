@@ -14,18 +14,18 @@ html {
   scroll-behavior: smooth;
 }
 
-.visable {
+.visible {
   opacity: 1;
   transition: opacity ease-in-out 0.5s;
 }
-.invisable {
+.invisible {
   opacity: 0.2;
   transition: opacity ease-in-out 0.5s;
 }
 
 /* this is for auto scroll to account for header height */
 .section {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 90px;
 }
 
 /* body to bg color changes android button color */

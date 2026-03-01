@@ -3,6 +3,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 200px; /* Desired spacing */
+  margin-top: -200px; /* Matches gap size to hide it (skip 1st element) */
   padding-bottom: 50vh;
 }

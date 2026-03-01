@@ -1,14 +1,12 @@
 import "./about.css";
 import { Text } from "../text/text";
 import { useRef, useEffect } from "react";
-import { useIntersectionObserver } from "../../hooks/useIntersectionObserver/useIntersectionObeserver";
 import { useActiveElementContext } from "../../state/active-element/active-element-context";
 
 export const About = () => {
   const sectionRef = useRef(null);
-  const isVisable = useIntersectionObserver({ sectionRef });
-  const { register } = useActiveElementContext();
-  const visible = isVisable ? "visable" : "invisable";
+  const { activeId, register } = useActiveElementContext();
+  const visible = activeId === "About" ? "visible" : "invisible";
 
   useEffect(() => {
     const unregister = register(sectionRef.current);

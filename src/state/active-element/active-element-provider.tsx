@@ -19,13 +19,13 @@ export const ActiveElementProvider = ({
     new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // 2. If an element hits the center "strip", make it active
-          if (entry.isIntersecting) {
+          // 2. ONLY trigger if the element is crossing the top edge
+          if (entry.isIntersecting && entry.intersectionRatio > 0) {
             setActiveId(entry.target.id);
           }
         });
       },
-      { rootMargin: "-50% 0px -50% 0px", threshold: 0 },
+      { rootMargin: "-80px 0px -85% 0px", threshold: 0 },
     ),
   );
 
