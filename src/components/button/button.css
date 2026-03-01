@@ -3,15 +3,15 @@
     font-size: 24px;
     font-family: var(--font-1);
     background-color: var(--color-tan);
-    color: var(--color-dark-blue);
-    fill: var(--color-dark-blue);
+    color: var(--color-white);
+    fill: var(--color-white);
     border: none;
     box-shadow: 0px 0px 0px 2px var(--color-dark-blue);
     &:hover {
       background-color: var(--color-tan--focus);
-      color: var(--color-dark-blue--focus);
-      fill: var(--color-dark-blue--focus);
-      box-shadow: 0px 0px 0px 2px var(--color-dark-blue--focus);
+      color: var(--color-blue--focus);
+      fill: var(--color-blue--focus);
+      box-shadow: 0px 0px 0px 2px var(--color-blue--focus);
     }
   }
   &.action {
