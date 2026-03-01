@@ -27,3 +27,8 @@ html {
 .section {
   scroll-margin-top: 60px;
 }
+
+/* body to bg color changes android button color */
+body {
+  background-color: #000000;
+}
