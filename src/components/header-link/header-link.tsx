@@ -10,8 +10,8 @@ export const HeaderLink = ({
   },
 }: HeaderLinkProps) => {
   return (
-    <button className={`HeaderLink`} onClick={onClick}>
+    <a className={`HeaderLink`} href={`#${title}`} onClick={onClick}>
       {title}
-    </button>
+    </a>
   );
 };
