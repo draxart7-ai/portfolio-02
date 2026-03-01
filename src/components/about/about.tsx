@@ -1,23 +1,17 @@
 import "./about.css";
 import { Text } from "../text/text";
+import { useRef } from "react";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver/useIntersectionObeserver";
 
 export const About = () => {
-  return (
-    <div id="About" className={`About`}>
-      <img src="/images/misc/alan-01.jpg" alt="profile" height="300px" />
-      {/* <div className="title"> Hello, I am </div>
-      <h1 className="name"> Alan Curtis </h1>
-      <h2 className="subtitle">Web Developer | Technical Artist</h2>
-      <p className="info">
-        I love board games, video games, hiking, playing sports, my family and
-        life in general. I am an upbeat optimist that enjoys a good challenge.
-        With being well organized I feel like a day of planning saves a week of
-        coding. I approach all my tasks with clarity and a well thought out
-        approach. With a strong ability to foresee issues before they arise. I
-        build stable, versatile and tested code.
-      </p> */}
+  const sectionRef = useRef(null);
+  const isVisable = useIntersectionObserver({ sectionRef });
 
-      <Text size="f6">Alan Curtis</Text>
+  const visible = isVisable ? "visable" : "invisable";
+
+  return (
+    <div id="About" className={`About ${visible}`} ref={sectionRef}>
+      <Text size="f6">About</Text>
       <Text isSubtle size="f6">
         Alan Curtis
       </Text>

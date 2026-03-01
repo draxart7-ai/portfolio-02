@@ -1,9 +1,16 @@
 import "./intro.css";
 import { Text } from "../text/text";
+import { useRef } from "react";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver/useIntersectionObeserver";
 
 export const Intro = () => {
+  const sectionRef = useRef(null);
+  const isVisable = useIntersectionObserver({ sectionRef });
+
+  const visible = isVisable ? "visable" : "invisable";
+
   return (
-    <div id="Intro" className={`Intro`}>
+    <div id="Intro" className={`Intro ${visible}`} ref={sectionRef}>
       <Text size="f6">Intro</Text>
       <Text isSubtle size="f6">
         Alan Curtis

@@ -1,9 +1,16 @@
 import "./contact.css";
 import { Text } from "../text/text";
+import { useRef } from "react";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver/useIntersectionObeserver";
 
 export const Contact = () => {
+  const sectionRef = useRef(null);
+  const isVisable = useIntersectionObserver({ sectionRef });
+
+  const visible = isVisable ? "visable" : "invisable";
+
   return (
-    <div id="Contact" className={`Contact`}>
+    <div id="Contact" className={`Contact ${visible}`} ref={sectionRef}>
       <Text size="f6">Contact</Text>
       <Text isSubtle size="f6">
         Alan Curtis
