@@ -11,7 +11,7 @@ export const Intro = () => {
 
   return (
     <div id="Intro" className={`Intro ${visible} section`} ref={sectionRef}>
-      <Text size="f6">Intro</Text>
+      <Text size="f6">Intro test</Text>
       <Text isSubtle size="f6">
         Alan Curtis
       </Text>
