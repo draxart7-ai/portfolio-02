@@ -1,10 +1,10 @@
-import "./intro.css";
+import "./skills.css";
 import { Text } from "../text/text";
 
-export const Intro = () => {
+export const Skills = () => {
   return (
-    <div id="Intro" className={`Intro`}>
-      <Text size="f6">Intro</Text>
+    <div id="Skills" className={`Skills`}>
+      <Text size="f6">Skills</Text>
       <Text isSubtle size="f6">
         Alan Curtis
       </Text>

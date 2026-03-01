@@ -4,6 +4,9 @@ import { AppHeader } from "./components/app-header/app-header";
 import { Preview } from "./components/preview/preview";
 import { Intro } from "./components/intro/intro";
 import { About } from "./components/about/about";
+import { Projects } from "./components/projects/projects";
+import { Contact } from "./components/contact/contact";
+import { Skills } from "./components/skills/skills";
 
 export const AppMain = () => {
   const previewMode = false;
@@ -14,15 +17,11 @@ export const AppMain = () => {
     <AppProvider>
       <div className="AppMain">
         <AppHeader />
+        <Intro />
         <About />
-        <Intro>{"<Intro />"}</Intro>
-        <Intro>{"<Intro />"}</Intro>
-        <Intro>{"<Intro />"}</Intro>
-        <Intro>{"<Intro />"}</Intro>
-        {/* <div className="About">{"<About />"}</div>
-        <div className="Skills">{"<Skills />"}</div>
-        <div className="Gallery">{"<Gallery />"}</div>
-        <div className="Contact">{"<Contact />"}</div> */}
+        <Projects />
+        <Skills />
+        <Contact />
       </div>
     </AppProvider>
   );

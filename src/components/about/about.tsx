@@ -3,7 +3,7 @@ import { Text } from "../text/text";
 
 export const About = () => {
   return (
-    <div className={`About`}>
+    <div id="About" className={`About`}>
       <img src="/images/misc/alan-01.jpg" alt="profile" height="300px" />
       {/* <div className="title"> Hello, I am </div>
       <h1 className="name"> Alan Curtis </h1>
