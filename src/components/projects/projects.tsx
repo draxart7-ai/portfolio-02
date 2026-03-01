@@ -10,7 +10,11 @@ export const Projects = () => {
   const visible = isVisable ? "visable" : "invisable";
 
   return (
-    <div id="Projects" className={`Projects ${visible}`} ref={sectionRef}>
+    <div
+      id="Projects"
+      className={`Projects ${visible} section`}
+      ref={sectionRef}
+    >
       <Text size="f6">Projects</Text>
       <Text isSubtle size="f6">
         Alan Curtis

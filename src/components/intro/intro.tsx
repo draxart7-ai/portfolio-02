@@ -10,7 +10,7 @@ export const Intro = () => {
   const visible = isVisable ? "visable" : "invisable";
 
   return (
-    <div id="Intro" className={`Intro ${visible}`} ref={sectionRef}>
+    <div id="Intro" className={`Intro ${visible} section`} ref={sectionRef}>
       <Text size="f6">Intro</Text>
       <Text isSubtle size="f6">
         Alan Curtis
