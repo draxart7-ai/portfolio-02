@@ -3,15 +3,16 @@ import { useActiveElementContext } from "../../state/active-element/active-eleme
 
 interface HeaderLinkProps {
   title?: string;
+  onClick?: () => void;
 }
 
-export const HeaderLink = ({ title = "" }: HeaderLinkProps) => {
+export const HeaderLink = ({ title = "", onClick }: HeaderLinkProps) => {
   const { activeId } = useActiveElementContext();
 
   const active = activeId === title ? "active" : "";
 
   return (
-    <a className={`HeaderLink ${active}`} href={`#${title}`}>
+    <a className={`HeaderLink ${active}`} href={`#${title}`} onClick={onClick}>
       {title}
     </a>
   );

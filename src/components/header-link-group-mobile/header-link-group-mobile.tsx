@@ -45,19 +45,19 @@ export const HeaderLinkGroupMobile = () => {
           className="dropdown-menu"
         >
           <li role="menuitem">
-            <HeaderLink title="Intro" />
+            <HeaderLink title="Intro" onClick={toggleDropdown} />
           </li>
           <li role="menuitem">
-            <HeaderLink title="About" />
+            <HeaderLink title="About" onClick={toggleDropdown} />
           </li>
           <li role="menuitem">
-            <HeaderLink title="Projects" />
+            <HeaderLink title="Projects" onClick={toggleDropdown} />
           </li>
           <li role="menuitem">
-            <HeaderLink title="Skills" />
+            <HeaderLink title="Skills" onClick={toggleDropdown} />
           </li>
           <li role="menuitem">
-            <HeaderLink title="Contact" />
+            <HeaderLink title="Contact" onClick={toggleDropdown} />
           </li>
         </ul>
       )}
