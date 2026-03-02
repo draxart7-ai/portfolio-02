@@ -49,16 +49,164 @@ export const About = () => {
           <img src="/images/misc/alan-01.jpg" alt="profile" height="300px" />
         </Card>
       </div>
-      <div className="bar">
+      <div
+        className="bar"
+        style={{
+          position: "relative",
+        }}
+      >
         <Card>
-          <p>
-            this ------ to this -------- to this -------- to this ------- end
-          </p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              zIndex: "200",
+              padding: "0 20px",
+              gap: "8px",
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                height: "40px",
+                width: "40px",
+                backgroundColor: "lightblue",
+              }}
+            ></div>
+            <div
+              style={{
+                height: "40px",
+                width: "40px",
+                backgroundColor: "lightgreen",
+              }}
+            ></div>
+            <div
+              style={{
+                height: "40px",
+                width: "40px",
+                backgroundColor: "lightyellow",
+              }}
+            ></div>
+            <div
+              style={{
+                height: "40px",
+                width: "40px",
+                backgroundColor: "lightcoral",
+              }}
+            ></div>
+            <div
+              style={{
+                height: "40px",
+                width: "40px",
+                backgroundColor: "lightsalmon",
+              }}
+            ></div>
+          </div>
+          <div
+            style={{
+              height: "2px",
+              width: "90%",
+              backgroundColor: "red",
+              position: "absolute",
+              top: "30px",
+            }}
+          ></div>
         </Card>
       </div>
       <div className="info">
         <Card>
-          <p>Info</p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+
+              padding: "0 20px",
+              gap: "8px",
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                height: "50px",
+                width: "100%",
+                backgroundColor: "black",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                }}
+              >
+                EA
+              </div>
+              <div
+                style={{
+                  fontSize: "16px",
+                }}
+              >
+                Games
+              </div>
+            </div>
+            <div
+              style={{
+                height: "50px",
+                width: "100%",
+                backgroundColor: "black",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                }}
+              >
+                Adobe
+              </div>
+              <div
+                style={{
+                  fontSize: "16px",
+                }}
+              >
+                Software
+              </div>
+            </div>
+            <div
+              style={{
+                height: "50px",
+                width: "100%",
+                backgroundColor: "black",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                }}
+              >
+                Void
+              </div>
+              <div
+                style={{
+                  fontSize: "16px",
+                }}
+              >
+                VR
+              </div>
+            </div>
+          </div>
         </Card>
       </div>
       <div className="more">
