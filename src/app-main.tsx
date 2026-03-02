@@ -19,11 +19,13 @@ export const AppMain = () => {
       <ActiveElementProvider>
         <div className="AppMain">
           <AppHeader />
-          <Intro />
-          <About />
-          <Projects />
-          <Skills />
-          <Contact />
+          <div className="section-container">
+            <Intro />
+            <About />
+            <Projects />
+            <Skills />
+            <Contact />
+          </div>
         </div>
       </ActiveElementProvider>
     </AppProvider>

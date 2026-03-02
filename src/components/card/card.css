@@ -1,19 +1,16 @@
 .Card {
-  font-size: 24px;
-  font-family: var(--font-1);
-  background-color: var(--color-tan);
-  color: var(--color-dark-blue);
-  border: none;
-  box-shadow: 0px 0px 0px 2px var(--color-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: rgb(24, 24, 24); /* todo style */
+  height: 100%;
+  width: 100%;
+  gap: 16px;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 2px rgb(50, 50, 50); /* todo style */
   &:hover {
-    background-color: var(--color-tan--focus);
-    color: var(--color-dark-blue--focus);
-    box-shadow: 0px 0px 0px 2px var(--color-dark-blue--focus);
+    box-shadow: 0px 0px 0px 2px rgb(88, 88, 88); /* todo style */
   }
-  width: 260px;
-  height: 300px;
-  transition: all 0.2s ease-in-out;
-  border-radius: 12px;
-  padding: var(--size-16);
-  margin: 5px;
 }

@@ -1,4 +1,48 @@
 .About {
+  /* max-width: 1200px; */
   background-color: none;
   padding: 10px;
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  grid-template-areas:
+    "title    title    title   desc   desc   desc  "
+    "picture  picture  picture   desc   desc   desc  "
+    "bar      bar      bar    bar    bar    bar   "
+    "info     info     info   more   more   more  ";
+  .title {
+    grid-area: title;
+    height: 60px;
+  }
+  .desc {
+    grid-area: desc;
+  }
+  .picture {
+    grid-area: picture;
+  }
+  .bar {
+    grid-area: bar;
+    height: 60px;
+  }
+  .info {
+    grid-area: info;
+    height: 60px;
+  }
+  .more {
+    grid-area: more;
+    height: 60px;
+  }
+}
+
+/* isMobile*/
+@media screen and (max-width: 768px) {
+  .About {
+    grid-template-areas:
+      "title "
+      "picture "
+      "desc"
+      "bar"
+      "info "
+      "more";
+  }
 }
