@@ -56,61 +56,37 @@ export const About = () => {
         }}
       >
         <Card>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              zIndex: "200",
-              padding: "0 20px",
-              gap: "8px",
-              width: "100%",
-            }}
-          >
-            <div
-              style={{
-                height: "40px",
-                width: "40px",
-                backgroundColor: "lightblue",
-              }}
-            ></div>
-            <div
-              style={{
-                height: "40px",
-                width: "40px",
-                backgroundColor: "lightgreen",
-              }}
-            ></div>
-            <div
-              style={{
-                height: "40px",
-                width: "40px",
-                backgroundColor: "lightyellow",
-              }}
-            ></div>
-            <div
-              style={{
-                height: "40px",
-                width: "40px",
-                backgroundColor: "lightcoral",
-              }}
-            ></div>
-            <div
-              style={{
-                height: "40px",
-                width: "40px",
-                backgroundColor: "lightsalmon",
-              }}
-            ></div>
+          <div className="timeline">
+            <div className="connector"></div>
+
+            <div className="entries">
+              <div className="entry">
+                <div className="icon"></div>
+                <div className="title">Art Institute</div>
+                <div className="date">2004-2007</div>
+              </div>
+              <div className="entry">
+                <div className="icon"></div>
+                <div className="title">EA Games</div>
+                <div className="date">2004-2007</div>
+              </div>
+              <div className="entry">
+                <div className="icon"></div>
+                <div className="title">Void VR</div>
+                <div className="date">2004-2007</div>
+              </div>
+              <div className="entry">
+                <div className="icon"></div>
+                <div className="title">Badger Sports</div>
+                <div className="date">2004-2007</div>
+              </div>
+              <div className="entry">
+                <div className="icon"></div>
+                <div className="title">Adobe</div>
+                <div className="date">2004-2007</div>
+              </div>
+            </div>
           </div>
-          <div
-            style={{
-              height: "2px",
-              width: "90%",
-              backgroundColor: "red",
-              position: "absolute",
-              top: "30px",
-            }}
-          ></div>
         </Card>
       </div>
       <div className="info">

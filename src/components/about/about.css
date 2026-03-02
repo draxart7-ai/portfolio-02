@@ -12,7 +12,7 @@
     "info     info     info   more   more   more  ";
   .title {
     grid-area: title;
-    height: 60px;
+    height: 80px;
   }
   .desc {
     grid-area: desc;
@@ -22,15 +22,54 @@
   }
   .bar {
     grid-area: bar;
-    height: 60px;
+    height: 80px;
+    .timeline {
+      width: 100%;
+      padding: 16px;
+
+      .entries {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .entry {
+          z-index: 200;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 64px;
+          width: 80px;
+          background-color: rgb(44, 44, 44);
+          border-radius: 4px;
+          box-shadow: 0px 0px 0px 2px var(--color-disabled-font);
+          .title {
+          }
+          .icon {
+            height: 20px;
+            width: 20px;
+            background-color: burlywood;
+          }
+          .date {
+          }
+        }
+      }
+      .connector {
+        z-index: 1;
+        background-color: rgb(80, 157, 230);
+        height: 2px;
+        width: 100%;
+        position: relative;
+        top: 30px;
+      }
+    }
   }
   .info {
     grid-area: info;
-    height: 60px;
+    height: 80px;
   }
   .more {
     grid-area: more;
-    height: 60px;
+    height: 80px;
   }
 }
 
