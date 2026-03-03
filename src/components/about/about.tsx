@@ -58,7 +58,6 @@ export const About = () => {
         <Card>
           <div className="timeline">
             <div className="connector"></div>
-
             <div className="entries">
               <div className="entry">
                 <img
@@ -186,7 +185,98 @@ export const About = () => {
       </div>
       <div className="more">
         <Card>
-          <p>More</p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+
+              padding: "0 20px",
+              gap: "8px",
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                height: "50px",
+                width: "100%",
+                backgroundColor: "black",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                }}
+              >
+                EA
+              </div>
+              <div
+                style={{
+                  fontSize: "16px",
+                }}
+              >
+                Games
+              </div>
+            </div>
+            <div
+              style={{
+                height: "50px",
+                width: "100%",
+                backgroundColor: "black",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                }}
+              >
+                Adobe
+              </div>
+              <div
+                style={{
+                  fontSize: "16px",
+                }}
+              >
+                Software
+              </div>
+            </div>
+            <div
+              style={{
+                height: "50px",
+                width: "100%",
+                backgroundColor: "black",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "bold",
+                }}
+              >
+                Void
+              </div>
+              <div
+                style={{
+                  fontSize: "16px",
+                }}
+              >
+                VR
+              </div>
+            </div>
+          </div>
         </Card>
       </div>
     </div>

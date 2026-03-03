@@ -5,9 +5,10 @@
   display: grid;
   gap: 16px;
   width: 100%;
+  grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
-    "title    title    title   desc   desc   desc  "
-    "picture  picture  picture   desc   desc   desc  "
+    "title    title    desc   desc   desc   desc  "
+    "picture  picture  desc   desc   desc   desc  "
     "bar      bar      bar    bar    bar    bar   "
     "info     info     info   more   more   more  ";
   .title {
@@ -55,12 +56,15 @@
         height: 2px;
         background: linear-gradient(
           /* for animating shimmer */ to right,
-          #004280 0%,
+          #07233f 0%,
+          #004280 10%,
           #03b3e9 20%,
-          #004280 22%
+          #b6e9f8 23%,
+          #004280 25%,
+          #07233f 28%
         );
-        background-size: 1000px 100%;
-        animation: shimmer 10s infinite linear;
+        background-size: 2000px 100%;
+        animation: shimmer 16s infinite linear;
       }
     }
   }
@@ -76,10 +80,10 @@
 
 @keyframes shimmer {
   0% {
-    background-position: -1000px 0; /* starts the gradient off-screen to the left */
+    background-position: -2000px 0; /* starts the gradient off-screen to the left */
   }
   100% {
-    background-position: 1000px 0; /* moves the gradient across to the right */
+    background-position: 2000px 0; /* moves the gradient across to the right */
   }
 }
 
