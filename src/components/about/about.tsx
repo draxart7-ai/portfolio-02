@@ -185,96 +185,22 @@ export const About = () => {
       </div>
       <div className="more">
         <Card>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-
-              padding: "0 20px",
-              gap: "8px",
-              width: "100%",
-            }}
-          >
-            <div
-              style={{
-                height: "50px",
-                width: "100%",
-                backgroundColor: "black",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: "20px",
-                  fontWeight: "bold",
-                }}
-              >
-                EA
-              </div>
-              <div
-                style={{
-                  fontSize: "16px",
-                }}
-              >
-                Games
-              </div>
+          <div className="container">
+            <div className="trait-card">
+              <div className="title">Curious</div>
+              <div className="content">Continuously exploring and learning</div>
             </div>
-            <div
-              style={{
-                height: "50px",
-                width: "100%",
-                backgroundColor: "black",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: "20px",
-                  fontWeight: "bold",
-                }}
-              >
-                Adobe
-              </div>
-              <div
-                style={{
-                  fontSize: "16px",
-                }}
-              >
-                Software
-              </div>
+            <div className="trait-card">
+              <div className="title">Adaptable</div>
+              {/* <div className="content">
+                Softare, VR, to video games each a differnt ecosystem
+              </div> */}
             </div>
-            <div
-              style={{
-                height: "50px",
-                width: "100%",
-                backgroundColor: "black",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: "20px",
-                  fontWeight: "bold",
-                }}
-              >
-                Void
-              </div>
-              <div
-                style={{
-                  fontSize: "16px",
-                }}
-              >
-                VR
-              </div>
+            <div className="trait-card">
+              <div className="title">Artistic</div>
+              {/* <div className="content">
+                I have a keen eye to spot the littlest details
+              </div> */}
             </div>
           </div>
         </Card>
