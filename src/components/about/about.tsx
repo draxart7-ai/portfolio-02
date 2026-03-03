@@ -61,29 +61,28 @@ export const About = () => {
 
             <div className="entries">
               <div className="entry">
-                <div className="icon"></div>
-                <div className="title">Art Institute</div>
-                <div className="date">2004-2007</div>
+                <img
+                  src="/images/companies/art-institute-logo.png"
+                  alt="art institute"
+                />
               </div>
               <div className="entry">
-                <div className="icon"></div>
-                <div className="title">EA Games</div>
-                <div className="date">2004-2007</div>
+                <img
+                  src="/images/companies/electronic-arts-logo.png"
+                  alt="electronic arts logo"
+                />
               </div>
               <div className="entry">
-                <div className="icon"></div>
-                <div className="title">Void VR</div>
-                <div className="date">2004-2007</div>
+                <img src="/images/companies/void-logo.png" alt="void logo" />
               </div>
               <div className="entry">
-                <div className="icon"></div>
-                <div className="title">Badger Sports</div>
-                <div className="date">2004-2007</div>
+                <img src="/images/companies/adobe-logo.png" alt="adobe logo" />
               </div>
               <div className="entry">
-                <div className="icon"></div>
-                <div className="title">Adobe</div>
-                <div className="date">2004-2007</div>
+                <img
+                  src="/images/companies/future-logo.png"
+                  alt="future logo"
+                />
               </div>
             </div>
           </div>
