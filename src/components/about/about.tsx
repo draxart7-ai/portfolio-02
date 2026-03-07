@@ -27,22 +27,28 @@ export const About = () => {
           <div className="container">
             <p className="title">Mission </p>
             <p>
-              Empower people through creating intuitive frictonless software
+              Empower people through creating intuitive frictionless software
             </p>
-            <p className="title">Software Developer</p>
+            <p className="title">Senior Software Developer</p>
             <p>
-              I have been a software developer for the last 10years. Main
-              achievements:
-              <br />- Adobe: Inventor of the Ai Reviewer
-              <br />- Developing Virtual Reality
-              <br />- Developing Virtual Reality
+              Over 9 years as Software Developer and 8 years as Technical Artist
+              my main achievemtns have been:
             </p>
-            <p className="title">Technical Artist </p>
-            <p>
-              Placeholder! in focused work, where efficiency is the only real
-              measure of progress. I seek the clarity of a well ordered mind and
-              a task executed with precision.
-            </p>
+            <ul className="list">
+              <li>
+                Inventor of the Ai Image Reviewer to analyze images and give
+                feedback based off brand guidelines (featured twice at Adobe
+                Summit)
+              </li>
+              <li>
+                Used pythagoras theorem to determine if rotated object fits
+                inside a bounding box
+              </li>
+              <li>
+                Created pipeline tool saving company over $150,000 by reducing
+                time to import assets into the game
+              </li>
+            </ul>
           </div>
         </Card>
       </div>
@@ -93,97 +99,15 @@ export const About = () => {
       </div>
       <div className="info">
         <Card>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-
-              padding: "0 20px",
-              gap: "8px",
-              width: "100%",
-            }}
-          >
-            <div
-              style={{
-                height: "50px",
-                width: "100%",
-                backgroundColor: "black",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
+          <div className="container">
+            <a
+              href="https://www.google.com/maps/place/Salt+Lake+City,+UT/"
+              className="address"
+              target="_blank"
             >
-              <div
-                style={{
-                  fontSize: "20px",
-                  fontWeight: "bold",
-                }}
-              >
-                EA
-              </div>
-              <div
-                style={{
-                  fontSize: "16px",
-                }}
-              >
-                Games
-              </div>
-            </div>
-            <div
-              style={{
-                height: "50px",
-                width: "100%",
-                backgroundColor: "black",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: "20px",
-                  fontWeight: "bold",
-                }}
-              >
-                Adobe
-              </div>
-              <div
-                style={{
-                  fontSize: "16px",
-                }}
-              >
-                Software
-              </div>
-            </div>
-            <div
-              style={{
-                height: "50px",
-                width: "100%",
-                backgroundColor: "black",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: "20px",
-                  fontWeight: "bold",
-                }}
-              >
-                Void
-              </div>
-              <div
-                style={{
-                  fontSize: "16px",
-                }}
-              >
-                VR
-              </div>
-            </div>
+              <div className="city">Salt Lake City, Utah</div>
+              <div className="country">United States of America</div>
+            </a>
           </div>
         </Card>
       </div>
