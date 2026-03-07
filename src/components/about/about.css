@@ -105,6 +105,8 @@
     grid-area: picture;
     display: flex;
     .container {
+      overflow: hidden;
+      border-radius: 8px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -196,14 +198,17 @@
     height: 80px;
     grid-area: more;
     .container {
+      overflow: hidden;
+      height: 100%;
       padding: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
-      .title {
+      > .title {
         font-size: var(--size-20);
+        margin-top: 20px;
       }
       .cards {
         display: flex;
