@@ -30,6 +30,7 @@ export const About = () => {
               <p>
                 Empower people through creating intuitive frictionless software
               </p>
+              <hr></hr>
             </div>
             <div className="achievements">
               <p className="title">Senior Software Developer</p>
@@ -48,8 +49,8 @@ export const About = () => {
                   inside a bounding box
                 </li>
                 <li>
-                  Created pipeline tool saving company over $150,000 by reducing
-                  time to import assets into the game
+                  Created pipeline tool saving company over $150,000 a year by
+                  reducing time to import assets into the game
                 </li>
                 <li>
                   Built Virtual Reality experiences that were lauched at Disney
@@ -114,14 +115,10 @@ export const About = () => {
       <div className="info">
         <Card>
           <div className="container">
-            <a
-              href="https://www.google.com/maps/place/Salt+Lake+City,+UT/"
-              className="address"
-              target="_blank"
-            >
+            <div className="address">
               <div className="city">Salt Lake City, Utah</div>
               <div className="country">United States of America</div>
-            </a>
+            </div>
           </div>
         </Card>
       </div>
@@ -131,7 +128,7 @@ export const About = () => {
             <div className="title">Me in 3</div>
             <div className="cards">
               <div className="trait-card">
-                <div className="title">Curious</div>
+                <div className="title">Determined</div>
               </div>
               <div className="trait-card">
                 <div className="title">Adaptable</div>
