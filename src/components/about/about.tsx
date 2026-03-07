@@ -85,28 +85,95 @@ export const About = () => {
             <div className="connector"></div>
             <div className="entries">
               <div className="entry">
-                <img
-                  src="/images/companies/art-institute-logo.png"
-                  alt="art institute"
-                />
+                <div className="container">
+                  <div className="base">
+                    <img
+                      src="/images/companies/art-institute-logo.png"
+                      alt="art institute"
+                    />
+                  </div>
+                  <div className="slide-out">
+                    <div className="header">
+                      <div className="title">Art Insitute</div>
+                      <div className="role">Student</div>
+                    </div>
+                    <div className="desc">Studied BS in 3d art Animation</div>
+                  </div>
+                </div>
               </div>
               <div className="entry">
-                <img
-                  src="/images/companies/electronic-arts-logo.png"
-                  alt="electronic arts logo"
-                />
+                <div className="container">
+                  <div className="base">
+                    <img
+                      src="/images/companies/electronic-arts-logo.png"
+                      alt="electronic arts logo"
+                    />
+                  </div>
+                  <div className="slide-out">
+                    <div className="header">
+                      <div className="title">EA Games</div>
+                      <div className="role">Technical Artist</div>
+                    </div>
+                    <div className="desc">
+                      Worked on games such as Sims 3 and 4, Minons Paridise
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="entry">
-                <img src="/images/companies/void-logo.png" alt="void logo" />
+                <div className="container">
+                  <div className="base">
+                    <img
+                      src="/images/companies/void-logo.png"
+                      alt="void logo"
+                    />
+                  </div>
+                  <div className="slide-out">
+                    <div className="header">
+                      <div className="title">The Void</div>
+                      <div className="role">Technical Artist</div>
+                    </div>
+                    <div className="desc">
+                      Developed Virtual Reality experinces
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="entry">
-                <img src="/images/companies/adobe-logo.png" alt="adobe logo" />
+                <div className="container">
+                  <div className="base">
+                    <img
+                      src="/images/companies/adobe-logo.png"
+                      alt="adobe logo"
+                    />
+                  </div>
+                  <div className="slide-out">
+                    <div className="header">
+                      <div className="title">Adobe</div>
+                      <div className="role">Senior Software Developer</div>
+                    </div>
+                    <div className="desc">
+                      Building enterpise level software
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="entry">
-                <img
-                  src="/images/companies/future-logo.png"
-                  alt="future logo"
-                />
+                <div className="container">
+                  <div className="base">
+                    <img
+                      src="/images/companies/future-logo.png"
+                      alt="future logo"
+                    />
+                  </div>
+                  <div className="slide-out">
+                    <div className="header">
+                      <div className="title">Future</div>
+                      <div className="role"></div>
+                    </div>
+                    <div className="desc">Who knows what the future holds</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
