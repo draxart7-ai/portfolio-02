@@ -25,30 +25,44 @@ export const About = () => {
       <div className="desc">
         <Card>
           <div className="container">
-            <p className="title">Mission </p>
-            <p>
-              Empower people through creating intuitive frictionless software
-            </p>
-            <p className="title">Senior Software Developer</p>
-            <p>
-              Over 9 years as Software Developer and 8 years as Technical Artist
-              my main achievemtns have been:
-            </p>
-            <ul className="list">
-              <li>
-                Inventor of the Ai Image Reviewer to analyze images and give
-                feedback based off brand guidelines (featured twice at Adobe
-                Summit)
-              </li>
-              <li>
-                Used pythagoras theorem to determine if rotated object fits
-                inside a bounding box
-              </li>
-              <li>
-                Created pipeline tool saving company over $150,000 by reducing
-                time to import assets into the game
-              </li>
-            </ul>
+            <div className="mission">
+              <p className="title">Mission </p>
+              <p>
+                Empower people through creating intuitive frictionless software
+              </p>
+            </div>
+            <div className="achievements">
+              <p className="title">Senior Software Developer</p>
+              <p>
+                Over 17 years in Software Developement, Video Games, Virtual
+                Reality
+              </p>
+              <ul className="list">
+                <li>
+                  Inventor of the Ai Image Reviewer to analyze images and give
+                  feedback based off brand guidelines (featured twice at Adobe
+                  Summit)
+                </li>
+                <li>
+                  Used pythagoras theorem to determine if rotated object fits
+                  inside a bounding box
+                </li>
+                <li>
+                  Created pipeline tool saving company over $150,000 by reducing
+                  time to import assets into the game
+                </li>
+                <li>
+                  Built Virtual Reality experiences that were lauched at Disney
+                  theme parks
+                </li>
+              </ul>
+            </div>
+            <div className="wrap-up">
+              <p>
+                I will identify bottlenecks and make the best experiece for the
+                customers
+              </p>
+            </div>
           </div>
         </Card>
       </div>
@@ -114,21 +128,17 @@ export const About = () => {
       <div className="more">
         <Card>
           <div className="container">
-            <div className="trait-card">
-              <div className="title">Curious</div>
-              <div className="content">Continuously exploring and learning</div>
-            </div>
-            <div className="trait-card">
-              <div className="title">Adaptable</div>
-              {/* <div className="content">
-                Softare, VR, to video games each a differnt ecosystem
-              </div> */}
-            </div>
-            <div className="trait-card">
-              <div className="title">Artistic</div>
-              {/* <div className="content">
-                I have a keen eye to spot the littlest details
-              </div> */}
+            <div className="title">Me in 3</div>
+            <div className="cards">
+              <div className="trait-card">
+                <div className="title">Curious</div>
+              </div>
+              <div className="trait-card">
+                <div className="title">Adaptable</div>
+              </div>
+              <div className="trait-card">
+                <div className="title">Creative</div>
+              </div>
             </div>
           </div>
         </Card>
