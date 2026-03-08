@@ -1,4 +1,6 @@
+.intro-container {
+  height: calc(100vh);
+}
 .Intro {
-  background-color: none;
-  padding: 10px;
+  display: block;
 }
