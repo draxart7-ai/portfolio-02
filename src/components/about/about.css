@@ -6,10 +6,10 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 80px auto 80px 80px;
   grid-template-areas:
-    "title    title    desc   desc   desc   desc  "
-    "picture  picture  desc   desc   desc   desc  "
-    "bar      bar      bar    bar    bar    bar   "
-    "info     info     info   more   more   more  ";
+    "title     title    description   description   description   description  "
+    "picture   picture  description   description   description   description  "
+    "timeline  timeline timeline      timeline      timeline      timeline   "
+    "info      info     info           more         more          more  ";
   > .title {
     grid-area: title;
     height: 80px;
@@ -20,83 +20,6 @@
       align-items: center;
       font-size: var(--size-32);
       font-weight: bold;
-    }
-  }
-  .desc {
-    grid-area: desc;
-    .container {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      align-items: center;
-      padding: var(--spcae-16);
-      gap: 10px;
-
-      .mission {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: var(--space-8);
-        > .title {
-          font-size: var(--size-32);
-          margin-bottom: var(--space-8);
-          text-align: center;
-        }
-        > p {
-          font-size: var(--size-18);
-        }
-        hr {
-          width: 100%;
-          height: 2px;
-          background-color: var(--color-text-grey);
-          border: none;
-        }
-      }
-      .achievements {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        > .title {
-          font-size: var(--size-32);
-          margin-bottom: var(--space-8);
-          align-items: center;
-          text-align: center;
-          color: var(--color-text-grey);
-        }
-        > p {
-          font-size: var(--size-18);
-          margin-bottom: var(--spcae-16);
-          color: var(--color-text-grey);
-        }
-        > ul {
-          list-style-type: square;
-          margin-left: 50px; /*unique style*/
-          > li {
-            padding-bottom: var(--space-8);
-            line-height: 1.3rem;
-          }
-          li:nth-child(odd) {
-            color: var(--color-text-white);
-          }
-          li:nth-child(even) {
-            color: var(--color-text-white);
-          }
-        }
-      }
-      .wrap-up {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        > p {
-          font-size: var(--size-18);
-          color: var(--color-text-grey);
-        }
-      }
     }
   }
   .picture {
@@ -116,148 +39,7 @@
       }
     }
   }
-  .bar {
-    grid-area: bar;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    .timeline {
-      width: 100%;
-      height: 100%;
-      padding: 0 var(--spcae-16);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      .entries {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        .entry {
-          z-index: 50;
-          display: flex;
-          flex-direction: column;
-          height: 64px;
-          width: 54px;
-          position: relative;
-          &:nth-child(1) {
-            .container {
-              left: 0;
-            }
-          }
-          &:nth-child(2) {
-            .container {
-              left: 0;
-            }
-          }
-          &:nth-child(2):hover {
-            .container {
-              left: -66px;
-            }
-          }
-          &:nth-child(3) {
-            .container {
-              left: 0;
-            }
-          }
-          &:nth-child(3):hover {
-            .container {
-              left: -134px;
-            }
-          }
-          &:nth-child(4) {
-            .container {
-              right: 0;
-            }
-          }
-          &:nth-child(4):hover {
-            .container {
-              right: -65px;
-            }
-          }
-          &:nth-child(5) {
-            .container {
-              right: 0;
-            }
-          }
-          &:nth-child(5):hover {
-            .container {
-              right: -0px;
-            }
-          }
-          &:hover {
-            z-index: 60;
-            > .container {
-              width: 324px;
-              > .slide-out {
-                opacity: 1;
-                transition-delay: 0.2s;
-              }
-            }
-          }
-          > .container {
-            z-index: 55;
-            background-color: var(--color-inner-card-background);
-            border-radius: var(--border-radius);
-            box-shadow: 0px 0px 0px 2px var(--color-inner-card-border);
-            height: 64px;
-            width: 54px;
-            display: flex;
-            width: 100%;
-            gap: 8px;
-            overflow: hidden;
-            padding-left: 2px; /*unique style*/
-            padding-right: 6px; /*unique style*/
-            align-items: center;
-            position: absolute;
-            transition:
-              width 0.2s ease-in-out,
-              left 0.2s ease-in-out,
-              right 0.2s ease-in-out;
-            > .base {
-              > img {
-                height: 50px;
-                width: 50px;
-                border-radius: var(--border-radius);
-              }
-            }
-            > .slide-out {
-              display: flex;
-              flex-direction: column;
-              width: 100%;
-              gap: 6px;
-              opacity: 0;
-              transition: opacity 0.1s ease-in;
 
-              > .header {
-                display: flex;
-                justify-content: space-between;
-              }
-            }
-          }
-        }
-      }
-      .connector {
-        position: relative;
-        top: 36px;
-        width: 100%;
-        height: 2px;
-        /* for animating shimmer */
-        background: linear-gradient(
-          to right,
-          #07233f 0%,
-          #004280 10%,
-          #03b3e9 20%,
-          #b6e9f8 23%,
-          #004280 25%,
-          #07233f 28%
-        );
-        background-size: 2000px 100%;
-        animation: shimmer 16s infinite linear;
-      }
-    }
-  }
   .info {
     grid-area: info;
     height: 80px;
@@ -320,15 +102,6 @@
   }
 }
 
-@keyframes shimmer {
-  0% {
-    background-position: -2000px 0; /* starts the gradient off-screen to the left */
-  }
-  100% {
-    background-position: 2000px 0; /* moves the gradient across to the right */
-  }
-}
-
 /* isMobile*/
 @media screen and (max-width: 768px) {
   .About {
@@ -337,27 +110,9 @@
     grid-template-areas:
       "title "
       "picture "
-      "desc"
-      "bar"
+      "description"
+      "timeline"
       "info "
       "more";
-
-    .desc {
-      .container {
-        .achievements {
-          > ul {
-            margin-left: 20px; /*unique style*/
-          }
-        }
-      }
-    }
-    .bar {
-      .timeline {
-        .connector {
-          background-size: 1000px 100%;
-          animation: shimmer 10s infinite linear;
-        }
-      }
-    }
   }
 }
