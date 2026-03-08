@@ -171,7 +171,6 @@ export const Display: React.FC = () => {
       <canvas
         ref={canvasRef}
         style={{
-          backgroundColor: "rgb(72, 87, 94)",
           position: "relative",
           top: 0,
         }}
