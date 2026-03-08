@@ -2,7 +2,7 @@
 #root {
   /* Colors */
   /* -- Color Theme Swatches in RGBA -- */
-  --color-blue: rgba(2, 94, 114, 1);
+  /* --color-blue: rgba(2, 94, 114, 1);
   --color-blue--focus: rgb(5, 123, 150);
   --color-dark-blue: rgba(0, 31, 38, 1);
   --color-dark-blue--focus: rgb(5, 73, 88);
@@ -14,10 +14,9 @@
   --color-orange--focus: rgb(252, 184, 58);
 
   --color-accent: var(--color-orange);
-  --color-background: rgb(12, 12, 12);
 
   --color-disabled-bg: rgb(141, 141, 141);
-  --color-disabled-font: rgb(94, 94, 94);
+  --color-disabled-font: rgb(94, 94, 94); */
 
   /* -- Universal Messaging -- */
   --color-error: rgb(218, 22, 22);
@@ -31,6 +30,20 @@
   /* text colors */
   --color-text-subtle: rgb(126, 125, 125);
   --color-text-main: rgb(228, 228, 225);
+
+  /* -- New Colors -- */
+  /* main app background color */
+  --color-main-app-background: rgb(12, 12, 12);
+  --color-n-blue-dark: #3f3f41;
+  --color-active: #11c4fa;
+  --color-hover: #0e5996;
+  --color-card-border: rgb(50, 50, 50);
+  --color-card-background: rgb(24, 24, 24);
+  --color-inner-card-border: rgb(94, 94, 94);
+  --color-inner-card-background: rgb(44, 44, 44);
+  --color-text-white: rgb(228, 228, 225);
+  --color-text-grey: #8c8d8f;
+
   /* Font */
   /* -- Family --*/
   /*  
@@ -58,6 +71,9 @@
   --size-32: 32px;
   --size-40: 40px;
   --size-48: 48px;
+
+  /* Border */
+  --border-radius: 8px;
 }
 
 /* isDesktop */

@@ -6,12 +6,12 @@
   border: none;
   text-decoration: none;
   &:hover {
-    color: var(--color-blue--focus);
+    color: var(--color-hover);
   }
   transition: all 0.2s ease-in-out;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   margin: var(--size-8);
   &.active {
-    color: var(--color-orange);
+    color: var(--color-active);
   }
 }
