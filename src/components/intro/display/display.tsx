@@ -179,9 +179,10 @@ export const Display: React.FC = () => {
       <div className="Intro" id="Intro">
         <div className="header h1">
           <div className="name">Alan Curtis</div>
+          <img src="/images/misc/alan-01.jpg" alt="profile" />
         </div>
         <div className="sub">
-          <div className="sub-header h2"> Web Developer | Technical Artist</div>
+          <div className="sub-header h2"> Senior Software Engineer</div>
           <button className="goto colorBtn h3" onClick={() => {}}>
             My Work
           </button>
