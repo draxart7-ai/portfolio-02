@@ -145,55 +145,46 @@
           position: relative;
           &:nth-child(1) {
             .container {
-              background-color: red;
               left: 0;
             }
           }
           &:nth-child(2) {
             .container {
-              background-color: orange;
               left: 0;
             }
           }
           &:nth-child(2):hover {
             .container {
-              background-color: orange;
               left: -66px;
             }
           }
           &:nth-child(3) {
             .container {
-              background-color: yellow;
               left: 0;
             }
           }
           &:nth-child(3):hover {
             .container {
-              background-color: yellow;
               left: -134px;
             }
           }
           &:nth-child(4) {
             .container {
-              background-color: green;
               right: 0;
             }
           }
           &:nth-child(4):hover {
             .container {
-              background-color: green;
               right: -65px;
             }
           }
           &:nth-child(5) {
             .container {
-              background-color: blue;
               right: 0;
             }
           }
           &:nth-child(5):hover {
             .container {
-              background-color: blue;
               right: -0px;
             }
           }
@@ -218,7 +209,9 @@
             width: 100%;
             gap: 8px;
             overflow: hidden;
-            padding: 2px;
+            padding-left: 2px;
+            padding-right: 6px;
+            align-items: center;
             position: absolute;
             transition:
               width 0.2s ease-in-out,
@@ -339,32 +332,6 @@
   }
   100% {
     background-position: 2000px 0; /* moves the gradient across to the right */
-  }
-}
-
-@keyframes parentanim {
-  0% {
-    width: 64px;
-  }
-  100% {
-    width: 324px;
-  }
-}
-@keyframes parentanimOff {
-  0% {
-    width: 324px;
-  }
-  100% {
-    width: 64px;
-  }
-}
-
-@keyframes childanim {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 

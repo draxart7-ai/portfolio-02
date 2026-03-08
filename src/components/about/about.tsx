@@ -89,8 +89,7 @@ export const About = () => {
                   </div>
                   <div className="slide-out">
                     <div className="header">
-                      <div className="title">Art Insitute</div>
-                      <div className="role">Student</div>
+                      <div className="title">Art Insitute | Student</div>
                     </div>
                     <div className="desc">Studied BS in 3d art Animation</div>
                   </div>
@@ -106,12 +105,9 @@ export const About = () => {
                   </div>
                   <div className="slide-out">
                     <div className="header">
-                      <div className="title">EA Games</div>
-                      <div className="role">Technical Artist</div>
+                      <div className="title">EA Games | Technical Artist</div>
                     </div>
-                    <div className="desc">
-                      Worked on games such as Sims 3 and 4, Minons Paridise
-                    </div>
+                    <div className="desc">Worked on Sims 3,4 mobile games</div>
                   </div>
                 </div>
               </div>
@@ -125,12 +121,9 @@ export const About = () => {
                   </div>
                   <div className="slide-out">
                     <div className="header">
-                      <div className="title">The Void</div>
-                      <div className="role">Technical Artist</div>
+                      <div className="title">The Void | Technical Artist</div>
                     </div>
-                    <div className="desc">
-                      Developed Virtual Reality experinces
-                    </div>
+                    <div className="desc">Built virtual reality experinces</div>
                   </div>
                 </div>
               </div>
@@ -144,8 +137,7 @@ export const About = () => {
                   </div>
                   <div className="slide-out">
                     <div className="header">
-                      <div className="title">Adobe</div>
-                      <div className="role">Senior Software Developer</div>
+                      <div className="title">Adobe | Software Developer</div>
                     </div>
                     <div className="desc">
                       Building enterpise level software
@@ -187,7 +179,7 @@ export const About = () => {
       <div className="more">
         <Card>
           <div className="container">
-            <div className="title">Me in 3</div>
+            <div className="title">I am</div>
             <div className="cards">
               <div className="trait-card">
                 <div className="title">Determined</div>
