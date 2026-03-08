@@ -74,6 +74,11 @@
 
   /* Border */
   --border-radius: 8px;
+
+  /* Spacing */
+  --space-8: 8px;
+  --space-12: 12px;
+  --spcae-16: 16px;
 }
 
 /* isDesktop */

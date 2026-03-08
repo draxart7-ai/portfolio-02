@@ -2,11 +2,11 @@ import "./app-main.css";
 import { AppProvider } from "./state/app/app-provider";
 import { AppHeader } from "./components/app-header/app-header";
 import { Preview } from "./components/preview/preview";
-import { Intro } from "./components/intro/intro";
+// import { Intro } from "./components/intro/intro";
 import { About } from "./components/about/about";
-import { Projects } from "./components/projects/projects";
-import { Contact } from "./components/contact/contact";
-import { Skills } from "./components/skills/skills";
+// import { Projects } from "./components/projects/projects";
+// import { Contact } from "./components/contact/contact";
+// import { Skills } from "./components/skills/skills";
 import { ActiveElementProvider } from "./state/active-element/active-element-provider";
 
 export const AppMain = () => {
@@ -20,11 +20,11 @@ export const AppMain = () => {
         <div className="AppMain">
           <AppHeader />
           <div className="section-container">
-            <Intro />
+            {/* <Intro /> */}
             <About />
-            <Projects />
-            <Skills />
-            <Contact />
+            {/* <Projects /> */}
+            {/* <Skills /> */}
+            {/* <Contact /> */}
           </div>
         </div>
       </ActiveElementProvider>
