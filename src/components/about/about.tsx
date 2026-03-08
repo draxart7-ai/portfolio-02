@@ -74,12 +74,7 @@ export const About = () => {
           </div>
         </Card>
       </div>
-      <div
-        className="bar"
-        style={{
-          position: "relative",
-        }}
-      >
+      <div className="bar">
         <Card>
           <div className="timeline">
             <div className="connector"></div>
