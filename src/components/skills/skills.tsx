@@ -1,7 +1,12 @@
 import "./skills.css";
-import { Text } from "../text/text";
 import { useRef, useEffect } from "react";
 import { useActiveElementContext } from "../../state/active-element/active-element-context";
+import { Description } from "./components/description/description";
+import { Development } from "./components/development/development";
+import { Devops } from "./components/devops/devops";
+import { Tools } from "./components/tools/tools";
+import { More } from "./components/more/more";
+import { Title } from "./components/title/title";
 
 export const Skills = () => {
   const sectionRef = useRef(null);
@@ -10,35 +15,17 @@ export const Skills = () => {
 
   useEffect(() => {
     const unregister = register(sectionRef.current);
-    return unregister; // Cleanup on unmount
+    return unregister;
   }, [register]);
 
   return (
     <div id="Skills" className={`Skills ${visible} section`} ref={sectionRef}>
-      <Text size="f6">Skills</Text>
-      <Text isSubtle size="f6">
-        Alan Curtis
-      </Text>
-      <Text size="f5">Alan Curtis</Text>
-      <Text size="f5" isSubtle>
-        Alan Curtis
-      </Text>
-      <Text size="f4">Alan Curtis</Text>
-      <Text size="f4" isSubtle>
-        Alan Curtis
-      </Text>
-      <Text size="f3">Alan Curtis</Text>
-      <Text size="f3" isSubtle>
-        Alan Curtis
-      </Text>
-      <Text size="f2">Alan Curtis</Text>
-      <Text size="f2" isSubtle>
-        Alan Curtis
-      </Text>
-      <Text size="f1">Alan Curtis</Text>
-      <Text size="f1" isSubtle>
-        Alan Curtis
-      </Text>
+      <Title />
+      <Description />
+      <Development />
+      <Devops />
+      <Tools />
+      <More />
     </div>
   );
 };

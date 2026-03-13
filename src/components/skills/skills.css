@@ -1,4 +1,28 @@
 .Skills {
-  background-color: none;
-  padding: 10px;
+  padding: var(--space-8);
+  display: grid;
+  gap: 16px;
+  padding-top: 200px;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 80px auto 80px;
+  grid-template-areas:
+    "title         title         description   description   description   description  "
+    "development   development   devops        devops        tools         tools  "
+    "more          more          more          more          more          more   ";
+}
+
+/* isMobile*/
+@media screen and (max-width: 768px) {
+  .Skills {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 80px auto auto auto auto auto;
+    grid-template-areas:
+      "title "
+      "description"
+      "development "
+      "devops"
+      "tools "
+      "more";
+  }
 }

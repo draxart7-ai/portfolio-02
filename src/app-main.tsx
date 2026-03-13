@@ -6,7 +6,8 @@ import { Intro } from "./components/intro/intro";
 import { About } from "./components/about/about";
 // import { Projects } from "./components/projects/projects";
 // import { Contact } from "./components/contact/contact";
-// import { Skills } from "./components/skills/skills";
+import { Skills } from "./components/skills/skills";
+
 import { ActiveElementProvider } from "./state/active-element/active-element-provider";
 
 export const AppMain = () => {
@@ -23,7 +24,7 @@ export const AppMain = () => {
             <Intro />
             <About />
             {/* <Projects /> */}
-            {/* <Skills /> */}
+            <Skills />
             {/* <Contact /> */}
           </div>
         </div>

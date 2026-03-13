@@ -1,0 +1,24 @@
+.Tools {
+  grid-area: tools;
+  display: flex;
+  > .container {
+    width: 100%;
+    .content {
+      padding: var(--size-16);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        display: flex;
+        justify-content: center;
+        padding: 0 var(--size-16) var(--size-16) var(--size-16);
+        font-size: var(--size-24);
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--size-8);
+      }
+    }
+  }
+}
