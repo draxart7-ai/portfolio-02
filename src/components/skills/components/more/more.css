@@ -1,11 +1,12 @@
 .More {
   height: 80px;
   grid-area: more;
+  z-index: 1;
   > div {
     > .container {
       display: grid;
       grid-template-areas: "title  filters  search";
-      grid-template-columns: 1fr 1fr 260px;
+      grid-template-columns: minmax(200px, 1fr) 1fr 260px;
       > .title {
         cursor: pointer;
         grid-area: "title";
@@ -23,12 +24,10 @@
         grid-area: "filters";
         display: flex;
         justify-self: end;
-        width: 100%;
       }
       > .search {
         grid-area: "search";
         display: flex;
-        width: 260px;
         justify-self: end;
       }
     }
