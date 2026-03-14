@@ -5,11 +5,11 @@ import { Preview } from "./components/preview/preview";
 import { Intro } from "./components/intro/intro";
 import { About } from "./components/about/about";
 // import { Projects } from "./components/projects/projects";
-// import { Contact } from "./components/contact/contact";
+import { Contact } from "./components/contact/contact";
 import { Skills } from "./components/skills/skills";
 
 import { ActiveElementProvider } from "./state/active-element/active-element-provider";
-
+import { SkillsProvider } from "./state/skills/skills-provider";
 export const AppMain = () => {
   const previewMode = false;
   if (previewMode) {
@@ -24,8 +24,10 @@ export const AppMain = () => {
             <Intro />
             <About />
             {/* <Projects /> */}
-            <Skills />
-            {/* <Contact /> */}
+            <SkillsProvider>
+              <Skills />
+            </SkillsProvider>
+            <Contact />
           </div>
         </div>
       </ActiveElementProvider>
