@@ -7,12 +7,11 @@ import { Devops } from "./components/devops/devops";
 import { Tools } from "./components/tools/tools";
 import { More } from "./components/more/more";
 import { Title } from "./components/title/title";
-import { useSkills } from "../../state/skills/skills-context";
+import { MoreSkills } from "./components/more-skills/more-skills";
 
 export const Skills = () => {
   const sectionRef = useRef(null);
   const { activeId, register } = useActiveElementContext();
-  const { isOpenStyle } = useSkills();
   const visible = activeId === "Skills" ? "visible" : "invisible";
 
   useEffect(() => {
@@ -21,17 +20,14 @@ export const Skills = () => {
   }, [register]);
 
   return (
-    <div
-      id="Skills"
-      className={`Skills ${visible} section ${isOpenStyle}`}
-      ref={sectionRef}
-    >
+    <div id="Skills" className={`Skills ${visible} section`} ref={sectionRef}>
       <Title />
       <Description />
       <Development />
       <Devops />
       <Tools />
       <More />
+      <MoreSkills />
     </div>
   );
 };

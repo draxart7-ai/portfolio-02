@@ -24,11 +24,6 @@ export const More = () => {
           <div className="search">Search</div>
         </div>
       </Card>
-      <div className={`slide-out ${isOpenStyle}`}>
-        <Card>
-          <div>more skills</div>
-        </Card>
-      </div>
     </div>
   );
 };

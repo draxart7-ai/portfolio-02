@@ -1,7 +1,6 @@
 .More {
   height: 80px;
   grid-area: more;
-  z-index: 1;
   > div {
     > .container {
       display: grid;
@@ -30,24 +29,6 @@
         display: flex;
         justify-self: end;
       }
-    }
-  }
-
-  > .slide-out {
-    margin-top: 20px;
-    transition: 0.4s;
-    height: 400px;
-    max-height: 0;
-    overflow: hidden;
-
-    > div {
-      width: 100%;
-    }
-
-    &.isOpen {
-      padding: 2px;
-      display: flex;
-      max-height: 400px;
     }
   }
 }

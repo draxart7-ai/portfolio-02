@@ -1,0 +1,16 @@
+.MoreSkills {
+  grid-area: more-skills;
+  display: flex;
+  height: 0px;
+  transition: height 0.25s ease-in-out;
+  padding: 0px;
+  overflow: hidden;
+  padding: 2px;
+
+  &.isOpen {
+    height: 400px;
+  }
+  > div {
+    width: 100%;
+  }
+}

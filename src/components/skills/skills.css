@@ -4,28 +4,27 @@
   gap: 16px;
   width: 100%;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 80px auto 80px;
+  grid-template-rows: 80px auto 80px auto;
   margin-bottom: 10px;
-  &.isOpen {
-    margin-bottom: 400px;
-  }
   grid-template-areas:
     "title         title         description   description   description   description  "
     "development   development   devops        devops        tools         tools  "
-    "more          more          more          more          more          more   ";
+    "more          more          more          more          more          more   "
+    "more-skills   more-skills   more-skills   more-skills   more-skills   more-skills   ";
 }
 
 /* isMobile*/
 @media screen and (max-width: 768px) {
   .Skills {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 80px auto auto auto auto auto;
+    grid-template-rows: 80px auto auto auto auto auto auto;
     grid-template-areas:
       "title "
       "description"
       "development "
       "devops"
       "tools "
-      "more";
+      "more "
+      "more-skills";
   }
 }
