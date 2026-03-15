@@ -5,7 +5,7 @@
     > .container {
       display: grid;
       grid-template-areas: "title  filters  search";
-      grid-template-columns: minmax(200px, 1fr) 1fr 260px;
+      grid-template-columns: 200px 1fr auto;
       > .title {
         cursor: pointer;
         grid-area: "title";
