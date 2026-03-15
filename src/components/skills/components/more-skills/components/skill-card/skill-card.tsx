@@ -1,13 +1,19 @@
 import "./skill-card.css";
 import { CardInner } from "../../../../../card-inner/card-inner";
 
-export const SkillCard = () => {
+interface SkillCardProps {
+  name: string;
+  icon: string;
+  tags: string[];
+}
+
+export const SkillCard = ({ name, icon }: SkillCardProps) => {
   return (
     <div className="SkillCard">
       <CardInner>
         <div className="container">
-          <img src="/images/tools/substance-designer-icon.png" alt="profile" />
-          <div className="text">Substance Designer</div>
+          <img src={`/images/tools/${icon}`} alt="profile" />
+          <div className="text">{name}</div>
         </div>
       </CardInner>
     </div>

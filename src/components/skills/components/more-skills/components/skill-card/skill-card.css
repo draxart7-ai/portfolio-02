@@ -2,10 +2,11 @@
   background-color: none;
   display: flex;
   height: 56px;
-  width: 300px;
   > .CardInner {
+    width: 100%;
     > .container {
       display: flex;
+      width: 100%;
       align-items: center;
       > img {
         height: 50px;

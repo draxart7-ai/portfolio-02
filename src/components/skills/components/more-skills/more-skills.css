@@ -1,20 +1,21 @@
 .MoreSkills {
   grid-area: more-skills;
   display: flex;
-  height: 0px;
-  transition: height 0.25s ease-in-out;
+  transition: max-height 0.25s ease-in-out;
   overflow: hidden;
+  max-height: 0px;
   &.isOpen {
-    height: 400px;
+    max-height: 400px;
   }
   > .card-container {
     width: 100%;
-    overflow: hidden;
     padding: 2px;
     > .Card {
+      overflow: auto;
       > .container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: var(--size-10);
         padding: var(--size-10);
       }
