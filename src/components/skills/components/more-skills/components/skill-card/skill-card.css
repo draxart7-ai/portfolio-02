@@ -1,0 +1,16 @@
+.SkillCard {
+  background-color: none;
+  display: flex;
+  height: 56px;
+  width: 300px;
+  > .CardInner {
+    > .container {
+      display: flex;
+      align-items: center;
+      > img {
+        height: 50px;
+        margin-right: var(--size-8);
+      }
+    }
+  }
+}

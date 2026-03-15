@@ -3,14 +3,21 @@
   display: flex;
   height: 0px;
   transition: height 0.25s ease-in-out;
-  padding: 0px;
   overflow: hidden;
-  padding: 2px;
-
   &.isOpen {
     height: 400px;
   }
-  > div {
+  > .card-container {
     width: 100%;
+    overflow: hidden;
+    padding: 2px;
+    > .Card {
+      > .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--size-10);
+        padding: var(--size-10);
+      }
+    }
   }
 }

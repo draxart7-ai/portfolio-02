@@ -7,6 +7,7 @@ import { About } from "./components/about/about";
 // import { Projects } from "./components/projects/projects";
 import { Contact } from "./components/contact/contact";
 import { Skills } from "./components/skills/skills";
+import { Separator } from "./components/separator/separator";
 
 import { ActiveElementProvider } from "./state/active-element/active-element-provider";
 import { SkillsProvider } from "./state/skills/skills-provider";
@@ -22,11 +23,15 @@ export const AppMain = () => {
           <AppHeader />
           <div className="section-container">
             <Intro />
+            <Separator />
             <About />
+            <Separator />
             {/* <Projects /> */}
             <SkillsProvider>
               <Skills />
             </SkillsProvider>
+            <Separator />
+
             <Contact />
           </div>
         </div>
