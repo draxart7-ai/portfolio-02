@@ -1,4 +1,13 @@
 .Projects {
   padding: 10px;
   width: 100%;
+  > .Card {
+    height: 80px;
+    font-size: var(--size-32);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 12px; /*unique size where else is 12 being used*/
+    margin-bottom: var(--size-16);
+  }
 }

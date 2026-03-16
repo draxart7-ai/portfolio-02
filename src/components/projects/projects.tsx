@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import { useActiveElementContext } from "../../state/active-element/active-element-context";
 import { projectsData } from "./projects-data";
 import { ProjectCard } from "./components/project-card/project-card";
-
+import { Card } from "../card/card";
 export const Projects = () => {
   const sectionRef = useRef(null);
   const { activeId, register } = useActiveElementContext();
@@ -24,6 +24,9 @@ export const Projects = () => {
       className={`Projects ${visible} section`}
       ref={sectionRef}
     >
+      <Card>
+        <div className="title">Projects</div>
+      </Card>
       {projectCards}
     </div>
   );
