@@ -24,7 +24,7 @@ export const ArrowLeftSvg = ({
       fill={fill}
       stroke={stroke}
       strokeWidth={strokeWidth}
-      transform="rotate(180)"
+      transform="rotate(180) translate(2, 0)"
     >
       <g id="Arrow">
         <path

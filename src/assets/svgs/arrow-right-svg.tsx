@@ -25,6 +25,7 @@ export const ArrowRightSvg = ({
       fill={fill}
       stroke={stroke}
       strokeWidth={strokeWidth}
+      transform="translate(2, 0)"
     >
       <g id="Arrow">
         <path
