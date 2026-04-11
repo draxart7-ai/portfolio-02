@@ -37,7 +37,7 @@ export const AppMain = () => {
               height: "500px",
               backgroundColor: "#73917a",
               margin: "20px",
-              overflow: "hidden",
+              // overflow: "hidden",
             }}
           >
             <Carousel media={carouselMedia}></Carousel>

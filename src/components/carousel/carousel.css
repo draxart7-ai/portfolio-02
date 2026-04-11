@@ -4,6 +4,8 @@
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 10px;
 
   > .arrow {
     position: absolute;
@@ -33,6 +35,32 @@
         color: var(--color-active);
         fill: var(--color-active);
         box-shadow: 0px 0px 0px 2px var(--color-active);
+      }
+    }
+  }
+  > .slide {
+    object-fit: cover;
+    height: 100%;
+    &.inactive {
+      display: none;
+    }
+  }
+  > .indicators {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    bottom: 20px;
+    gap: 10px;
+    z-index: 1;
+    > .indicator {
+      cursor: pointer;
+      height: 20px;
+      width: 20px;
+      background-color: pink;
+      border-radius: 50%;
+      &.inactive {
+        background-color: blue;
       }
     }
   }
