@@ -37,12 +37,12 @@ export const HeaderLinkGroupMobile = () => {
       >
         <BurgerSvg />
       </Button>
-      {isOpen && (
+      {true && (
         <ul
           id="dropdown-menu"
           role="menu"
           aria-labelledby="dropdown-button"
-          className="dropdown-menu"
+          className={`dropdown-menu ${isOpen && "open"}`}
         >
           <li role="menuitem">
             <HeaderLink title="Intro" onClick={toggleDropdown} />
