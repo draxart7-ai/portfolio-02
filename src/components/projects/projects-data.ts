@@ -3,25 +3,13 @@ export const projectsData = [
     id: 0,
     priority: 11,
     title: "Paint Your Pixture",
-    directory: "paint-your-picture",
-    media: [
-      {
-        content: "paint-your-picture-01.jpg",
-        title: "Landing",
-        note: "",
-      },
-      {
-        content: "paint-your-picture-02.jpg",
-        title: "Bottom of page",
-        note: "",
-      },
-      {
-        content: "paint-your-picture-03.jpg",
-        title: "Card Content",
-        note: "",
-      },
-    ],
-    cover: "paint-your-picture-cover.jpg",
+    media:  [
+    "/images/projects/paint-your-picture/paint-your-picture-cover.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-01.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-02.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-03.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-04.jpg",
+  ],
     links: [],
     description:
       "This was a site challenge to match the css style requirements from an image.",
@@ -47,25 +35,13 @@ export const projectsData = [
     id: 0,
     priority: 11,
     title: "Star Wars Secrets of the Empire",
-    directory: "paint-your-picture",
-    media: [
-      {
-        content: "paint-your-picture-01.jpg",
-        title: "Landing",
-        note: "",
-      },
-      {
-        content: "paint-your-picture-02.jpg",
-        title: "Bottom of page",
-        note: "",
-      },
-      {
-        content: "paint-your-picture-03.jpg",
-        title: "Card Content",
-        note: "",
-      },
-    ],
-    cover: "paint-your-picture-cover.jpg",
+    media:  [
+    "/images/projects/paint-your-picture/paint-your-picture-cover.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-01.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-02.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-03.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-04.jpg",
+  ],
     links: [],
     description:
       "This was a site challenge to match the css style requirements from an image.",

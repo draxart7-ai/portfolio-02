@@ -21,9 +21,9 @@
       justify-content: center;
       text-align: center;
     }
-    > .carousel {
+    > .carousel-container {
       grid-area: carousel;
-      overflow: hidden;
+      min-height: 200px;
       > img {
         width: 100%;
         height: 100%;
