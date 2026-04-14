@@ -47,7 +47,7 @@ export const Carousel = ({ media }: CarouselProps) => {
 
   return (
     <div className="Carousel">
-      {mediaElements}
+      <div className="slide-container">{mediaElements}</div>
       <div className="arrow left">
         <button className="Button" onClick={handleBack}>
           <ArrowLeftSvg />
@@ -62,3 +62,15 @@ export const Carousel = ({ media }: CarouselProps) => {
     </div>
   );
 };
+
+/* 
+
+ const carouselMedia = [
+    "/images/projects/paint-your-picture/paint-your-picture-cover.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-01.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-02.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-03.jpg",
+    "/images/projects/paint-your-picture/paint-your-picture-04.jpg",
+  ];
+
+  */
