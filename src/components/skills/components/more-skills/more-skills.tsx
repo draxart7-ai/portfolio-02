@@ -7,7 +7,9 @@ import { moreSkillsData } from "./more-skills-data";
 export const MoreSkills = () => {
   const { isOpenStyle } = useSkills();
 
-  const skillCards = moreSkillsData.map((skill) => <SkillCard {...skill} />);
+  const skillCards = moreSkillsData.map((skill) => (
+    <SkillCard key={skill.name} {...skill} />
+  ));
   return (
     <div className={`MoreSkills ${isOpenStyle}`}>
       <div className="card-container">

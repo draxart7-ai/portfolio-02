@@ -27,6 +27,7 @@ export const Carousel = ({ media }: CarouselProps) => {
   const indicatorElements = media.map((_, index) => {
     return (
       <div
+        key={index}
         onClick={() => handleIndicatorSelect(index)}
         className={index === selectedSlide ? "indicator" : "indicator inactive"}
       />

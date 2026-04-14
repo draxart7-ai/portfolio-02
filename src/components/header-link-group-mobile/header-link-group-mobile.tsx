@@ -37,30 +37,28 @@ export const HeaderLinkGroupMobile = () => {
       >
         <BurgerSvg />
       </Button>
-      {true && (
-        <ul
-          id="dropdown-menu"
-          role="menu"
-          aria-labelledby="dropdown-button"
-          className={`dropdown-menu ${isOpen && "open"}`}
-        >
-          <li role="menuitem">
-            <HeaderLink title="Intro" onClick={toggleDropdown} />
-          </li>
-          <li role="menuitem">
-            <HeaderLink title="About" onClick={toggleDropdown} />
-          </li>
-          <li role="menuitem">
-            <HeaderLink title="Projects" onClick={toggleDropdown} />
-          </li>
-          <li role="menuitem">
-            <HeaderLink title="Skills" onClick={toggleDropdown} />
-          </li>
-          <li role="menuitem">
-            <HeaderLink title="Contact" onClick={toggleDropdown} />
-          </li>
-        </ul>
-      )}
+      <ul
+        id="dropdown-menu"
+        role="menu"
+        aria-labelledby="dropdown-button"
+        className={`dropdown-menu ${isOpen && "open"}`}
+      >
+        <li role="menuitem">
+          <HeaderLink title="Intro" onClick={toggleDropdown} />
+        </li>
+        <li role="menuitem">
+          <HeaderLink title="About" onClick={toggleDropdown} />
+        </li>
+        <li role="menuitem">
+          <HeaderLink title="Projects" onClick={toggleDropdown} />
+        </li>
+        <li role="menuitem">
+          <HeaderLink title="Skills" onClick={toggleDropdown} />
+        </li>
+        <li role="menuitem">
+          <HeaderLink title="Contact" onClick={toggleDropdown} />
+        </li>
+      </ul>
     </div>
   );
 };

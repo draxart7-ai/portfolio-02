@@ -1,92 +1,66 @@
 import "./timeline.css";
 import { Card } from "../../../card/card";
+import { useState, useEffect, useRef } from "react";
+import { timelineData } from "./timeline-data.ts";
 
 export const Timeline = () => {
+  const [activeCard, setActiveCard] = useState<string | null>("");
+  const timelineRef = useRef<HTMLInputElement>(null);
+
+  interface handleCardSelectArgs {
+    id: string | null;
+  }
+
+  const handleCardSelect = ({ id }: handleCardSelectArgs) => {
+    if (id === activeCard) {
+      setActiveCard("");
+    } else {
+      setActiveCard(id);
+    }
+  };
+
+  // Close the entry card when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event: Event) => {
+      if (
+        timelineRef.current &&
+        !timelineRef.current.contains(event.target as Node)
+      ) {
+        setActiveCard("");
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const entryCards = timelineData.map((entry) => (
+    <div
+      key={entry.id}
+      className={`entry ${activeCard === entry.id ? "active" : ""}`}
+      onClick={() => handleCardSelect({ id: entry.id })}
+    >
+      <div className="container">
+        <div className="base">
+          <img src={entry.logo} alt={entry.title} />
+        </div>
+        <div className="slide-out">
+          <div className="header">
+            <div className="title">{entry.title}</div>
+          </div>
+          <div className="desc">{entry.description}</div>
+        </div>
+      </div>
+    </div>
+  ));
+
   return (
-    <div className="Timeline">
+    <div className="Timeline" ref={timelineRef}>
       <Card>
         <div className="timeline-container">
           <div className="connector"></div>
-          <div className="entries">
-            <div className="entry">
-              <div className="container">
-                <div className="base">
-                  <img
-                    src="/images/companies/art-institute-logo.png"
-                    alt="art institute"
-                  />
-                </div>
-                <div className="slide-out">
-                  <div className="header">
-                    <div className="title">Art Institute | Student</div>
-                  </div>
-                  <div className="desc">Studied BS in 3d art Animation</div>
-                </div>
-              </div>
-            </div>
-            <div className="entry">
-              <div className="container">
-                <div className="base">
-                  <img
-                    src="/images/companies/electronic-arts-logo.png"
-                    alt="electronic arts logo"
-                  />
-                </div>
-                <div className="slide-out">
-                  <div className="header">
-                    <div className="title">EA Games | Technical Artist</div>
-                  </div>
-                  <div className="desc">Worked on Sims 3,4 mobile games</div>
-                </div>
-              </div>
-            </div>
-            <div className="entry">
-              <div className="container">
-                <div className="base">
-                  <img src="/images/companies/void-logo.png" alt="void logo" />
-                </div>
-                <div className="slide-out">
-                  <div className="header">
-                    <div className="title">The Void | Technical Artist</div>
-                  </div>
-                  <div className="desc">Built virtual reality experiences</div>
-                </div>
-              </div>
-            </div>
-            <div className="entry">
-              <div className="container">
-                <div className="base">
-                  <img
-                    src="/images/companies/adobe-logo.png"
-                    alt="adobe logo"
-                  />
-                </div>
-                <div className="slide-out">
-                  <div className="header">
-                    <div className="title">Adobe | Software Developer</div>
-                  </div>
-                  <div className="desc">Building enterprise level software</div>
-                </div>
-              </div>
-            </div>
-            <div className="entry">
-              <div className="container">
-                <div className="base">
-                  <img
-                    src="/images/companies/future-logo.png"
-                    alt="future logo"
-                  />
-                </div>
-                <div className="slide-out">
-                  <div className="header">
-                    <div className="title">Future</div>
-                    <div className="role"></div>
-                  </div>
-                  <div className="desc">Who knows what the future holds</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="entries">{entryCards}</div>
         </div>
       </Card>
     </div>

@@ -16,13 +16,13 @@ export const projectsData = [
     tags: [
       "React",
       "CSS",
+      "Sass",
+      "Unreal Engine",
+      "Photoshop",
       "Nodejs",
-      "React",
-      "CSS",
-      "Nodejs",
-      "React",
-      "CSS",
-      "Nodejs",
+      "UX",
+      "Express",
+      "Vite",
     ],
     achievements: [
       "Made functional site from static image within a given time frame.",
@@ -32,7 +32,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 0,
+    id: 1,
     priority: 11,
     title: "Star Wars Secrets of the Empire",
     media:  [

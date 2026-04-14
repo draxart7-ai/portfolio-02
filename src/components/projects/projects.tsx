@@ -15,7 +15,7 @@ export const Projects = () => {
   }, [register]);
 
   const projectCards = projectsData.map((project) => (
-    <ProjectCard {...project} />
+    <ProjectCard key={project.id} {...project} />
   ));
 
   return (

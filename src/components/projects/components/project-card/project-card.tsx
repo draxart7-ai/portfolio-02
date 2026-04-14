@@ -18,11 +18,10 @@ export const ProjectCard = ({
   description,
   achievements,
 }: ProjectCardProps) => {
-  const tech = tags.map((tag) => <CardInner>{tag}</CardInner>);
+  const tech = tags.map((tag) => <CardInner key={tag}>{tag}</CardInner>);
   const bulletPoints = achievements.map((bulletPoint) => (
-    <li>{bulletPoint}</li>
+    <li key={bulletPoint}>{bulletPoint}</li>
   ));
-  console.log({ media });
   return (
     <div id="ProjectCard" className="ProjectCard">
       <Card>
