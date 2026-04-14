@@ -16,6 +16,7 @@ export const AppMain = () => {
   if (previewMode) {
     return <Preview />;
   }
+
   return (
     <AppProvider>
       <ActiveElementProvider>
