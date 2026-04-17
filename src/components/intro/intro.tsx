@@ -6,7 +6,7 @@ import { Display } from "./display/display";
 export const Intro = () => {
   const sectionRef = useRef(null);
   const { activeId, register } = useActiveElementContext();
-  const visible = activeId === "Intro" ? "visible" : "invisible";
+  const visible = "visible"; // activeId === "Intro" ? "visible" : "invisible";
 
   useEffect(() => {
     const unregister = register(sectionRef.current);

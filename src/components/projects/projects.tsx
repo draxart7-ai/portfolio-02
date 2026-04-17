@@ -7,7 +7,7 @@ import { Card } from "../card/card";
 export const Projects = () => {
   const sectionRef = useRef(null);
   const { activeId, register } = useActiveElementContext();
-  const visible = activeId === "Projects" ? "visible" : "invisible";
+  const visible = "visible"; // activeId === "Projects" ? "visible" : "invisible";
 
   useEffect(() => {
     const unregister = register(sectionRef.current);

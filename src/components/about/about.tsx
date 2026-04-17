@@ -11,7 +11,7 @@ import { Title } from "./components/title/title";
 export const About = () => {
   const sectionRef = useRef(null);
   const { activeId, register } = useActiveElementContext();
-  const visible = activeId === "About" ? "visible" : "invisible";
+  const visible = "visible"; // activeId === "About" ? "visible" : "invisible";
 
   useEffect(() => {
     const unregister = register(sectionRef.current);

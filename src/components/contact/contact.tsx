@@ -6,7 +6,7 @@ import { useActiveElementContext } from "../../state/active-element/active-eleme
 export const Contact = () => {
   const sectionRef = useRef(null);
   const { activeId, register } = useActiveElementContext();
-  const visible = activeId === "Contact" ? "visible" : "invisible";
+  const visible = "visible"; // activeId === "Contact" ? "visible" : "invisible";
 
   useEffect(() => {
     const unregister = register(sectionRef.current);
