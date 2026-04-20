@@ -10,7 +10,7 @@ import { Title } from "./components/title/title";
 
 export const About = () => {
   const sectionRef = useRef(null);
-  const { activeId, register } = useActiveElementContext();
+  const { register } = useActiveElementContext();
   const visible = "visible"; // activeId === "About" ? "visible" : "invisible";
 
   useEffect(() => {

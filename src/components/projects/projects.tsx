@@ -6,7 +6,7 @@ import { ProjectCard } from "./components/project-card/project-card";
 import { Card } from "../card/card";
 export const Projects = () => {
   const sectionRef = useRef(null);
-  const { activeId, register } = useActiveElementContext();
+  const { register } = useActiveElementContext();
   const visible = "visible"; // activeId === "Projects" ? "visible" : "invisible";
 
   useEffect(() => {

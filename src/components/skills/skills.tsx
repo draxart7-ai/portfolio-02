@@ -11,7 +11,7 @@ import { MoreSkills } from "./components/more-skills/more-skills";
 
 export const Skills = () => {
   const sectionRef = useRef(null);
-  const { activeId, register } = useActiveElementContext();
+  const { register } = useActiveElementContext();
   const visible = "visible"; // activeId === "Skills" ? "visible" : "invisible";
 
   useEffect(() => {
