@@ -12,6 +12,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
   const isMobile = useMediaQuery("(max-width: 640px)");
   const isTablet = useMediaQuery("(min-width: 641px) and (max-width: 1024px)");
   const isDesktop = !isMobile && !isTablet;
+  const [isScrollEnabled, setIsScrollEnabled] = useState(true);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
@@ -21,6 +22,8 @@ export const AppProvider = ({ children }: AppProviderProps) => {
   const contextValue = {
     theme,
     toggleTheme,
+    isScrollEnabled,
+    setIsScrollEnabled,
     screen: {
       isMobile,
       isTablet,

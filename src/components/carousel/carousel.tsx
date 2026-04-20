@@ -3,12 +3,17 @@ import { ArrowLeftSvg } from "../../assets/svgs/arrow-left-svg";
 import { ArrowRightSvg } from "../../assets/svgs/arrow-right-svg";
 
 import "./carousel.css";
+import { useAppContext } from "../../state/app/app-context";
 
 interface CarouselProps {
   media: string[];
+  setIsFullScreen?: React.Dispatch<React.SetStateAction<boolean>>;
+  isFullScreen?: boolean;
 }
 export const Carousel = ({ media }: CarouselProps) => {
   const [selectedSlide, setSelectedSlide] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const { isScrollEnabled, setIsScrollEnabled } = useAppContext();
 
   const mediaElements = media.map((src, index) => {
     return (
@@ -45,10 +50,15 @@ export const Carousel = ({ media }: CarouselProps) => {
       selectedSlide === 0 ? media.length - 1 : selectedSlide - 1,
     );
   };
+  const handleFullScreen = () => {
+    console.log("handle full screen");
+    setIsScrollEnabled(!isScrollEnabled);
+    setIsFullscreen(!isFullscreen);
+  };
 
   return (
-    <div className="Carousel">
-      <div className="slide-container">{mediaElements}</div>
+    <div className={`Carousel ${isFullscreen ? "fullscreen" : ""}`}>
+      <div className={`slide-container `}>{mediaElements}</div>
       <div className="arrow left">
         <button className="Button" onClick={handleBack}>
           <ArrowLeftSvg />
@@ -60,6 +70,9 @@ export const Carousel = ({ media }: CarouselProps) => {
         </button>
       </div>
       <div className="indicators">{indicatorElements}</div>
+      <div className="fullscreen-button" onClick={handleFullScreen}>
+        <ArrowRightSvg />
+      </div>
     </div>
   );
 };

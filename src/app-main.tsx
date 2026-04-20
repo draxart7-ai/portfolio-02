@@ -1,5 +1,4 @@
 import "./app-main.css";
-import { AppProvider } from "./state/app/app-provider";
 import { AppHeader } from "./components/app-header/app-header";
 import { Preview } from "./components/preview/preview";
 import { Intro } from "./components/intro/intro";
@@ -9,34 +8,31 @@ import { Contact } from "./components/contact/contact";
 import { Skills } from "./components/skills/skills";
 import { Separator } from "./components/separator/separator";
 
-import { ActiveElementProvider } from "./state/active-element/active-element-provider";
 import { SkillsProvider } from "./state/skills/skills-provider";
+import { useAppContext } from "./state/app/app-context";
 export const AppMain = () => {
   const previewMode = false;
+  const { isScrollEnabled } = useAppContext();
   if (previewMode) {
     return <Preview />;
   }
 
   return (
-    <AppProvider>
-      <ActiveElementProvider>
-        <div className="AppMain">
-          <AppHeader />
-          <div className="section-container">
-            <Intro />
-            <Separator />
-            <About />
-            <Separator />
-            <SkillsProvider>
-              <Skills />
-            </SkillsProvider>
-            <Separator />
-            <Projects />
-            <Separator />
-            <Contact />
-          </div>
-        </div>
-      </ActiveElementProvider>
-    </AppProvider>
+    <div className={`AppMain ${!isScrollEnabled ? "no-scroll" : ""} `}>
+      <AppHeader />
+      <div className="section-container">
+        <Intro />
+        <Separator />
+        <About />
+        <Separator />
+        <SkillsProvider>
+          <Skills />
+        </SkillsProvider>
+        <Separator />
+        <Projects />
+        <Separator />
+        <Contact />
+      </div>
+    </div>
   );
 };

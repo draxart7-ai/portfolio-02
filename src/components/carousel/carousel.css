@@ -7,6 +7,14 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  &.fullscreen {
+    height: 100vh;
+    width: calc(100vw-20px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 120;
+  }
   > .arrow {
     position: absolute;
     cursor: pointer;
@@ -75,6 +83,25 @@
       &.inactive {
         background-color: blue;
       }
+    }
+  }
+
+  > .fullscreen-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(37, 150, 135, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    > .slide {
+      object-fit: contain;
+      max-height: 90%;
+      max-width: 90%;
+      opacity: 1;
+      transition: opacity ease-out 0.25s;
     }
   }
 }
