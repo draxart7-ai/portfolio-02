@@ -53,6 +53,13 @@ export const Carousel = ({ media }: CarouselProps) => {
   const handleFullScreen = () => {
     console.log("handle full screen");
     toggleScroll();
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
     setIsFullscreen(!isFullscreen);
   };
 
