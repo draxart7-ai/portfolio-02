@@ -13,7 +13,7 @@ interface CarouselProps {
 export const Carousel = ({ media }: CarouselProps) => {
   const [selectedSlide, setSelectedSlide] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const { isScrollEnabled, setIsScrollEnabled } = useAppContext();
+  const { toggleScroll } = useAppContext();
 
   const mediaElements = media.map((src, index) => {
     return (
@@ -52,7 +52,7 @@ export const Carousel = ({ media }: CarouselProps) => {
   };
   const handleFullScreen = () => {
     console.log("handle full screen");
-    setIsScrollEnabled(!isScrollEnabled);
+    toggleScroll();
     setIsFullscreen(!isFullscreen);
   };
 

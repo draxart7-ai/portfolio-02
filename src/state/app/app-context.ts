@@ -4,7 +4,7 @@ export const AppContext = createContext({
   theme: "dark",
   toggleTheme: () => {},
   isScrollEnabled: true,
-  setIsScrollEnabled: () => {},
+  toggleScroll: () => {},
   screen: {
     isMobile: false,
     isTablet: false,

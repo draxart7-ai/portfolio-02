@@ -18,12 +18,16 @@ export const AppProvider = ({ children }: AppProviderProps) => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
+  const toggleScroll = () => {
+    setIsScrollEnabled((prev) => !prev);
+  };
+
   // The value prop is crucial; it holds the data and functions you want to share
   const contextValue = {
     theme,
     toggleTheme,
     isScrollEnabled,
-    setIsScrollEnabled,
+    toggleScroll,
     screen: {
       isMobile,
       isTablet,
