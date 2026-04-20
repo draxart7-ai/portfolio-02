@@ -54,11 +54,19 @@ export const Carousel = ({ media }: CarouselProps) => {
     console.log("handle full screen");
     toggleScroll();
     if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen();
+      // If no element is in fullscreen, request it for the whole document
+      document.documentElement.requestFullscreen().catch((err) => {
+        console.error(
+          `Error attempting to enable full-screen mode: ${err.message}`,
+        );
+      });
     } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
+      // Otherwise, exit fullscreen
+      document.exitFullscreen().catch((err) => {
+        console.error(
+          `Error attempting to exit full-screen mode: ${err.message}`,
+        );
+      });
     }
     setIsFullscreen(!isFullscreen);
   };
