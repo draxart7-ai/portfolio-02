@@ -17,8 +17,10 @@ export const AppMain = () => {
     return <Preview />;
   }
 
+  document.body.style.overflow = !isScrollEnabled ? "hidden" : "";
+
   return (
-    <div className={`AppMain ${!isScrollEnabled ? "no-scroll" : ""} `}>
+    <div className="AppMain">
       <AppHeader />
       <div className="section-container">
         <Intro />
