@@ -1,6 +1,8 @@
 import { SetStateAction, useState } from "react";
 import { ArrowLeftSvg } from "../../assets/svgs/arrow-left-svg";
 import { ArrowRightSvg } from "../../assets/svgs/arrow-right-svg";
+import { FullScreenEnterSvg } from "../../assets/svgs/full-screen-enter-svg";
+import { FullScreenExitSvg } from "../../assets/svgs/full-screen-exit-svg copy";
 
 import "./carousel.css";
 import { useAppContext } from "../../state/app/app-context";
@@ -86,7 +88,11 @@ export const Carousel = ({ media }: CarouselProps) => {
       </div>
       <div className="indicators">{indicatorElements}</div>
       <div className="fullscreen-button" onClick={handleFullScreen}>
-        <ArrowRightSvg />
+        {isFullscreen ? (
+          <FullScreenExitSvg size="40px" />
+        ) : (
+          <FullScreenEnterSvg size="40px" />
+        )}
       </div>
     </div>
   );

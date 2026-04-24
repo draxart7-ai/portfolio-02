@@ -1,5 +1,5 @@
 .Carousel {
-  background-color: rgb(134, 145, 155);
+  background-color: rgb(94, 94, 94); /* todo variable */
   position: relative;
   height: 100%;
   width: 100%;
@@ -27,20 +27,16 @@
       right: 0;
     }
     > .Button {
-      background-color: red;
-      color: var(--color-white);
-      fill: var(--color-white);
-      padding: 10px;
+      background-color: rgba(166, 167, 166, 0.664); /* todo variable */
+      cursor: pointer;
+      fill: var(--color-black);
+      padding: 6px;
       border: none;
-      box-shadow: 0px 0px 0px 2px var(--color-dark-blue);
       display: flex;
       transition: all 0.2s ease-in-out;
       border-radius: 50%;
       &:hover {
-        background-color: var(--color-tan--focus);
-        color: var(--color-active);
-        fill: var(--color-active);
-        box-shadow: 0px 0px 0px 2px var(--color-active);
+        background-color: rgba(166, 167, 166, 0.9); /* todo variable */
       }
     }
   }
@@ -69,17 +65,17 @@
     display: flex;
     align-items: center;
     justify-self: center;
-    bottom: 20px;
+    bottom: 12px;
     gap: 10px;
     z-index: 1;
     > .indicator {
       cursor: pointer;
-      height: 20px;
-      width: 20px;
-      background-color: pink;
+      height: 16px;
+      width: 16px;
+      background-color: rgba(240, 240, 240, 0.9); /* todo variable */
       border-radius: 50%;
       &.inactive {
-        background-color: blue;
+        background-color: rgba(166, 167, 166, 0.664); /* todo variable */
       }
     }
   }
@@ -88,18 +84,17 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
-    width: 60px;
-    height: 60px;
-    background-color: rgba(37, 150, 135, 0.8);
+    background-color: rgba(166, 167, 166, 0.664); /* todo variable */
+    border-radius: var(--border-radius);
+    display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
-    > .slide {
-      object-fit: contain;
-      max-height: 90%;
-      max-width: 90%;
-      opacity: 1;
-      transition: opacity ease-out 0.25s;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    fill: var(--color-black);
+    &:hover {
+      background-color: rgba(166, 167, 166, 0.9); /* todo variable */
     }
   }
 }
