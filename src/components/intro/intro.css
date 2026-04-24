@@ -1,5 +1,6 @@
 .intro-container {
   height: calc(100vh);
+  height: 100dvh;
 }
 .Intro {
   display: block;

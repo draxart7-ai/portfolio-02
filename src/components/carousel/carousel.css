@@ -9,7 +9,8 @@
   padding: 10px;
   &.fullscreen {
     height: 100vh;
-    width: calc(100vw-20px);
+    height: 100dvh;
+    /* width: calc(100vw-20px); */
     position: fixed;
     top: 0;
     left: 0;

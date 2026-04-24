@@ -2,6 +2,7 @@
   background-color: var(--color-main-app-background);
   color: var(--color-text-main);
   height: 100vh;
+  height: 100dvh;
   * {
     box-sizing: border-box;
     scrollbar-color: #747474 #2a2a2a; /* thumb color, track color */
