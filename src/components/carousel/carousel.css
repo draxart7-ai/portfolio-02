@@ -83,7 +83,7 @@
   > .fullscreen-button {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 8px;
     background-color: rgba(166, 167, 166, 0.664); /* todo variable */
     border-radius: var(--border-radius);
     display: flex;
