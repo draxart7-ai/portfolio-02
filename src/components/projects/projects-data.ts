@@ -4,6 +4,7 @@ export const projectsData = [
     priority: 11,
     title: "Paint Your Pixture",
     media:  [
+    "/images/projects/paint-your-picture/paint-your-picture-01-clip.mp4",
     "/images/projects/paint-your-picture/paint-your-picture-cover.jpg",
     "/images/projects/paint-your-picture/paint-your-picture-01.jpg",
     "/images/projects/paint-your-picture/paint-your-picture-02.jpg",

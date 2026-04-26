@@ -18,6 +18,24 @@ export const Carousel = ({ media }: CarouselProps) => {
   const { toggleScroll } = useAppContext();
 
   const mediaElements = media.map((src, index) => {
+    console.log("media element", src);
+    const fileExtension = src
+      .split(".")
+      .pop()
+      ?.toLowerCase();
+
+    if (fileExtension === "mp4") {
+      return (
+        <video
+          key={index}
+          controls
+          className={index === selectedSlide ? "slide" : "slide inactive"}
+        >
+          <source src={src} type="video/mp4" />
+        </video>
+      );
+    }
+
     return (
       <img
         className={index === selectedSlide ? "slide" : "slide inactive"}
@@ -75,7 +93,7 @@ export const Carousel = ({ media }: CarouselProps) => {
 
   return (
     <div className={`Carousel ${isFullscreen ? "fullscreen" : ""}`}>
-      <div className={`slide-container `}>{mediaElements}</div>
+      <div className={`slide-container`}>{mediaElements}</div>
       <div className="arrow left">
         <button className="Button" onClick={handleBack}>
           <ArrowLeftSvg />
