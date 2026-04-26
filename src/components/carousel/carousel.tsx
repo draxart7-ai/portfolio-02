@@ -29,10 +29,24 @@ export const Carousel = ({ media }: CarouselProps) => {
         <video
           key={index}
           controls
-          className={index === selectedSlide ? "slide" : "slide inactive"}
+          className={
+            index === selectedSlide
+              ? "slide loadedVideo"
+              : "slide inactive loadedVideo"
+          }
         >
           <source src={src} type="video/mp4" />
         </video>
+      );
+    }
+
+    if (src.includes("youtube")) {
+      return (
+        <iframe
+          title={`hello`}
+          className={index === selectedSlide ? "slide" : "slide inactive"}
+          src={src}
+        />
       );
     }
 
@@ -46,9 +60,32 @@ export const Carousel = ({ media }: CarouselProps) => {
     );
   });
 
+  const stopAllVideos = () => {
+    const iframes = document.getElementsByTagName("iframe");
+    Array.from(iframes).forEach((iframe) => {
+      const iframeWindow = iframe.contentWindow;
+      if (iframeWindow) {
+        iframeWindow.postMessage(
+          '{"event":"command","func":"pauseVideo","args":[]}',
+          "*",
+        );
+      }
+    });
+
+    const loadedVideos = document.getElementsByClassName(
+      "loadedVideo",
+    ) as HTMLCollectionOf<HTMLVideoElement>;
+    Array.from(loadedVideos).forEach((x) => {
+      if (x instanceof HTMLVideoElement) {
+        x.pause();
+      }
+    });
+  };
+
   const handleIndicatorSelect = (index: SetStateAction<number>) => {
     setSelectedSlide(index);
   };
+
   const indicatorElements = media.map((_, index) => {
     return (
       <div
@@ -60,12 +97,14 @@ export const Carousel = ({ media }: CarouselProps) => {
   });
 
   const handleNext = () => {
+    stopAllVideos();
     setSelectedSlide(
       selectedSlide === media.length - 1 ? 0 : selectedSlide + 1,
     );
   };
 
   const handleBack = () => {
+    stopAllVideos();
     setSelectedSlide(
       selectedSlide === 0 ? media.length - 1 : selectedSlide - 1,
     );
