@@ -178,7 +178,7 @@ export const Display: React.FC = () => {
       <div className="Intro" id="Intro">
         <div className="header h1">
           <div className="name">Alan Curtis</div>
-          <img src="/images/misc/alan-01.jpg" alt="profile" />
+          <img src="/images/misc/alan-01-small.jpg" alt="profile" />
         </div>
         <div className="sub">
           <div className="sub-header h2"> Senior Software Engineer</div>

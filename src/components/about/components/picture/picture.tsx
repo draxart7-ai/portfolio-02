@@ -6,7 +6,7 @@ export const Picture = () => {
     <div className="Picture">
       <Card>
         <div className="container">
-          <img src="/images/misc/alan-01.jpg" alt="profile" />
+          <img src="/images/misc/alan-01-small.jpg" alt="profile" />
         </div>
       </Card>
     </div>
