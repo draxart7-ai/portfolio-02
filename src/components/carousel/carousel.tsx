@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useState, useEffect, useRef } from "react";
 import { ArrowLeftSvg } from "../../assets/svgs/arrow-left-svg";
 import { ArrowRightSvg } from "../../assets/svgs/arrow-right-svg";
 import { FullScreenEnterSvg } from "../../assets/svgs/full-screen-enter-svg";
@@ -16,9 +16,23 @@ export const Carousel = ({ media }: CarouselProps) => {
   const [selectedSlide, setSelectedSlide] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const { toggleScroll } = useAppContext();
+  const indicatorRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (indicatorRef.current) {
+      if (selectedSlide <= 2) {
+        indicatorRef.current.style.transform = `translateX(calc(0px))`;
+      } else if (selectedSlide >= media.length - 2) {
+        indicatorRef.current.style.transform = `translateX(calc(-25px * ${media.length -
+          5}))`;
+      } else {
+        indicatorRef.current.style.transform = `translateX(calc(-25px * ${selectedSlide -
+          2}))`;
+      }
+    }
+  }, [selectedSlide]);
 
   const mediaElements = media.map((src, index) => {
-    console.log("media element", src);
     const fileExtension = src
       .split(".")
       .pop()
@@ -143,7 +157,14 @@ export const Carousel = ({ media }: CarouselProps) => {
           <ArrowRightSvg />
         </button>
       </div>
-      <div className="indicators">{indicatorElements}</div>
+      <div className="slide-count">
+        {selectedSlide + 1}/{media.length}
+      </div>
+      <div className="indicator-container">
+        <div className="indicators" ref={indicatorRef}>
+          {indicatorElements}
+        </div>
+      </div>
       <div className="fullscreen-button" onClick={handleFullScreen}>
         {isFullscreen ? (
           <FullScreenExitSvg size="40px" />

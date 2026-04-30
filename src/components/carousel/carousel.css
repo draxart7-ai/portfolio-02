@@ -66,25 +66,45 @@
   video::-webkit-media-controls-fullscreen-button {
     display: none !important;
   }
-
-  > .indicators {
+  > .indicator-container {
+    --indicator-size: 15px;
     position: absolute;
     display: flex;
-    align-items: center;
-    justify-self: center;
+    z-index: 4;
+    max-width: 118px;
     bottom: 12px;
-    gap: 10px;
-    z-index: 3;
-    > .indicator {
-      cursor: pointer;
-      height: 16px;
-      width: 16px;
-      background-color: rgba(240, 240, 240, 0.9); /* todo variable */
-      border-radius: 50%;
-      &.inactive {
-        background-color: rgba(166, 167, 166, 0.664); /* todo variable */
+    overflow: hidden;
+    padding: 0 1px;
+    > .indicators {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      gap: 10px;
+      z-index: 3;
+      transition: transform 0.2s ease-in-out;
+      > .indicator {
+        cursor: pointer;
+        height: var(--indicator-size);
+        width: var(--indicator-size);
+        background-color: rgba(240, 240, 240, 0.9); /* todo variable */
+        border-radius: 50%;
+        &.inactive {
+          background-color: rgba(166, 167, 166, 0.664); /* todo variable */
+        }
       }
     }
+  }
+
+  > .slide-count {
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+    background-color: rgba(166, 167, 166, 0.664); /* todo variable */
+    border-radius: var(--border-radius);
+    padding: 4px 8px;
+    font-size: 12px;
+    z-index: 4;
+    color: var(--color-black);
   }
 
   > .fullscreen-button {
