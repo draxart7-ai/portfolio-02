@@ -2,7 +2,7 @@ import { SetStateAction, useState, useEffect, useRef } from "react";
 import { ArrowLeftSvg } from "../../assets/svgs/arrow-left-svg";
 import { ArrowRightSvg } from "../../assets/svgs/arrow-right-svg";
 import { FullScreenEnterSvg } from "../../assets/svgs/full-screen-enter-svg";
-import { FullScreenExitSvg } from "../../assets/svgs/full-screen-exit-svg copy";
+import { FullScreenExitSvg } from "../../assets/svgs/full-screen-exit-svg";
 
 import "./carousel.css";
 import { useAppContext } from "../../state/app/app-context";

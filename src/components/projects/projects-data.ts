@@ -35,7 +35,10 @@ export const projectsData = [
     id: 16,
     title: "AI Image Reviewer",
     media: ["/images/misc/project-placeholder.jpg"],
-    links: [],
+    links: [
+      { type: "github", url: "https://github.com" },
+      { type: "site", url: "https://example.com" },
+    ],
     description:
       "This was a site challenge to match the css style requirements from an image.",
     tags: ["React", "CSS", "Nodejs"],

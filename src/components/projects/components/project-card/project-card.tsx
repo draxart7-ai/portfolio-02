@@ -3,6 +3,7 @@ import { Card } from "../../../card/card";
 import { CardInner } from "../../../card-inner/card-inner";
 import { Carousel } from "../../../carousel/carousel";
 import { useState } from "react";
+import { ButtonAction } from "../../../button-action/button-action";
 
 interface ProjectCardProps {
   title: string;
@@ -10,6 +11,7 @@ interface ProjectCardProps {
   tags: string[];
   achievements: string[];
   media: string[];
+  links: { type: string; url: string }[];
 }
 
 export const ProjectCard = ({
@@ -18,12 +20,17 @@ export const ProjectCard = ({
   tags,
   description,
   achievements,
+  links,
 }: ProjectCardProps) => {
   const tech = tags.map((tag) => <CardInner key={tag}>{tag}</CardInner>);
   const bulletPoints = achievements.map((bulletPoint) => (
     <li key={bulletPoint}>{bulletPoint}</li>
   ));
   const [isFullScreen, setIsFullScreen] = useState(false);
+
+  const actionButtons = links.map((link) => (
+    <ButtonAction key={link.type} link={link} />
+  ));
 
   return (
     <div id="ProjectCard" className="ProjectCard">
@@ -43,7 +50,7 @@ export const ProjectCard = ({
           <p>{description}</p>
           <ul>{bulletPoints}</ul>
         </div>
-        <div className="actions">action buttons</div>
+        <div className="actions">{actionButtons}</div>
       </Card>
     </div>
   );

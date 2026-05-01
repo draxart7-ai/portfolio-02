@@ -1,13 +1,16 @@
-interface LogoSvgProps {
+interface LogoAlanCurtisSvgProps {
   className?: string;
   size?: string;
 }
-export const LogoSvg = ({ className, size = "32px" }: LogoSvgProps) => {
+export const LogoAlanCurtisSvg = ({
+  className,
+  size = "32px",
+}: LogoAlanCurtisSvgProps) => {
   const width = size;
   const height = size;
   return (
     <svg
-      id="logo"
+      id="logoAlanCurtis"
       viewBox="0 0 256 256"
       className={className}
       height={height}
@@ -23,4 +26,4 @@ export const LogoSvg = ({ className, size = "32px" }: LogoSvgProps) => {
   );
 };
 
-export default LogoSvg;
+export default LogoAlanCurtisSvg;
