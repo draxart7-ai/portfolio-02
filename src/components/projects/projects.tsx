@@ -141,7 +141,9 @@ export const Projects = () => {
           </div>
         </Card>
       </div>
-      <div className="projects-container">{projectCards}</div>
+      <div className="projects-container">
+        <div className="inner">{projectCards}</div>
+      </div>
     </div>
   );
 };
