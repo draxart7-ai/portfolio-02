@@ -1,6 +1,7 @@
 .Timeline {
   grid-area: timeline;
   height: 80px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

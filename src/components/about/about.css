@@ -10,6 +10,7 @@
     "picture   picture  description   description   description   description  "
     "timeline  timeline timeline      timeline      timeline      timeline   "
     "location      location     location           more         more          more  ";
+  justify-items: center;
 }
 
 /* isMobile*/

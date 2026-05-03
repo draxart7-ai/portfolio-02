@@ -1,6 +1,7 @@
 .Title {
   grid-area: title;
   height: 80px;
+  width: 100%;
   .header {
     display: flex;
     height: 100%;

@@ -1,6 +1,7 @@
 .Location {
   grid-area: location;
   height: 80px;
+  width: 100%;
   .container {
     height: 100%;
     display: flex;
