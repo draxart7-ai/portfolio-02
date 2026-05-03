@@ -26,28 +26,28 @@ export const LeaveSvg = ({
       strokeWidth={strokeWidth}
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M15.6666 8L17.75 10.5L15.6666 8Z"
         stroke={stroke}
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M15.6666 13L17.75 10.5L15.6666 13Z"
         stroke={stroke}
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M16.5 10.5L10 10.5"
         stroke={stroke}
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <line
         x1="4"
@@ -55,8 +55,8 @@ export const LeaveSvg = ({
         x2="13"
         y2="3.5"
         stroke={stroke}
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <line
         x1="4"
@@ -64,26 +64,26 @@ export const LeaveSvg = ({
         x2="13"
         y2="17.5"
         stroke={stroke}
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <path
         d="M13 3.5V7.5"
         stroke={stroke}
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <path
         d="M13 13.5V17.5"
         stroke={stroke}
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <path
         d="M4 3.5L4 17.5"
         stroke={stroke}
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );

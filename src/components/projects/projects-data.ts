@@ -41,7 +41,7 @@ export const projectsData = [
     ],
     description:
       "This was a site challenge to match the css style requirements from an image.",
-    tags: ["React", "CSS", "Nodejs"],
+    tags: ["React", "CSS", "Nodejs", "Top 5"],
     achievements: [
       "Made functional site from static image within a given time frame.",
       "Leaned new css tricks. The corner fold.",
@@ -50,13 +50,13 @@ export const projectsData = [
     ],
   },
   {
-    id: 15,
+    id: 18,
     title: "Asset Approvals",
     media: ["/images/misc/project-placeholder.jpg"],
     links: [],
     description:
       "This was a site challenge to match the css style requirements from an image.",
-    tags: ["React", "CSS", "Nodejs"],
+    tags: ["React", "CSS", "Nodejs", "Top 5"],
     achievements: [
       "Made functional site from static image within a given time frame.",
       "Leaned new css tricks. The corner fold.",
@@ -104,7 +104,7 @@ export const projectsData = [
     links: [],
     description:
       "This was a site challenge to match the css style requirements from an image.",
-    tags: ["React", "CSS", "Nodejs"],
+    tags: ["Express"],
     achievements: [
       "Made functional site from static image within a given time frame.",
       "Leaned new css tricks. The corner fold.",
@@ -289,7 +289,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "Sims 4",
     media: ["/images/projects/sims-4/sims-4-cover.jpg"],
     links: [],
@@ -304,7 +304,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     title: "Sims Freeplay",
     media: [
       "/images/projects/sims-freeplay/sims-freeplay-cover.jpg",
@@ -324,7 +324,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     title: "Sims Mobile",
     media: ["/images/projects/sims-mobile/sims-mobile-cover.jpg"],
     links: [],
@@ -339,7 +339,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     title: "Tropicana Tropolis",
     media: [
       "/images/projects/tropicana-tropolis/tropolis-cover.jpg",
@@ -376,7 +376,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     title: "Akrasia",
     media: [
       "/images/projects/akrasia/akrasia-01.jpg",
@@ -394,7 +394,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 14,
+    id: 15,
     title: "O Captain",
     media: ["/images/projects/o-captain/o-captain-01.jpg"],
     links: [],

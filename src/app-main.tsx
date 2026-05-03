@@ -19,7 +19,6 @@ export const AppMain = () => {
 
   document.body.style.overflow = !isScrollEnabled ? "hidden" : "";
 
-  console.log("hello");
   return (
     <div className="AppMain">
       <AppHeader />

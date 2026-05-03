@@ -28,7 +28,7 @@ export const LogoGithubSvg = ({
       <title>github [#142]</title>
       <desc>Created with Sketch.</desc>
       <defs></defs>
-      <g id="Page-1" stroke="none" stroke-width="1">
+      <g id="Page-1" stroke="none" strokeWidth="1">
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-140.000000, -7559.000000)"

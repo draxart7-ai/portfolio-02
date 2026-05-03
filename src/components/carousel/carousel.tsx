@@ -57,6 +57,7 @@ export const Carousel = ({ media }: CarouselProps) => {
     if (src.includes("youtube")) {
       return (
         <iframe
+          key={index}
           title={`hello`}
           className={index === selectedSlide ? "slide" : "slide inactive"}
           src={src}

@@ -1,4 +1,6 @@
 export const filtersData = [
+  "Clear All Filters",
+  "Top 5",
   "React",
   "Redux",
   "TypeScript",

@@ -1,15 +1,15 @@
-import { ReactNode } from "react";
 import "./badge.css";
 import { XSvg } from "../../assets/svgs/x-svg";
 
 interface BadgeProps {
-  children: ReactNode;
+  onClick?: () => void;
+  value?: string;
 }
-export const Badge = ({ children }: BadgeProps) => {
+export const Badge = ({ onClick, value }: BadgeProps) => {
   return (
     <div className={`Badge`}>
-      {children}
-      <button onClick={() => console.log("remove badge")}>
+      {value}
+      <button onClick={onClick} className="remove-button">
         <XSvg fill="currentColor" size="18px" />
       </button>
     </div>
