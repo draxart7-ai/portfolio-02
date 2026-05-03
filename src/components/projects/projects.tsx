@@ -4,6 +4,12 @@ import { useActiveElementContext } from "../../state/active-element/active-eleme
 import { projectsData } from "./projects-data";
 import { ProjectCard } from "./components/project-card/project-card";
 import { Title } from "./components/title/title";
+import { Card } from "../card/card";
+import { FilterSvg } from "../../assets/svgs/filter-svg";
+import { ButtonIcon } from "../button-icon/button-icon";
+import { Badge } from "../badge/badge";
+import { filtersData } from "./filters-data";
+
 export const Projects = () => {
   const sectionRef = useRef(null);
   const { register } = useActiveElementContext();
@@ -18,6 +24,10 @@ export const Projects = () => {
     <ProjectCard key={project.id} {...project} />
   ));
 
+  const badgeElements = filtersData.map((filter) => (
+    <Badge key={filter}>{filter}</Badge>
+  ));
+
   return (
     <div
       id="Projects"
@@ -25,7 +35,19 @@ export const Projects = () => {
       ref={sectionRef}
     >
       <Title />
-      {projectCards}
+      <div className="search-container">
+        <Card>
+          <div className="filter-container">
+            <div className="badge-container">{badgeElements}</div>
+            <div className="filter-button">
+              <ButtonIcon onClick={() => console.log("Filter button clicked")}>
+                <FilterSvg size="32px" />
+              </ButtonIcon>
+            </div>
+          </div>
+        </Card>
+      </div>
+      <div className="projects-container">{projectCards}</div>
     </div>
   );
 };

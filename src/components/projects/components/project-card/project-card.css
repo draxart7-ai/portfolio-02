@@ -1,6 +1,5 @@
 .ProjectCard {
   width: 100%;
-  margin-top: 16px;
   > .Card {
     padding: var(--size-10);
     display: grid;
