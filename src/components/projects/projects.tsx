@@ -120,6 +120,7 @@ export const Projects = () => {
                 aria-haspopup="true"
                 aria-expanded={isOpen}
                 aria-controls="dropdown-menu"
+                isActive={selectedFilters.length > 0}
               >
                 <FilterSvg size="32px" />
               </ButtonIcon>

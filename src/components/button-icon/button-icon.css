@@ -1,16 +1,22 @@
 .ButtonIcon {
-  fill: var(--color-white);
+  fill: var(--color-inner-card-border);
   border: none;
   cursor: pointer;
   background-color: transparent;
   box-shadow: none;
-  box-shadow: 0px 0px 0px 2px var(--color-active);
+  box-shadow: 0px 0px 0px 2px var(--color-inner-card-border);
   border-radius: var(--border-radius);
   transition: all 0.2s ease-in-out;
   display: flex;
   padding: 6px;
-  &:hover {
+  &.isActive {
     color: var(--color-active);
     fill: var(--color-active);
+    box-shadow: 0px 0px 0px 2px var(--color-active);
+  }
+  &:hover {
+    color: var(--color-hover);
+    fill: var(--color-hover);
+    box-shadow: 0px 0px 0px 2px var(--color-hover);
   }
 }

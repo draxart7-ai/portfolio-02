@@ -7,6 +7,7 @@ interface ButtonIconProps {
   onClick?: () => void;
   children?: ReactNode;
   isQuiet?: boolean;
+  isActive?: boolean;
 }
 export const ButtonIcon = ({
   variant = "default",
@@ -15,14 +16,16 @@ export const ButtonIcon = ({
   onClick = () => {
     console.log(title);
   },
+  isActive = false,
   children,
   isQuiet = false,
 }: ButtonIconProps) => {
   const isQuietStyle = isQuiet && "isQuiet";
+  const isActiveStyle = isActive && "isActive";
 
   return (
     <button
-      className={`ButtonIcon ${variant} ${isQuietStyle}`}
+      className={`ButtonIcon ${variant} ${isQuietStyle} ${isActiveStyle}`}
       disabled={disabled}
       onClick={onClick}
     >
