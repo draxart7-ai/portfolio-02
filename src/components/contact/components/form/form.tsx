@@ -3,7 +3,7 @@ import { Card } from "../../../card/card";
 import { useState } from "react";
 import { ButtonBasic } from "../../../button-basic/button-basic";
 export const Form = () => {
-  const [name, setName] = useState("Cheese");
+  const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   return (
     <div className="Form">
@@ -20,8 +20,8 @@ export const Form = () => {
           <label>Message</label>
           <textarea
             rows={5}
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           />
         </div>
         <div className="actions">
