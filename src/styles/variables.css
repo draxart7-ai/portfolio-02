@@ -43,6 +43,8 @@
   --color-inner-card-background: rgb(44, 44, 44);
   --color-text-white: rgb(228, 228, 225);
   --color-text-grey: #8c8d8f;
+  --color-action: #11c4fa;
+  --color-action-muted: #3488a1;
 
   /* Font */
   /* -- Family --*/

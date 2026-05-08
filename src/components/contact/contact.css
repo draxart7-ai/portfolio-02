@@ -1,4 +1,24 @@
 .Contact {
-  background-color: none;
-  padding: 10px;
+  padding: var(--space-8);
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 80px auto;
+  margin-bottom: 10px;
+  grid-template-areas:
+    "title     title    description   description   description   description  "
+    "form      form     form          form          form          form  ";
+}
+
+/* isMobile*/
+@media screen and (max-width: 768px) {
+  .Contact {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 80px auto auto;
+    grid-template-areas:
+      "title "
+      "description"
+      "form";
+  }
 }

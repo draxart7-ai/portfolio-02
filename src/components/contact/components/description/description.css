@@ -1,0 +1,11 @@
+.Description {
+  grid-area: description;
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding: var(--size-16);
+    justify-content: end;
+  }
+}

@@ -1,0 +1,24 @@
+.Form {
+  grid-area: form;
+
+  > .Card {
+    padding: 16px;
+    display: grid;
+    grid-template-areas:
+      "name"
+      "message"
+      "actions";
+    gap: 20px;
+    > .name {
+      grid-area: name;
+    }
+    > .message {
+      grid-area: message;
+    }
+    > .actions {
+      grid-area: actions;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

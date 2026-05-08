@@ -1,44 +1,25 @@
 import "./contact.css";
-import { Text } from "../text/text";
 import { useRef, useEffect } from "react";
 import { useActiveElementContext } from "../../state/active-element/active-element-context";
+import { Description } from "./components/description/description";
+import { Title } from "./components/title/title";
+import { Form } from "./components/form/form";
 
 export const Contact = () => {
   const sectionRef = useRef(null);
   const { register } = useActiveElementContext();
-  const visible = "visible"; // activeId === "Contact" ? "visible" : "invisible";
+  const visible = "visible"; // activeId === "Skills" ? "visible" : "invisible";
 
   useEffect(() => {
     const unregister = register(sectionRef.current);
-    return unregister; // Cleanup on unmount
+    return unregister;
   }, [register]);
 
   return (
     <div id="Contact" className={`Contact ${visible} section`} ref={sectionRef}>
-      <Text size="f6">Contact</Text>
-      <Text isSubtle size="f6">
-        Alan Curtis
-      </Text>
-      <Text size="f5">Alan Curtis</Text>
-      <Text size="f5" isSubtle>
-        Alan Curtis
-      </Text>
-      <Text size="f4">Alan Curtis</Text>
-      <Text size="f4" isSubtle>
-        Alan Curtis
-      </Text>
-      <Text size="f3">Alan Curtis</Text>
-      <Text size="f3" isSubtle>
-        Alan Curtis
-      </Text>
-      <Text size="f2">Alan Curtis</Text>
-      <Text size="f2" isSubtle>
-        Alan Curtis
-      </Text>
-      <Text size="f1">Alan Curtis</Text>
-      <Text size="f1" isSubtle>
-        Alan Curtis
-      </Text>
+      <Title />
+      <Description />
+      <Form />
     </div>
   );
 };

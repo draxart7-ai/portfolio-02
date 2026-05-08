@@ -1,0 +1,20 @@
+.ButtonBasic {
+  font-size: 16px;
+  background-color: var(--color-action);
+  font-weight: bold;
+  color: var(--color-black);
+  border: none;
+  box-shadow: 0px 0px 0px 2px var(--color-action-muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  margin: 0 6px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 999px;
+  &:hover {
+    background-color: var(--color-hover);
+    box-shadow: 0px 0px 0px 2px var(--color-action-muted);
+    color: var(--color-white);
+  }
+}
