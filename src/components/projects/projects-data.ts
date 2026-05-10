@@ -52,7 +52,15 @@ export const projectsData = [
   {
     id: 18,
     title: "Asset Approvals",
-    media: ["/images/misc/project-placeholder.jpg"],
+    media: [
+      "/images/projects/adobe-workfront-approvals/approvals-video-01.mp4",
+      "/images/projects/adobe-workfront-approvals/approvals-01.png",
+      "/images/projects/adobe-workfront-approvals/approvals-02-create-sidebar.png",
+      "/images/projects/adobe-workfront-approvals/approvals-03-create-dialog.png",
+      "/images/projects/adobe-workfront-approvals/approvals-04-create-dialog-dnd.png",
+      "/images/projects/adobe-workfront-approvals/approvals-05-sidebar-decision-dropdown.png",
+      "/images/projects/adobe-workfront-approvals/approvals-06-sidebar.png",
+    ],
     links: [],
     description:
       "This was a site challenge to match the css style requirements from an image.",
