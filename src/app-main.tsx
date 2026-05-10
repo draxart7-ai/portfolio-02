@@ -7,6 +7,7 @@ import { Projects } from "./components/projects/projects";
 import { Contact } from "./components/contact/contact";
 import { Skills } from "./components/skills/skills";
 import { Separator } from "./components/separator/separator";
+import { AppFooter } from "./components/app-footer/app-footer";
 
 import { SkillsProvider } from "./state/skills/skills-provider";
 import { useAppContext } from "./state/app/app-context";
@@ -35,6 +36,7 @@ export const AppMain = () => {
         <Separator />
         <Contact />
       </div>
+      <AppFooter />
     </div>
   );
 };

@@ -2,7 +2,6 @@
   background-color: var(--color-main-app-background);
   display: flex;
   flex-direction: column;
-  padding-bottom: 70vh;
   .section-container {
     align-self: center;
     max-width: 1000px;
