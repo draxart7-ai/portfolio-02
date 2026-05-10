@@ -4,6 +4,8 @@ import { CardInner } from "../../../card-inner/card-inner";
 import { Carousel } from "../../../carousel/carousel";
 import { useState } from "react";
 import { ButtonAction } from "../../../button-action/button-action";
+import { LogoGithubSvg } from "../../../../assets/svgs/logo-github-svg";
+import { LeaveSvg } from "../../../../assets/svgs/leave-svg";
 
 interface ProjectCardProps {
   title: string;
@@ -28,8 +30,19 @@ export const ProjectCard = ({
   ));
   const [isFullScreen, setIsFullScreen] = useState(false);
 
+  const getIcon = (type: string) => {
+    switch (type.toLowerCase()) {
+      case "github":
+        return <LogoGithubSvg size="20" />;
+      case "site":
+        return <LeaveSvg size="20" />;
+      default:
+        return null;
+    }
+  };
+
   const actionButtons = links.map((link) => (
-    <ButtonAction key={link.type} link={link} />
+    <ButtonAction key={link.type} link={link} icon={getIcon(link.type)} />
   ));
 
   return (
