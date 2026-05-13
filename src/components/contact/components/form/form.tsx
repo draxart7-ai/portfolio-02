@@ -31,17 +31,17 @@ export const Form = () => {
           <ButtonAction key={email.type} link={email} icon={<EmailSvg />} />
           <div className="social-media">
             <ButtonAction
-              key={github.type}
+              key={"github"}
               link={github}
               icon={<LogoGithubSvg />}
             />
             <ButtonAction
-              key={linkedIn.type}
+              key={"linkedIn"}
               link={linkedIn}
               icon={<LogoLinkedInSvg />}
             />
             <ButtonAction
-              key={artStation.type}
+              key={"artStation"}
               link={artStation}
               icon={<LogoArtStationSvg />}
             />

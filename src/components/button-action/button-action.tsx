@@ -8,7 +8,6 @@ export const ButtonAction = ({
   link = { type: "github", url: "https://github.com" },
   icon = null,
 }: ButtonActionProps) => {
-  console.log("hello", icon);
   return (
     <a
       className={`ButtonAction `}
