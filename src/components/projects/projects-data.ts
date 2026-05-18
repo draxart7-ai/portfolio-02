@@ -34,7 +34,10 @@ export const projectsData = [
   {
     id: 16,
     title: "AI Image Reviewer",
-    media: ["/images/misc/project-placeholder.jpg"],
+    media: [
+      "/images/projects/adobe-workfront-ai-image-reviewer/ai-image-reviewer-presentation.mp4",
+      "/images/projects/adobe-workfront-ai-image-reviewer/ai-image-reviewer-pitch.mp4",
+    ],
     links: [
       { type: "github", url: "https://github.com" },
       { type: "site", url: "https://example.com" },
@@ -53,7 +56,7 @@ export const projectsData = [
     id: 18,
     title: "Asset Approvals",
     media: [
-      "/images/projects/adobe-workfront-approvals/approvals-video-01.mp4",
+      "/images/projects/adobe-workfront-approvals/approvals-video-with-thumbnail.mp4",
       "/images/projects/adobe-workfront-approvals/approvals-01.png",
       "/images/projects/adobe-workfront-approvals/approvals-02-create-sidebar.png",
       "/images/projects/adobe-workfront-approvals/approvals-03-create-dialog.png",
@@ -76,8 +79,8 @@ export const projectsData = [
     id: 17,
     title: "Asset Management System",
     media: [
+      "/images/projects/adobe-workfront-documents/new-docs-with-thumbnail.mp4",
       "/images/projects/adobe-workfront-documents/new-docs-13-grid.png",
-      "/images/projects/adobe-workfront-documents/new-docs-video.mp4",
       "/images/projects/adobe-workfront-documents/new-docs-01-landing.png",
       "/images/projects/adobe-workfront-documents/new-docs-02-upload.png",
       "/images/projects/adobe-workfront-documents/new-docs-03-details-rail-action-menu.png",
@@ -157,6 +160,7 @@ export const projectsData = [
     id: 3,
     title: "Athletic Apparel Customizer",
     media: [
+      "/images/projects/fsg-builder/athletic-apparel-customizer-thumbnail.png",
       "https://www.youtube.com/embed/v_7VDm1LEqY?enablejsapi=1&rel=0",
       "/images/projects/fsg-builder/fsg-builder-01.jpg",
       "/images/projects/fsg-builder/fsg-builder-02.jpg",
@@ -166,7 +170,15 @@ export const projectsData = [
     ],
     links: [],
     description: "An athletic apparel customization tool.",
-    tags: ["React", "CSS", "Redux", "Adobe CS", "PostgreSQL", "Nodejs"],
+    tags: [
+      "React",
+      "CSS",
+      "Redux",
+      "Adobe CS",
+      "PostgreSQL",
+      "Nodejs",
+      "Top 5",
+    ],
     achievements: [
       "I was in charge of visual representation of the data on canvas and canvas interactions.",
       "Did tons of math and geometry to match scale, detect edges and resize elements.",
@@ -177,6 +189,7 @@ export const projectsData = [
     id: 4,
     title: "Athletic Apparel Store",
     media: [
+      "/images/projects/fsg-store/athletic-apparel-store-thumbnail.png",
       "/images/projects/fsg-store/fsg-store-01.jpg",
       "/images/projects/fsg-store/fsg-store-02.jpg",
       "/images/projects/fsg-store/fsg-store-03.jpg",
@@ -189,7 +202,15 @@ export const projectsData = [
     links: [],
     description:
       "A ecomerce store used to catalogued, displayed and purchase athletic apparel.",
-    tags: ["React", "CSS", "Redux", "Adobe CS", "PostgreSQL", "Nodejs"],
+    tags: [
+      "React",
+      "CSS",
+      "Redux",
+      "Adobe CS",
+      "PostgreSQL",
+      "Nodejs",
+      "Top 5",
+    ],
     achievements: [
       "Made universal image component used on all pages. Leveraging reacts component based architecture.",
       "Created the multi-tier filtering system to sort through over 2000 products.",
