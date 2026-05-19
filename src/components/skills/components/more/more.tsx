@@ -20,8 +20,6 @@ export const More = () => {
             </div>
             <div className="text">More Skills</div>
           </div>
-          <div className="filters"> Filters</div>
-          <div className="search">Search</div>
         </div>
       </Card>
     </div>

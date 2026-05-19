@@ -18,6 +18,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: var(--size-8);
+        line-height: 1rem;
       }
     }
   }

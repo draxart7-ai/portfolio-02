@@ -24,7 +24,12 @@ export const ProjectCard = ({
   achievements,
   links,
 }: ProjectCardProps) => {
-  const tech = tags.map((tag) => <CardInner key={tag}>{tag}</CardInner>);
+  const tech = tags.map((tag) => {
+    if (tag !== "Top 5") {
+      return <CardInner key={tag}>{tag}</CardInner>;
+    }
+    return null;
+  });
   const bulletPoints = achievements.map((bulletPoint) => (
     <li key={bulletPoint}>{bulletPoint}</li>
   ));
@@ -61,6 +66,7 @@ export const ProjectCard = ({
         <div className="tech">{tech}</div>
         <div className="description">
           <p>{description}</p>
+          <hr />
           <ul>{bulletPoints}</ul>
         </div>
         <div className="actions">{actionButtons}</div>

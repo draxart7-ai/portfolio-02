@@ -39,17 +39,32 @@ export const projectsData = [
       "/images/projects/adobe-workfront-ai-image-reviewer/ai-image-reviewer-pitch.mp4",
     ],
     links: [
-      { type: "github", url: "https://github.com" },
-      { type: "site", url: "https://example.com" },
+      { type: "Youtube", url: "https://www.youtube.com/watch?v=8Fc5HB8nT8Y" },
+      {
+        type: "Documentation",
+        url:
+          "https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-reviews-and-approvals/wf-ai-reviewer",
+      },
     ],
     description:
-      "This was a site challenge to match the css style requirements from an image.",
-    tags: ["React", "CSS", "Nodejs", "Top 5"],
+      "I architected and built an AI image detection tool to improve accuracy and speed approval processes.",
+
+    tags: [
+      "AI",
+      "React",
+      "CSS",
+      "Nodejs",
+      "JavaScript",
+      "MongoDB",
+      "Top 5",
+      "Kaftka",
+      "TypeScript",
+    ],
     achievements: [
-      "Made functional site from static image within a given time frame.",
-      "Leaned new css tricks. The corner fold.",
-      "Side bar fades on page scroll position.",
-      "Used gsap to make cool staggered animations and transitions.",
+      "I take pride on being the inventor for this product",
+      "From garage week project to full release",
+      "Adobe Summit headliner 2 years in a row",
+      "Granted a small task force to deliver final product",
     ],
   },
   {
@@ -94,7 +109,10 @@ export const projectsData = [
       "/images/projects/adobe-workfront-documents/new-docs-11-filters.png",
       "/images/projects/adobe-workfront-documents/new-docs-12-dialog-new.png",
     ],
-    links: [],
+    links: [
+      { type: "github", url: "https://github.com" },
+      { type: "site", url: "https://example.com" },
+    ],
     description:
       "This was a site challenge to match the css style requirements from an image.",
     tags: ["React", "CSS", "Nodejs", "Top 5"],
@@ -181,7 +199,7 @@ export const projectsData = [
     ],
     achievements: [
       "I was in charge of visual representation of the data on canvas and canvas interactions.",
-      "Did tons of math and geometry to match scale, detect edges and resize elements.",
+      "Used Pythagorean theorem and other math formulas to match scale, detect edges and resize elements.",
       "Organize a giant yet powerful redux state to manage iteraction accross app and canvas.",
     ],
   },

@@ -48,7 +48,7 @@
         color: var(--color-text-grey);
       }
       > ul {
-        list-style-type: square;
+        list-style-type: disc;
         margin-left: 50px; /*unique style*/
         > li {
           padding-bottom: var(--space-8);

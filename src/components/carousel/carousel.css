@@ -1,5 +1,7 @@
 .Carousel {
-  background-color: rgb(94, 94, 94); /* todo variable */
+  background-color: var(--color-inner-card-background); /* todo variable */
+  border-radius: var(--border-radius);
+  overflow: hidden;
   position: relative;
   height: 100%;
   width: 100%;

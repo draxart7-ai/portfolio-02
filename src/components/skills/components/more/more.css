@@ -4,8 +4,8 @@
   > div {
     > .container {
       display: grid;
-      grid-template-areas: "title  filters  search";
-      grid-template-columns: 200px 1fr auto;
+      grid-template-areas: "title ";
+      grid-template-columns: 1fr;
       > .title {
         cursor: pointer;
         grid-area: "title";
@@ -18,16 +18,6 @@
             rotate: -0.25turn;
           }
         }
-      }
-      > .filters {
-        grid-area: "filters";
-        display: flex;
-        justify-self: end;
-      }
-      > .search {
-        grid-area: "search";
-        display: flex;
-        justify-self: end;
       }
     }
   }
