@@ -50,6 +50,9 @@ export const HeaderLinkGroupMobile = () => {
           <HeaderLink title="About" onClick={toggleDropdown} />
         </li>
         <li role="menuitem">
+          <HeaderLink title="Timeline" onClick={toggleDropdown} />
+        </li>
+        <li role="menuitem">
           <HeaderLink title="Skills" onClick={toggleDropdown} />
         </li>
         <li role="menuitem">

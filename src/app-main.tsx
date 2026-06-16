@@ -4,6 +4,7 @@ import { Preview } from "./components/preview/preview";
 import { Intro } from "./components/intro/intro";
 import { About } from "./components/about/about";
 import { Projects } from "./components/projects/projects";
+import { Timeline } from "./components/timeline/timeline";
 import { Contact } from "./components/contact/contact";
 import { Skills } from "./components/skills/skills";
 import { Separator } from "./components/separator/separator";
@@ -27,6 +28,8 @@ export const AppMain = () => {
         <Intro />
         <Separator />
         <About />
+        <Separator />
+        <Timeline />
         <Separator />
         <SkillsProvider>
           <Skills />

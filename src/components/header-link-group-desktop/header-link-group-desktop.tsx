@@ -6,6 +6,7 @@ export const HeaderLinkGroupDesktop = () => {
     <div className="HeaderLinkGroupDesktop">
       <HeaderLink title="Intro" />
       <HeaderLink title="About" />
+      <HeaderLink title="Timeline" />
       <HeaderLink title="Skills" />
       <HeaderLink title="Projects" />
       <HeaderLink title="Contact" />
