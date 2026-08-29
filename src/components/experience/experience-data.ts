@@ -1,6 +1,7 @@
 export const projectsData = [
   // { example
   //   id: 0,
+  //   date: "2066 - 2077",
   //   title: "Paint Your Pixture",
   //   media:  [
   //     "https://www.youtube.com/embed/v_7VDm1LEqY?enablejsapi=1&rel=0",
@@ -33,6 +34,7 @@ export const projectsData = [
   // },
   {
     id: 16,
+    date: "2066 - 2077",
     title: "AI Image Reviewer",
     media: ["/images/companies/adobe-logo.png"],
     links: [
@@ -66,6 +68,7 @@ export const projectsData = [
   },
   {
     id: 18,
+    date: "2066 - 2077",
     title: "Asset Approvals",
     media: ["/images/companies/art-institute-logo.png"],
     links: [],
@@ -81,6 +84,7 @@ export const projectsData = [
   },
   {
     id: 17,
+    date: "2066 - 2077",
     title: "Asset Management System",
     media: ["/images/companies/electronic-arts-logo.png"],
     links: [
@@ -99,6 +103,7 @@ export const projectsData = [
   },
   {
     id: 1,
+    date: "2066 - 2077",
     title: "Star Wars Secrets of the Empire",
     media: ["/images/companies/void-logo.png"],
     links: [],
@@ -123,6 +128,7 @@ export const projectsData = [
   },
   {
     id: 2,
+    date: "2066 - 2077",
     title: "Ghostbusters",
     media: [
       "/images/projects/ghostbusters/ghostbusters-01.jpg",
@@ -150,6 +156,7 @@ export const projectsData = [
   },
   {
     id: 3,
+    date: "2066 - 2077",
     title: "Athletic Apparel Customizer",
     media: [
       "/images/projects/fsg-builder/athletic-apparel-customizer-thumbnail.png",
@@ -179,6 +186,7 @@ export const projectsData = [
   },
   {
     id: 4,
+    date: "2066 - 2077",
     title: "Athletic Apparel Store",
     media: [
       "/images/projects/fsg-store/athletic-apparel-store-thumbnail.png",
@@ -212,6 +220,7 @@ export const projectsData = [
   },
   {
     id: 5,
+    date: "2066 - 2077",
     title: "Minions Paradise",
     media: [
       "/images/projects/minions-paradise/minions-paradise-cover.jpg",
@@ -264,6 +273,7 @@ export const projectsData = [
   },
   {
     id: 6,
+    date: "2066 - 2077",
     title: "Monopoly Streets",
     media: ["/images/projects/monopoly-streets/monopoly-streets-cover.jpg"],
     links: [],
@@ -278,6 +288,7 @@ export const projectsData = [
   },
   {
     id: 7,
+    date: "2066 - 2077",
     title: "Nerf N-Strike",
     media: ["/images/projects/nerf-1/nerf-1-01.jpg"],
     links: [],
@@ -292,6 +303,7 @@ export const projectsData = [
   },
   {
     id: 8,
+    date: "2066 - 2077",
     title: "Nerf N-Strike Elite",
     media: ["/images/projects/nerf-2/nerf-2-01.jpg"],
     links: [],
@@ -306,6 +318,7 @@ export const projectsData = [
   },
   {
     id: 9,
+    date: "2066 - 2077",
     title: "Sims 3",
     media: [
       "/images/projects/sims-3/the-sims-3-logo.jpg",
@@ -347,6 +360,7 @@ export const projectsData = [
   },
   {
     id: 10,
+    date: "2066 - 2077",
     title: "Sims 4",
     media: ["/images/projects/sims-4/sims-4-cover.jpg"],
     links: [],
@@ -362,6 +376,7 @@ export const projectsData = [
   },
   {
     id: 11,
+    date: "2066 - 2077",
     title: "Sims Freeplay",
     media: [
       "/images/projects/sims-freeplay/sims-freeplay-cover.jpg",
@@ -379,6 +394,7 @@ export const projectsData = [
   },
   {
     id: 12,
+    date: "2066 - 2077",
     title: "Sims Mobile",
     media: ["/images/projects/sims-mobile/sims-mobile-cover.jpg"],
     links: [],
@@ -391,6 +407,7 @@ export const projectsData = [
   },
   {
     id: 13,
+    date: "2066 - 2077",
     title: "Tropicana Tropolis",
     media: [
       "/images/projects/tropicana-tropolis/tropolis-cover.jpg",
@@ -428,6 +445,7 @@ export const projectsData = [
   },
   {
     id: 14,
+    date: "2066 - 2077",
     title: "Akrasia",
     media: [
       "/images/projects/akrasia/akrasia-01.jpg",
@@ -453,6 +471,7 @@ export const projectsData = [
   },
   {
     id: 15,
+    date: "2066 - 2077",
     title: "O Captain",
     media: ["/images/projects/o-captain/o-captain-01.jpg"],
     links: [],

@@ -12,6 +12,7 @@ interface ExperienceCardProps {
   achievements: string[];
   media: string[];
   links: { type: string; url: string }[];
+  date: string;
 }
 
 export const ExperienceCard = ({
@@ -21,6 +22,7 @@ export const ExperienceCard = ({
   description,
   achievements,
   links,
+  date,
 }: ExperienceCardProps) => {
   const tech = tags.map((tag) => {
     if (tag !== "Top 5") {
@@ -48,20 +50,80 @@ export const ExperienceCard = ({
   ));
 
   return (
-    <div id="ExperienceCard" className="ExperienceCard">
-      <Card>
-        <div className="title">{title}</div>
-        <div className={`image-container`}>
-          <img src={media[0]} alt={`${title} media`} />
+    <div
+      style={{
+        display: "flex",
+        gap: "12px",
+        width: "100%",
+        position: "relative",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div
+        className="date-container"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          height: "calc(100% + 20px)",
+          marginLeft: "12px",
+          paddingRight: "12px",
+        }}
+      >
+        <div
+          className="date-line"
+          style={{
+            height: "calc(100% + 20px)",
+            width: "8px",
+            backgroundColor: "#0e5996",
+            position: "absolute",
+            borderRadius: "6px",
+            marginTop: "10px",
+          }}
+        ></div>
+        <div
+          className="date-marker"
+          style={{
+            height: "12px",
+            width: "24px",
+            backgroundColor: "white",
+            position: "absolute",
+            top: "10px",
+            borderRadius: "6px",
+          }}
+        ></div>
+        <div
+          className="date-label"
+          style={{
+            height: "12px",
+            position: "absolute",
+            top: "2px",
+            left: "34px",
+            fontSize: "20px",
+            fontWeight: "bold",
+            color: "white",
+          }}
+        >
+          {date}
         </div>
-        <div className="tech">{tech}</div>
-        <div className="description">
-          <p>{description}</p>
-          <hr />
-          <ul>{bulletPoints}</ul>
-        </div>
-        <div className="actions">{actionButtons}</div>
-      </Card>
+      </div>
+
+      <div id="ExperienceCard" className="ExperienceCard">
+        <Card>
+          <div className="title">{title}</div>
+          <div className={`image-container`}>
+            <img src={media[0]} alt={`${title} media`} />
+          </div>
+          <div className="tech">{tech}</div>
+          <div className="description">
+            <p>{description}</p>
+            <hr />
+            <ul>{bulletPoints}</ul>
+          </div>
+          <div className="actions">{actionButtons}</div>
+        </Card>
+      </div>
     </div>
   );
 };

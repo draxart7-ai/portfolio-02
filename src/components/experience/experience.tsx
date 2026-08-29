@@ -56,7 +56,7 @@ export const Experience = () => {
     return unregister; // Cleanup on unmount
   }, [register]);
 
-  const projectCards = filteredExperience.map((project) => (
+  const experienceCards = filteredExperience.map((project) => (
     <ExperienceCard key={project.id} {...project} />
   ));
 
@@ -142,7 +142,7 @@ export const Experience = () => {
         </Card>
       </div>
       <div className="projects-container">
-        <div className="inner">{projectCards}</div>
+        <div className="inner">{experienceCards}</div>
       </div>
     </div>
   );
