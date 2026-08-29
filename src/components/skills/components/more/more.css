@@ -15,7 +15,7 @@
           transition: rotate 0.25s ease-in-out;
           margin-right: var(--size-8);
           &.isOpen {
-            rotate: -0.25turn;
+            rotate: 0.25turn;
           }
         }
       }

@@ -1,6 +1,6 @@
 import "./more.css";
 import { Card } from "../../../card/card";
-import { ArrowLeftSvg } from "../../../../assets/svgs/arrow-left-svg";
+import { ArrowRightSvg } from "../../../../assets/svgs/arrow-right-svg";
 import { useSkills } from "../../../../state/skills/skills-context";
 
 export const More = () => {
@@ -16,7 +16,7 @@ export const More = () => {
             }}
           >
             <div className={`arrow ${isOpenStyle}`}>
-              <ArrowLeftSvg fill="white" size="24" />
+              <ArrowRightSvg fill="white" size="24" />
             </div>
             <div className="text">More Skills</div>
           </div>
