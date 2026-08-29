@@ -6,7 +6,7 @@ export const Title = () => {
     <div className="Title">
       <Card>
         <div className="header">
-          <p>Timeline</p>
+          <p>Experience</p>
         </div>
       </Card>
     </div>

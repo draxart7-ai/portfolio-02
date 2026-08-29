@@ -4,7 +4,7 @@ import { Preview } from "./components/preview/preview";
 import { Intro } from "./components/intro/intro";
 import { About } from "./components/about/about";
 import { Projects } from "./components/projects/projects";
-import { Timeline } from "./components/timeline/timeline";
+import { Experience } from "./components/experience/experience";
 import { Contact } from "./components/contact/contact";
 import { Skills } from "./components/skills/skills";
 import { Separator } from "./components/separator/separator";
@@ -29,7 +29,7 @@ export const AppMain = () => {
         <Separator />
         <About />
         <Separator />
-        <Timeline />
+        <Experience />
         <Separator />
         <SkillsProvider>
           <Skills />

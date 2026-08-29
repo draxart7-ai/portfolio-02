@@ -1,11 +1,11 @@
-import "./timeline-card.css";
+import "./experience-card.css";
 import { Card } from "../../../card/card";
 import { CardInner } from "../../../card-inner/card-inner";
 import { ButtonAction } from "../../../button-action/button-action";
 import { LogoGithubSvg } from "../../../../assets/svgs/logo-github-svg";
 import { LeaveSvg } from "../../../../assets/svgs/leave-svg";
 
-interface TimelineCardProps {
+interface ExperienceCardProps {
   title: string;
   description: string;
   tags: string[];
@@ -14,14 +14,14 @@ interface TimelineCardProps {
   links: { type: string; url: string }[];
 }
 
-export const TimelineCard = ({
+export const ExperienceCard = ({
   title,
   media,
   tags,
   description,
   achievements,
   links,
-}: TimelineCardProps) => {
+}: ExperienceCardProps) => {
   const tech = tags.map((tag) => {
     if (tag !== "Top 5") {
       return <CardInner key={tag}>{tag}</CardInner>;
@@ -48,7 +48,7 @@ export const TimelineCard = ({
   ));
 
   return (
-    <div id="TimelineCard" className="TimelineCard">
+    <div id="ExperienceCard" className="ExperienceCard">
       <Card>
         <div className="title">{title}</div>
         <div className={`image-container`}>

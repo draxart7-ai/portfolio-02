@@ -1,0 +1,18 @@
+export const filtersData = [
+  "Clear All Filters",
+  "Top 5",
+  "React",
+  "Redux",
+  "TypeScript",
+  "JavaScript",
+  "CSS",
+  "HTML",
+  "Node",
+  "Express",
+  "MongoDB",
+  "Python",
+  // " PostgreSQL",
+  // "Video Games",
+  // "vitual reality",
+  // "software",
+];
