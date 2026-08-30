@@ -48,7 +48,7 @@ export const projectsData = [
     description:
       "I architected and built an AI image detection tool to improve accuracy and speed approval processes.",
 
-    tags: ["Top 5", ,],
+    tags: ["Top 5", "Software"],
     achievements: [
       "I take pride on being the inventor for this product",
       "From garage week project to full release",
@@ -64,7 +64,7 @@ export const projectsData = [
     links: [],
     description:
       "This was a site challenge to match the css style requirements from an image.",
-    tags: ["React", "CSS", "Nodejs", "Top 5"],
+    tags: ["Top 5", "Software"],
     achievements: [
       "Made functional site from static image within a given time frame.",
       "Leaned new css tricks. The corner fold.",
@@ -83,7 +83,7 @@ export const projectsData = [
     ],
     description:
       "This was a site challenge to match the css style requirements from an image.",
-    tags: ["Top 5"],
+    tags: ["Top 5", "Software"],
     achievements: [
       "Made functional site from static image within a given time frame.",
       "Leaned new css tricks. The corner fold.",
@@ -98,7 +98,7 @@ export const projectsData = [
     media: ["/images/companies/dev-mountain-logo.png"],
     links: [],
     description: "A virtual reality experience made for Disney!",
-    tags: ["Education"],
+    tags: ["Education", "Software"],
     achievements: [
       "Built edge normalizer tool to achieve smooth bevels with minimal geometry.",
       "Created Story board and animatic for whole experience.",
@@ -113,7 +113,7 @@ export const projectsData = [
     media: ["/images/companies/void-logo.png"],
     links: [],
     description: "A Virtual Reality experience made at the Void.",
-    tags: ["Video Games", "Virtual Reality"],
+    tags: ["Video Games", "Virtual Reality", "Top 5", "Software"],
     achievements: [
       "Small team great results! Proud to be on a small team and achieve something this big.",
       "Learned limitations and how to work within restraints of Virtual Reality.",
@@ -128,7 +128,7 @@ export const projectsData = [
     media: ["/images/companies/electronic-arts-logo.png"],
     links: [],
     description: "An athletic apparel customization tool.",
-    tags: ["Top 5"],
+    tags: ["Top 5", "Software", "Video Games"],
     achievements: [
       "I was in charge of visual representation of the data on canvas and canvas interactions.",
       "Used Pythagorean theorem and other math formulas to match scale, detect edges and resize elements.",
@@ -143,7 +143,7 @@ export const projectsData = [
     links: [],
     description:
       "A ecomerce store used to catalogued, displayed and purchase athletic apparel.",
-    tags: ["Top 5"],
+    tags: ["Top 5", "Software"],
     achievements: [
       "Made universal image component used on all pages. Leveraging reacts component based architecture.",
       "Created the multi-tier filtering system to sort through over 2000 products.",
@@ -159,7 +159,7 @@ export const projectsData = [
     links: [],
     description:
       "A ecomerce store used to catalogued, displayed and purchase athletic apparel.",
-    tags: ["Education", "Top 5"],
+    tags: ["Education", "Top 5", "Software"],
     achievements: [
       "Made universal image component used on all pages. Leveraging reacts component based architecture.",
       "Created the multi-tier filtering system to sort through over 2000 products.",
