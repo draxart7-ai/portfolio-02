@@ -6,6 +6,7 @@ import { useState } from "react";
 import { ButtonAction } from "../../../button-action/button-action";
 import { LogoGithubSvg } from "../../../../assets/svgs/logo-github-svg";
 import { LeaveSvg } from "../../../../assets/svgs/leave-svg";
+import { useAppContext } from "../../../../state/app/app-context";
 
 interface ProjectCardProps {
   title: string;
@@ -24,6 +25,10 @@ export const ProjectCard = ({
   achievements,
   links,
 }: ProjectCardProps) => {
+  const {
+    screen: { isMobile },
+  } = useAppContext();
+
   const tech = tags.map((tag) => {
     if (tag !== "Top 5") {
       return <CardInner key={tag}>{tag}</CardInner>;
@@ -50,10 +55,25 @@ export const ProjectCard = ({
     <ButtonAction key={link.type} link={link} icon={getIcon(link.type)} />
   ));
 
+  const titleSize = () => {
+    switch (true) {
+      case isMobile && title.length > 20:
+        return "var(--size-24)";
+      case isMobile && title.length <= 20:
+        return "var(--size-32)";
+      case title.length > 30:
+        return "var(--size-24)";
+      default:
+        return "var(--size-32)";
+    }
+  };
+
   return (
     <div id="ProjectCard" className="ProjectCard">
       <Card>
-        <div className="title">{title}</div>
+        <div className="title" style={{ fontSize: titleSize() }}>
+          {title}
+        </div>
         <div
           className={`carousel-container ${isFullScreen ? "fullscreen" : ""}`}
         >
