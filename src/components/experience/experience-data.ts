@@ -159,7 +159,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     role: "Contractor",
     date: "Jul 2008 - Nov 2010",
     title: "Electronic Arts",
@@ -175,7 +175,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     role: "Student",
     date: "2004 - 2007",
     title: "Art Institute",
