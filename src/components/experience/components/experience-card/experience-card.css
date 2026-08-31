@@ -93,14 +93,7 @@
 @media screen and (max-width: 768px) {
   .ExperienceCard {
     > .Card {
-      grid-template-areas:
-        "title  "
-        "carousel "
-        "tech "
-        "description "
-        "actions ";
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto auto auto;
+      gap: 12px;
     }
   }
 }
