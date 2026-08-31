@@ -5,53 +5,79 @@
     padding: var(--size-10);
     display: grid;
     grid-template-areas:
-      "title    tech"
-      "carousel tech"
-      "carousel description"
-      "carousel description"
-      "carousel actions";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 1fr 1fr 38px;
+      "image title"
+      "divider-top divider-top"
+      "description description"
+      "divider-bottom divider-bottom"
+      "achievements achievements";
+    grid-template-columns: 54px 1fr;
+    grid-template-rows: auto auto auto auto auto;
     gap: 12px;
-    width: 370px;
+    /* max-width: 370px; */
+    width: 270px;
+    align-items: center;
     > .title {
       grid-area: title;
-      font-size: var(--size-32);
+      font-size: var(--size-24);
+      font-weight: bold;
       display: flex;
-      justify-content: center;
-      text-align: center;
+      /* justify-content: center; */
+      /* text-align: center; */
     }
     > .image-container {
-      grid-area: carousel;
-      transition: all 0.25s ease-out;
-      min-height: 200px;
-      max-height: 200px;
+      grid-area: image;
+      min-height: 50px;
+      max-height: 50px;
+      display: flex;
+      justify-content: center;
       > img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
     }
-    > .tech {
-      grid-area: tech;
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--size-10);
-      align-items: center;
-      > .CardInner {
-        line-height: 1rem;
-      }
+    > .divider-top {
+      grid-area: divider-top;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-text-grey);
+      border: none;
     }
+
     > .description {
       grid-area: description;
       font-size: var(--size-18);
-      > hr {
-        width: 100%;
-        height: 2px;
-        background-color: var(--color-text-grey);
-        border: none;
+      > .description-header {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        color: var(--color-text-white);
       }
+      > p {
+        margin-top: 10px;
+        color: var(--color-text-grey);
+        font-size: 16px;
+      }
+    }
+    > .divider-bottom {
+      grid-area: divider-bottom;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-text-grey);
+      border: none;
+    }
+    > .achievements {
+      grid-area: achievements;
+      font-size: var(--size-18);
+      > .achievements-header {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        color: var(--color-text-white);
+      }
+
       > ul {
+        color: var(--color-text-grey);
         list-style-type: disc;
         margin-left: 30px; /*unique style*/
         margin-top: 10px;
@@ -59,13 +85,6 @@
           font-size: 16px;
         }
       }
-    }
-    > .actions {
-      grid-area: actions;
-      /* background-color: rgb(61, 61, 61); */
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
     }
   }
 }

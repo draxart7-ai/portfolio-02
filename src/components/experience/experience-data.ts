@@ -34,6 +34,7 @@ export const projectsData = [
   // },
   {
     id: 1,
+    role: "Senior Software Engineer",
     date: "Jun 2021 - Present",
     title: "Adobe",
     media: ["/images/companies/adobe-logo.png"],
@@ -58,6 +59,7 @@ export const projectsData = [
   },
   {
     id: 2,
+    role: "Software Engineer",
     date: "Jul 2020 - Jun 2021",
     title: "Basecamp Franchising",
     media: ["/images/companies/basecamp-franchising-logo.png"],
@@ -75,6 +77,7 @@ export const projectsData = [
   {
     id: 3,
     date: "Jun 2018 - Jul 2020",
+    role: "Software Engineer",
     title: "Founder Sport Group",
     media: ["/images/companies/founder-sport-group-logo.png"],
     links: [
@@ -93,6 +96,7 @@ export const projectsData = [
   },
   {
     id: 4,
+    role: "Student",
     date: "Jan 2018 - Apr 2018",
     title: "Dev Mountain",
     media: ["/images/companies/dev-mountain-logo.png"],
@@ -108,6 +112,7 @@ export const projectsData = [
   },
   {
     id: 5,
+    role: "Technical Artist",
     date: "Feb 2016 - Oct 2017",
     title: "The Void",
     media: ["/images/companies/void-logo.png"],
@@ -123,6 +128,7 @@ export const projectsData = [
   },
   {
     id: 6,
+    role: "Technical Artist",
     date: "Mar 2011 - Feb 2016",
     title: "Electronic Arts",
     media: ["/images/companies/electronic-arts-logo.png"],
@@ -137,6 +143,7 @@ export const projectsData = [
   },
   {
     id: 7,
+    role: "Technical Artist",
     date: "Dec 2010 - Jan 2011",
     title: "Riser Media",
     media: ["/images/companies/riser-media-logo.png"],
@@ -153,6 +160,7 @@ export const projectsData = [
   },
   {
     id: 8,
+    role: "Student",
     date: "2004 - 2007",
     title: "Art Institute",
     media: ["/images/companies/art-institute-logo.png"],
