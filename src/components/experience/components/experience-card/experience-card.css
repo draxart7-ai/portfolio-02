@@ -12,7 +12,7 @@
       "achievements achievements";
     grid-template-columns: 54px 1fr;
     grid-template-rows: auto auto auto auto auto;
-    gap: 12px;
+    gap: 8px;
     /* max-width: 370px; */
     width: 270px;
     align-items: center;
@@ -42,6 +42,7 @@
       height: 2px;
       background-color: var(--color-text-grey);
       border: none;
+      margin: 0;
     }
 
     > .description {
@@ -54,7 +55,7 @@
         color: var(--color-text-white);
       }
       > p {
-        margin-top: 10px;
+        margin-top: 6px;
         color: var(--color-text-grey);
         font-size: 16px;
       }
@@ -65,6 +66,7 @@
       height: 2px;
       background-color: var(--color-text-grey);
       border: none;
+      margin: 0;
     }
     > .achievements {
       grid-area: achievements;
@@ -80,7 +82,7 @@
         color: var(--color-text-grey);
         list-style-type: disc;
         margin-left: 30px; /*unique style*/
-        margin-top: 10px;
+        margin-top: 6px;
         > li {
           font-size: 16px;
         }
@@ -93,7 +95,7 @@
 @media screen and (max-width: 768px) {
   .ExperienceCard {
     > .Card {
-      gap: 12px;
+      gap: 8px;
     }
   }
 }
