@@ -13,8 +13,7 @@
     grid-template-columns: 54px 1fr;
     grid-template-rows: auto auto auto auto auto;
     gap: 8px;
-    /* max-width: 370px; */
-    width: 270px;
+    width: 100%;
     align-items: center;
     > .title {
       grid-area: title;
@@ -34,6 +33,7 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
+        border-radius: 6px;
       }
     }
     > .divider-top {
@@ -50,7 +50,7 @@
       font-size: var(--size-18);
       > .description-header {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         font-weight: bold;
         color: var(--color-text-white);
       }
@@ -73,7 +73,7 @@
       font-size: var(--size-18);
       > .achievements-header {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         font-weight: bold;
         color: var(--color-text-white);
       }
@@ -96,6 +96,16 @@
   .ExperienceCard {
     > .Card {
       gap: 8px;
+      > .description {
+        > .description-header {
+          justify-content: center;
+        }
+      }
+      > .achievements {
+        > .achievements-header {
+          justify-content: center;
+        }
+      }
     }
   }
 }

@@ -16,7 +16,7 @@ export const Experience = () => {
   const { register } = useActiveElementContext();
   const visible = "visible"; // activeId === "Experience" ? "visible" : "invisible";
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedFilters, setSelectedFilters] = useState<string[]>(["Top 5"]);
+  const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
   const [filteredExperience, setFilteredExperience] = useState(projectsData);
 
   useEffect(() => {
