@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./display.css";
+import { ButtonAction } from "../../button-action/button-action";
+import { ArrowRightSvg } from "../../../assets/svgs/arrow-right-svg";
 
 export const Display: React.FC = () => {
   // 1. Properly type the Canvas Ref
@@ -182,10 +184,12 @@ export const Display: React.FC = () => {
         </div>
         <div className="sub">
           <div className="sub-header h2"> Senior Software Engineer</div>
-          <button className="goto colorBtn h3" onClick={() => {}}>
-            My Work
-          </button>
         </div>
+        <ButtonAction
+          key={"My Work"}
+          link={{ type: "My Work", url: "#About" }}
+          icon={<ArrowRightSvg />}
+        />
       </div>
     </div>
   );

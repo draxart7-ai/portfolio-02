@@ -12,7 +12,7 @@ export const ButtonAction = ({
     <a
       className={`ButtonAction `}
       href={link.url}
-      target="_blank"
+      target={link.url.includes("http") ? "_blank" : undefined}
       rel="noopener noreferrer"
     >
       {icon}
