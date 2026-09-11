@@ -47,7 +47,7 @@ export const projectsData = [
       },
     ],
     description:
-      "I architected and built an AI image detection tool to improve accuracy and speed approval processes.",
+      "I architected and built an AI image reviewer. It takes an image compares it to company standards and guidelines. Then it will provide feedback to help improve accuracy and speed approval processes.",
 
     tags: [
       "AI",
@@ -61,7 +61,7 @@ export const projectsData = [
       "TypeScript",
     ],
     achievements: [
-      "I take pride on being the inventor for this product",
+      "I take pride on being the inventor of this product",
       "From garage week project to full release",
       "Adobe Summit headliner 2 years in a row",
       "Granted a small task force to deliver final product",
@@ -81,13 +81,12 @@ export const projectsData = [
     ],
     links: [],
     description:
-      "This was a site challenge to match the css style requirements from an image.",
-    tags: ["React", "CSS", "Nodejs", "Top 5"],
+      "Created new service and front end to track assets through approval process. Passing it from 1 stage to another depending on feedback and decisions",
+    tags: ["React", "CSS", "Nodejs", "Top 5", "Figma"],
     achievements: [
-      "Made functional site from static image within a given time frame.",
-      "Leaned new css tricks. The corner fold.",
-      "Side bar fades on page scroll position.",
-      "Used gsap to make cool staggered animations and transitions.",
+      "Made new micro service and micro front end",
+      "Created reusable components to be platform agnostic",
+      "Designed approval state machine to be able to pass assets to next stage dependant on multiple decissions being made",
     ],
   },
   {
@@ -114,13 +113,13 @@ export const projectsData = [
       { type: "site", url: "https://example.com" },
     ],
     description:
-      "This was a site challenge to match the css style requirements from an image.",
-    tags: ["React", "CSS", "Nodejs", "Top 5"],
+      "After manintaining legacy managment system for a while my team was tasked with giving the service and front end a makeover",
+    tags: ["React", "CSS", "Nodejs", "Top 5", "Figma"],
     achievements: [
-      "Made functional site from static image within a given time frame.",
-      "Leaned new css tricks. The corner fold.",
-      "Side bar fades on page scroll position.",
-      "Used gsap to make cool staggered animations and transitions.",
+      "Created new micro front end in react vs angular",
+      "Improved speed of page load by 50% by making clear api calls",
+      "Made new nested folder left rail system",
+      "Was on POC team to prove approach was viable",
     ],
   },
   {
@@ -133,7 +132,7 @@ export const projectsData = [
     links: [{ type: "site", url: "https://xn--gr-wra.com/home" }],
     description:
       "Contract job to make animated banner for global leading brand dōTERRA",
-    tags: ["React", "CSS", "Nodejs", "Animation"],
+    tags: ["React", "CSS", "Nodejs", "Animation", "Figma"],
     achievements: [
       "Made fun animated banner in mid centery modern style",
       "Looping animation",
@@ -213,6 +212,7 @@ export const projectsData = [
       "PostgreSQL",
       "Nodejs",
       "Top 5",
+      "Figma",
     ],
     achievements: [
       "I was in charge of visual representation of the data on canvas and canvas interactions.",
@@ -245,6 +245,7 @@ export const projectsData = [
       "PostgreSQL",
       "Nodejs",
       "Top 5",
+      "Figma",
     ],
     achievements: [
       "Made universal image component used on all pages. Leveraging reacts component based architecture.",

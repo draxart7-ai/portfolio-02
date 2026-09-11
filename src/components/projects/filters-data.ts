@@ -11,6 +11,7 @@ export const filtersData = [
   "Express",
   "MongoDB",
   "Python",
+  "Figma",
   // " PostgreSQL",
   // "Video Games",
   // "vitual reality",
