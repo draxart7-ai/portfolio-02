@@ -2,6 +2,7 @@ import "./about.css";
 import { useRef, useEffect } from "react";
 import { useActiveElementContext } from "../../state/active-element/active-element-context";
 import { Description } from "./components/description/description";
+import { Mission } from "./components/mission/mission";
 import { Timeline } from "./components/timeline/timeline";
 import { Picture } from "./components/picture/picture";
 import { Location } from "./components/location/location";
@@ -21,6 +22,7 @@ export const About = () => {
   return (
     <div id="About" className={`About ${visible} section`} ref={sectionRef}>
       <Title />
+      <Mission />
       <Description />
       <Picture />
       <Timeline />

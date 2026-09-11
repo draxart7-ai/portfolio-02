@@ -8,15 +8,9 @@ export const More = () => {
         <div className="container">
           <div className="title">I am</div>
           <div className="cards">
-            <div className="trait-card">
-              <div className="title">Determined</div>
-            </div>
-            <div className="trait-card">
-              <div className="title">Adaptable</div>
-            </div>
-            <div className="trait-card">
-              <div className="title">Creative</div>
-            </div>
+            <div className="title">Determined</div>
+            <div className="title">Adaptable</div>
+            <div className="title">Creative</div>
           </div>
         </div>
       </Card>

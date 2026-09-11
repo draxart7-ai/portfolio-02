@@ -6,13 +6,6 @@ export const Description = () => {
     <div className="Description">
       <Card>
         <div className="container">
-          <div className="mission">
-            <p className="title">Mission </p>
-            <p>
-              Empower people through creating intuitive frictionless software
-            </p>
-            <hr></hr>
-          </div>
           <div className="achievements">
             <p className="title">Senior Software Developer</p>
             <p>
@@ -27,14 +20,14 @@ export const Description = () => {
               </li>
               <li>
                 Used pythagoras theorem to determine if rotated object fits
-                inside a bounding box
+                inside a bounding box for image manipulation
               </li>
               <li>
                 Created pipeline tool saving company over $150,000 a year by
                 reducing time to import assets into the game
               </li>
               <li>
-                Built Virtual Reality experiences that were launched at Disney
+                Built virtual reality experiences that were launched at Disney
                 theme parks
               </li>
             </ul>
