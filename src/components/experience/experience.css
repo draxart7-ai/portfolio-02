@@ -7,7 +7,7 @@
 
   grid-template-areas:
     "title      title      search          search          search           search  "
-    "projects   projects   projects        projects        projects         projects  ";
+    "experiences   experiences   experiences        experiences        experiences         experiences  ";
 
   > .search-container {
     grid-area: search;
@@ -68,8 +68,8 @@
     }
   }
 
-  > .projects-container {
-    grid-area: projects;
+  > .experiences-container {
+    grid-area: experiences;
     overflow: hidden;
     border-radius: var(--border-radius);
     box-shadow: 0px 0px 0px 2px var(--color-card-border);
@@ -97,9 +97,9 @@
     grid-template-areas:
       "title          "
       "search        "
-      "projects   ";
+      "experiences   ";
 
-    > .projects-container {
+    > .experiences-container {
       margin-right: 12px;
     }
   }

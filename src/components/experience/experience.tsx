@@ -1,7 +1,7 @@
 import "./experience.css";
 import { useRef, useEffect, useState } from "react";
 import { useActiveElementContext } from "../../state/active-element/active-element-context";
-import { projectsData } from "./experience-data";
+import { experienceData } from "./experience-data";
 import { ExperienceCard } from "./components/experience-card/experience-card";
 import { Title } from "./components/title/title";
 import { Card } from "../card/card";
@@ -17,15 +17,15 @@ export const Experience = () => {
   const visible = "visible"; // activeId === "Experience" ? "visible" : "invisible";
   const [isOpen, setIsOpen] = useState(false);
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
-  const [filteredExperience, setFilteredExperience] = useState(projectsData);
+  const [filteredExperience, setFilteredExperience] = useState(experienceData);
 
   useEffect(() => {
     if (selectedFilters.length === 0) {
-      setFilteredExperience(projectsData);
+      setFilteredExperience(experienceData);
     } else {
       setFilteredExperience(
-        projectsData.filter((project) =>
-          selectedFilters.some((filter) => project.tags.includes(filter)),
+        experienceData.filter((experience) =>
+          selectedFilters.some((filter) => experience.tags.includes(filter)),
         ),
       );
     }
@@ -56,8 +56,8 @@ export const Experience = () => {
     return unregister; // Cleanup on unmount
   }, [register]);
 
-  const experienceCards = filteredExperience.map((project) => (
-    <ExperienceCard key={project.id} {...project} />
+  const experienceCards = filteredExperience.map((experience) => (
+    <ExperienceCard key={experience.id} {...experience} />
   ));
 
   const handleRemoveFilter = (filter: string) => {
@@ -111,7 +111,7 @@ export const Experience = () => {
             <div className="total-count">
               <div>Showing</div>
               <div>
-                {filteredExperience.length} of {projectsData.length}
+                {filteredExperience.length} of {experienceData.length}
               </div>
             </div>
             <div className="filter-button" ref={dropdownRef}>
@@ -141,7 +141,7 @@ export const Experience = () => {
           </div>
         </Card>
       </div>
-      <div className="projects-container">
+      <div className="experiences-container">
         <div className="inner">{experienceCards}</div>
       </div>
     </div>
