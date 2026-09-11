@@ -47,14 +47,14 @@ export const experienceData = [
       },
     ],
     description:
-      "I architected and built an AI image detection tool to improve accuracy and speed approval processes.",
+      "Built AI-powered and enterprise-scale features for a work management platform using React, Node.js, TypeScript, and Kafka, spanning AI content review, approval workflows, and asset management.",
 
     tags: ["Software"],
     achievements: [
-      "I take pride on being the inventor for this product",
-      "From garage week project to full release",
+      "Invented and architected an AI image detection tool, taking it from a prototype to full product release; featured as an Adobe Summit headliner two years running.",
+      "Led a dedicated task force through final development and delivery of the AI Image Reviewer.",
       "Adobe Summit headliner 2 years in a row",
-      "Granted a small task force to deliver final product",
+      "Converted complex design mockups into fully functional, pixel-accurate interfaces under tight deadlines, including a full-featured asset management system",
     ],
   },
   {

@@ -124,6 +124,23 @@ export const projectsData = [
     ],
   },
   {
+    id: 33,
+    title: "Grō Animation",
+    media: [
+      "/images/projects/gro-site/gro-animated-banner-video.mp4",
+      "/images/projects/gro-site/gro-animated-banner.png",
+    ],
+    links: [{ type: "site", url: "https://xn--gr-wra.com/home" }],
+    description:
+      "Contract job to make animated banner for global leading brand dōTERRA",
+    tags: ["React", "CSS", "Nodejs", "Animation"],
+    achievements: [
+      "Made fun animated banner in mid centery modern style",
+      "Looping animation",
+      "Over a dozen custom assets",
+    ],
+  },
+  {
     id: 1,
     title: "Star Wars Secrets of the Empire",
     media: ["/images/projects/star-wars/star-wars-01.jpg"],
