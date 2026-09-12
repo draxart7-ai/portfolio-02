@@ -6,6 +6,8 @@
       display: grid;
       grid-template-areas: "title ";
       grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
       > .title {
         cursor: pointer;
         grid-area: "title";
