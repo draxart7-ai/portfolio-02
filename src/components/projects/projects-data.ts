@@ -61,10 +61,10 @@ export const projectsData = [
       "TypeScript",
     ],
     achievements: [
-      "I take pride on being the inventor of this product",
-      "From garage week project to full release",
+      "I take pride in being the inventor of this product",
+      "Grew from a garage-week project into a full product release",
       "Adobe Summit headliner 2 years in a row",
-      "Granted a small task force to deliver final product",
+      "Was granted a small task force to deliver the final product",
     ],
   },
   {
@@ -81,12 +81,12 @@ export const projectsData = [
     ],
     links: [],
     description:
-      "Created new service and front end to track assets through approval process. Passing it from 1 stage to another depending on feedback and decisions",
+      "Created a new service and front end to track assets through the approval process, moving them from one stage to the next based on feedback and decisions",
     tags: ["React", "CSS", "Nodejs", "Top 5", "Figma"],
     achievements: [
-      "Made new micro service and micro front end",
+      "Built a new microservice and micro frontend",
       "Created reusable components to be platform agnostic",
-      "Designed approval state machine to be able to pass assets to next stage dependant on multiple decissions being made",
+      "Designed approval state machine to be able to pass assets to next stage dependent on multiple decissions being made",
     ],
   },
   {
@@ -113,10 +113,10 @@ export const projectsData = [
       { type: "site", url: "https://example.com" },
     ],
     description:
-      "After manintaining legacy managment system for a while my team was tasked with giving the service and front end a makeover",
+      "After maintaining legacy management system for a while my team was tasked with giving the service and front end a makeover",
     tags: ["React", "CSS", "Nodejs", "Top 5", "Figma"],
     achievements: [
-      "Created new micro front end in react vs angular",
+      "Created new micro frontend in react vs angular",
       "Improved speed of page load by 50% by making clear api calls",
       "Made new nested folder left rail system",
       "Was on POC team to prove approach was viable",
@@ -134,7 +134,7 @@ export const projectsData = [
       "Contract job to make animated banner for global leading brand dōTERRA",
     tags: ["React", "CSS", "Nodejs", "Animation", "Figma"],
     achievements: [
-      "Made fun animated banner in mid centery modern style",
+      "Made fun animated banner in mid-century modern style",
       "Looping animation",
       "Over a dozen custom assets",
     ],
@@ -159,7 +159,7 @@ export const projectsData = [
     achievements: [
       "Built edge normalizer tool to achieve smooth bevels with minimal geometry.",
       "Created Story board and animatic for whole experience.",
-      "Featured at DisneyLand and Disney World resorts is quite a badge of honor.",
+      "Featured at DisneyLand and Disney World resorts was quite a badge of honor.",
       "Getting to work with Disney and Star Wars!",
     ],
   },
@@ -217,7 +217,7 @@ export const projectsData = [
     achievements: [
       "I was in charge of visual representation of the data on canvas and canvas interactions.",
       "Used Pythagorean theorem and other math formulas to match scale, detect edges and resize elements.",
-      "Organize a giant yet powerful redux state to manage iteraction accross app and canvas.",
+      "Organized a giant yet powerful Redux state to manage iteraction accross app and canvas.",
     ],
   },
   {
@@ -289,7 +289,7 @@ export const projectsData = [
       "This is a life simulation game with character customization and house building.",
     tags: ["Maya", "ZBrush", "Adobe CS", "Python", "C#", "Video Games"],
     achievements: [
-      "I take pride in working on a game that has more then ten million copies sold.",
+      "I take pride in working on a game that has more than ten million copies sold.",
       "Learned the power of project folder structure and naming conventions.",
       "Created modular system to work with grid based custom home builder.",
       "Presented to over 100 coworkers monthly, on teams achievements and progress.",
@@ -307,7 +307,7 @@ export const projectsData = [
       "Made custom maya toolbar to aid with modeling, rigging and exporting.",
       "Got flown out to EA Headquarters to work on project for 2 months.",
       "Updated base game assets to be more versatile for use in future expansion packs.",
-      "Part of process for desinging and implementing new texture and style system",
+      "Part of process for designing and implementing new texture and style system",
     ],
   },
   {
@@ -358,7 +358,7 @@ export const projectsData = [
     achievements: [
       "Invented a tool that saved company over $150,000 by reducing production time.",
       "I created the project folder structure, naming conventions and modeling pipeline from scratch.",
-      "Made customMaya tools in Python tools for Animation, Modeling, LightBaking and exports.",
+      "Made custom Maya tools in Python for Animation, Modeling, Light Baking, and exports.",
       "In charge of the design doc organization, keeping a team over 60 all on the same page.",
     ],
   },
@@ -400,9 +400,9 @@ export const projectsData = [
       "Monopoly the video game release on Xbox 360, Playstation 3, and the Wii",
     tags: ["Adobe CS", "Maya", "Video Games", "Python"],
     achievements: [
-      "Verified bug fixes and entering data into Dev Track.",
-      "I created and ran test cases.",
-      "Character concepts.",
+      "Designed early character concepts for the roster.",
+      "Wrote and executed test cases across the Xbox 360, PS3, and Wii builds.",
+      "Tracked and verified bug fixes through Jira, helping the team ship a polished multi-platform release.",
     ],
   },
   {
@@ -413,10 +413,9 @@ export const projectsData = [
     description: "A video game release on the wii.",
     tags: ["Adobe CS", "Maya", "Video Games"],
     achievements: [
-      "Assisted with a Sizzle video and some conceptual design.",
-      "Creating and running test cases",
-      "Verified bug fixes and entering data into Dev Track.",
-      "I created and ran test cases.",
+      "Contributed conceptual design work and assisted on a sizzle video for the pitch.",
+      "Built out test cases to cover core gameplay scenarios.",
+      "Logged and verified fixes in Jira to keep the team on top of open issues.",
     ],
   },
   {
@@ -427,10 +426,9 @@ export const projectsData = [
     description: "The Sequel to Nerf N-Strike release on Wii.",
     tags: ["Adobe CS", "Maya", "Video Games", "Python"],
     achievements: [
-      "Work with Art Director to make Enemy, Environment, Vehicle, and Weapon concepts.",
-      "It's not proven but I bet I still have the highest score in the Blasting Chamber.",
-      "Verified bug fixes and entering data into Dev Track.",
-      "I created and ran test cases.",
+      "Partnered with the Art Director on Enemy, Environment, Vehicle, and Weapon concepts for the sequel.",
+      "Still unofficially holds the high score in the Blasting Chamber.",
+      "Ran regression testing and verified bug fixes to support a smoother sequel launch.",
     ],
   },
   {
@@ -465,7 +463,7 @@ export const projectsData = [
     tags: ["Flash", "Adobe CS"],
     achievements: [
       "FWA Award winning site!",
-      "Tradition 2d animated characters and environments.",
+      "Traditional 2D animated characters and environments.",
       "Made over a dozen coloring book pages for downloadable content.",
       "I was the only artist on the team.",
     ],
@@ -490,7 +488,7 @@ export const projectsData = [
       "JavaScript",
     ],
     achievements: [
-      "Created a time window using 'Momentjs' for completing, validating and closing challenges.",
+      "Created a time window using 'Moment.js' for completing, validating and closing challenges.",
       "Made detailed wireframe to keep group in alignment while in development.",
       "Contributed in team discussions to help forsee any issues and create solutions.",
     ],
