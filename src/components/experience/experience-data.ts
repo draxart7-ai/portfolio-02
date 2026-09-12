@@ -1,37 +1,4 @@
 export const experienceData = [
-  // { example
-  //   id: 0,
-  //   date: "2066 - 2077",
-  //   title: "Paint Your Pixture",
-  //   media:  [
-  //     "https://www.youtube.com/embed/v_7VDm1LEqY?enablejsapi=1&rel=0",
-  //     "/images/projects/paint-your-picture/paint-your-picture-01-clip.mp4",
-  //     "/images/projects/paint-your-picture/paint-your-picture-cover.jpg",
-  //     "/images/projects/paint-your-picture/paint-your-picture-01.jpg",
-  //     "/images/projects/paint-your-picture/paint-your-picture-02.jpg",
-  //     "/images/projects/paint-your-picture/paint-your-picture-03.jpg",
-  //     "/images/projects/paint-your-picture/paint-your-picture-04.jpg",
-  // ],
-  //   links: [],
-  //   description:
-  //     "This was a site challenge to match the css style requirements from an image.",
-  //   tags: [
-  //     "React",
-  //     "CSS",
-  //     "Sass",
-  //     "Unreal Engine",
-  //     "Photoshop",
-  //     "Nodejs",
-  //     "UX",
-  //     "Vite",
-  //   ],
-  //   achievements: [
-  //     "Made functional site from static image within a given time frame.",
-  //     "Leaned new css tricks. The corner fold.",
-  //     "Side bar fades on page scroll position.",
-  //     "Used gsap to make cool staggered animations and transitions.",
-  //   ],
-  // },
   {
     id: 1,
     role: "Senior Software Engineer",
@@ -48,12 +15,11 @@ export const experienceData = [
     ],
     description:
       "Full-stack developer building AI-powered and workflow tools for content review and asset management, using React, Node.js, and TypeScript to architect scalable microservices and reusable front-end components.",
-
     tags: ["Software"],
     achievements: [
-      "Invented and built an AI Image Reviewer that auto-checks images against brand guidelines; grew from a hackathon project to a full release and a 2x Adobe Summit headliner",
+      "Invented and built an AI Image Reviewer that auto-checks images against brand guidelines — grew from a hackathon project into a full release and a 2x Adobe Summit headliner.",
       "Led a React migration (from Angular) of the Asset Management System, cutting page load time by 50% through optimized API calls.",
-      "Architected a new microservice and micro front end for Asset Approvals, designing a multi-stage approval state machine with reusable, platform-agnostic components",
+      "Architected a new microservice and micro front end for Asset Approvals, designing a multi-stage approval state machine with reusable, platform-agnostic components.",
     ],
   },
   {
@@ -67,10 +33,10 @@ export const experienceData = [
       "Full-stack developer building a point-of-sale system for franchise stores, using React for the front end, PostgreSQL for the database, and Java for the backend, with integrations for barcode scanners, registers, and credit card processing.",
     tags: ["Software"],
     achievements: [
-      "Built core POS functionality including coupons, a buy-back system, returns processing, and day-to-day purchase transactions",
-      "Integrated hardware support for barcode scanners and registers to support in-store checkout workflows",
-      "Implemented secure credit card payment processing within the POS system",
-      "Developed the full stack across React, PostgreSQL, and Java, ensuring smooth data flow from checkout to backend inventory/transaction records",
+      "Built core POS functionality including coupons, a buy-back system, returns processing, and day-to-day purchase transactions.",
+      "Integrated hardware support for barcode scanners and registers to support in-store checkout workflows.",
+      "Implemented secure credit card payment processing within the POS system.",
+      "Developed the full stack across React, PostgreSQL, and Java, ensuring smooth data flow from checkout to backend inventory and transaction records.",
     ],
   },
   {
@@ -89,7 +55,7 @@ export const experienceData = [
     achievements: [
       "Built the canvas rendering and interaction engine for an apparel customization tool, applying geometric formulas (including the Pythagorean theorem) for scaling, edge detection, and element resizing.",
       "Architected a large-scale Redux state system to manage complex interactions across the app and canvas.",
-      "Designed a multi-tier filtering system to help users sort through 2,000+ products on the ecommerce store",
+      "Designed a multi-tier filtering system to help users sort through 2,000+ products on the ecommerce store.",
       "Built a reusable, component-based SVG system enabling dynamic JavaScript control, and contributed UX design and mockups alongside development work.",
     ],
   },
@@ -97,15 +63,15 @@ export const experienceData = [
     id: 4,
     role: "Student",
     date: "Jan 2018 - Apr 2018",
-    title: "Dev Mountain",
+    title: "DevMountain",
     media: ["/images/companies/dev-mountain-logo.png"],
     links: [],
     description:
       "After several years in the video game industry, I transitioned into software development. To build a solid foundation in modern development tools and processes, I attended DevMountain to close those gaps.",
     tags: ["Education", "Software"],
     achievements: [
-      "Learned Web and Software development",
-      "Focus on NERD stack Nodejs, Express, React, Database(sql)",
+      "Learned web and software development fundamentals.",
+      "Focused on the NERD stack: Node.js, Express, React, and SQL databases.",
     ],
   },
   {
@@ -119,9 +85,9 @@ export const experienceData = [
       "Contributed as a developer and technical artist on immersive location-based VR experiences, building custom tooling and 3D content pipelines in Unity and Unreal to support small, high-output teams delivering AAA-caliber entertainment for major IP partners.",
     tags: ["Video Games", "Virtual Reality", "Software"],
     achievements: [
-      "Engineered custom production tools (edge normalizer, skin-weight transfer, mass OBJ exporter) that streamlined 3D asset pipelines and boosted team productivity by 20%",
-      `Delivered a full-scale VR experience for Disney ("Star Wars: Secrets of the Empire"), owning storyboarding and animatic development that shaped the end-to-end player experience, later featured at Disneyland and Disney World`,
-      "Operated effectively within the technical constraints of early VR hardware, applying cross-disciplinary skills spanning 3D modeling, animation, and concept art to ship a title on a lean team",
+      "Engineered custom production tools (edge normalizer, skin-weight transfer, mass OBJ exporter) that streamlined 3D asset pipelines and boosted team productivity by 20%.",
+      `Delivered a full-scale VR experience for Disney ("Star Wars: Secrets of the Empire"), owning storyboarding and animatic development that shaped the end-to-end player experience, later featured at Disneyland and Disney World.`,
+      "Operated effectively within the technical constraints of early VR hardware, applying cross-disciplinary skills spanning 3D modeling, animation, and concept art to ship a title on a lean team.",
     ],
   },
   {
@@ -132,13 +98,13 @@ export const experienceData = [
     media: ["/images/companies/electronic-arts-logo.png"],
     links: [],
     description:
-      "Served as a technical artist across a broad portfolio of EA titles spanning mobile, console, and PC platforms, building custom Maya/Python pipelines and toolsets that scaled asset production for teams of 60+ while contributing to games with combined sales in the tens of millions",
+      "Served as a technical artist across a broad portfolio of EA titles spanning mobile, console, and PC platforms, building custom Maya/Python pipelines and toolsets that scaled asset production for teams of 60+ while contributing to games with combined sales in the tens of millions.",
     tags: ["Software", "Video Games"],
     achievements: [
-      "Engineered a custom production tool that saved the company over $150,000 by significantly reducing production time, while establishing project folder structures, naming conventions, and modeling pipelines from scratch for a 60+ person team",
-      "Built custom Python and Maya toolsets for animation, modeling, light baking, and exports, improving efficiency and consistency across multiple shipped titles including The Sims 3, Sims 4, and Minions Paradise",
-      "Designed a modular, grid-based system for The Sims 3's custom home builder and contributed to a new texture/style system for The Sims 4, working on a franchise with over 10 million copies sold",
-      "Selected for cross-studio assignments, including a 2-month relocation to EA Headquarters and a 2-month trip to EA's Melbourne studio, to help develop mobile game pipelines (Sims Freeplay) under strict platform constraints",
+      "Engineered a custom production tool that saved the company over $150,000 by significantly reducing production time, while establishing project folder structures, naming conventions, and modeling pipelines from scratch for a 60+ person team.",
+      "Built custom Python and Maya toolsets for animation, modeling, light baking, and exports, improving efficiency and consistency across multiple shipped titles including The Sims 3, Sims 4, and Minions Paradise.",
+      "Designed a modular, grid-based system for The Sims 3's custom home builder and contributed to a new texture/style system for The Sims 4, working on a franchise with over 10 million copies sold.",
+      "Selected for cross-studio assignments, including a 2-month relocation to EA Headquarters and a 2-month trip to EA's Melbourne studio, to help develop mobile game pipelines (Sims Freeplay) under strict platform constraints.",
     ],
   },
   {
@@ -152,10 +118,10 @@ export const experienceData = [
       "Worked as an artist on interactive Flash-based web experiences, delivering traditional 2D animation and illustration for branded marketing campaigns aimed at younger audiences.",
     tags: ["Software"],
     achievements: [
-      "Served as the sole artist on an FWA award-winning Flash site built for a Tropicana product launch, independently owning the full visual production of the project",
-      "Produced traditional 2D animated characters and environments for an interactive kids' experience featuring games, puzzles, and activities",
-      "Delivered polished, on-brand creative under a compressed one-person art pipeline, balancing animation, illustration, and asset production single-handedly",
-      "Illustrated over a dozen original coloring book pages as downloadable bonus content, expanding the campaign's engagement beyond the core site",
+      "Served as the sole artist on an FWA award-winning Flash site built for a Tropicana product launch, independently owning the full visual production of the project.",
+      "Produced traditional 2D animated characters and environments for an interactive kids' experience featuring games, puzzles, and activities.",
+      "Delivered polished, on-brand creative under a compressed one-person art pipeline, balancing animation, illustration, and asset production single-handedly.",
+      "Illustrated over a dozen original coloring book pages as downloadable bonus content, expanding the campaign's engagement beyond the core site.",
     ],
   },
   {
@@ -169,10 +135,10 @@ export const experienceData = [
       "Brought on as a contractor to support quality assurance and concept art needs across three console titles (Xbox 360, PlayStation 3, and Wii), combining hands-on testing rigor with creative contributions to character and environment design.",
     tags: ["Software", "Video Games"],
     achievements: [
-      "Verified bug fixes and maintained detailed QA records in Dev Track, along with authoring and executing test cases across three shipped titles (Monopoly Streets, Nerf N-Strike, Nerf N-Strike Elite)",
-      "Contributed character concept art for Monopoly Streets, translating classic board game pieces into a polished video game aesthetic",
-      "Collaborated directly with the Art Director on Nerf N-Strike Elite to develop enemy, environment, vehicle, and weapon concepts for the sequel title",
-      "Supported pre-launch marketing efforts on Nerf N-Strike by assisting with sizzle reel production and early conceptual design",
+      "Verified bug fixes and maintained detailed QA records in Dev Track, along with authoring and executing test cases across three shipped titles (Monopoly Streets, Nerf N-Strike, Nerf N-Strike Elite).",
+      "Contributed character concept art for Monopoly Streets, translating classic board game pieces into a polished video game aesthetic.",
+      "Collaborated directly with the Art Director on Nerf N-Strike Elite to develop enemy, environment, vehicle, and weapon concepts for the sequel title.",
+      "Supported pre-launch marketing efforts on Nerf N-Strike by assisting with sizzle reel production and early conceptual design.",
     ],
   },
   {
@@ -183,11 +149,11 @@ export const experienceData = [
     media: ["/images/companies/art-institute-logo.png"],
     links: [],
     description:
-      "Went to college in San Diego California for a BS in Computer Science with a focus on animation and video game development",
+      "Went to college in San Diego, California for a BS in Computer Science with a focus on animation and video game development.",
     tags: ["Education", "Software"],
     achievements: [
-      "Built a strong foundation in 3D modeling, animation, and game development, culminating in a BS focused on the intersection of computer science and interactive media",
-      "Gained hands-on proficiency across the industry-standard creative pipeline, including Adobe Photoshop, Maya, 3ds Max, and Unreal Engine",
+      "Built a strong foundation in 3D modeling, animation, and game development, culminating in a BS focused on the intersection of computer science and interactive media.",
+      "Gained hands-on proficiency across the industry-standard creative pipeline, including Adobe Photoshop, Maya, 3ds Max, and Unreal Engine.",
     ],
   },
 ];
