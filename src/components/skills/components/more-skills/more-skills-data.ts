@@ -115,4 +115,9 @@ export const moreSkillsData = [
     icon: "zbrush-icon.png",
     tags: ["coding", "front-end"],
   },
+  {
+    name: "Figma",
+    icon: "figma-icon.png",
+    tags: ["design", "front-end"],
+  },
 ];

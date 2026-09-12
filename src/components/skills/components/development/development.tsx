@@ -18,6 +18,7 @@ export const Development = () => {
               <CardInner> SQL</CardInner>
               <CardInner> HTML</CardInner>
               <CardInner> CSS</CardInner>
+              <CardInner> Figma</CardInner>
             </div>
           </div>
         </Card>
