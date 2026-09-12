@@ -15,7 +15,7 @@ export const experienceData = [
     ],
     description:
       "Full-stack developer building AI-powered and workflow tools for content review and asset management, using React, Node.js, and TypeScript to architect scalable microservices and reusable front-end components.",
-    tags: ["Software"],
+    tags: ["Software", "Highlights"],
     achievements: [
       "Invented and built an AI Image Reviewer that auto-checks images against brand guidelines — grew from a hackathon project into a full release and a 2x Adobe Summit headliner.",
       "Led a React migration (from Angular) of the Asset Management System, cutting page load time by 50% through optimized API calls.",
@@ -51,7 +51,7 @@ export const experienceData = [
     ],
     description:
       "Full-stack developer building customer-facing tools for athletic apparel customization and ecommerce, using React, Redux, and PostgreSQL, with a strong focus on canvas interactions, dynamic SVG systems, and UX design.",
-    tags: ["Software"],
+    tags: ["Software", "Highlights"],
     achievements: [
       "Built the canvas rendering and interaction engine for an apparel customization tool, applying geometric formulas (including the Pythagorean theorem) for scaling, edge detection, and element resizing.",
       "Architected a large-scale Redux state system to manage complex interactions across the app and canvas.",
@@ -68,7 +68,7 @@ export const experienceData = [
     links: [],
     description:
       "After several years in the video game industry, I transitioned into software development. To build a solid foundation in modern development tools and processes, I attended DevMountain to close those gaps.",
-    tags: ["Education", "Software"],
+    tags: ["Education", "Software", "Highlights"],
     achievements: [
       "Learned web and software development fundamentals.",
       "Focused on the NERD stack: Node.js, Express, React, and SQL databases.",
@@ -83,7 +83,7 @@ export const experienceData = [
     links: [],
     description:
       "Contributed as a developer and technical artist on immersive location-based VR experiences, building custom tooling and 3D content pipelines in Unity and Unreal to support small, high-output teams delivering AAA-caliber entertainment for major IP partners.",
-    tags: ["Video Games", "Virtual Reality", "Software"],
+    tags: ["Video Games", "Virtual Reality", "Software", "Highlights"],
     achievements: [
       "Engineered custom production tools (edge normalizer, skin-weight transfer, mass OBJ exporter) that streamlined 3D asset pipelines and boosted team productivity by 20%.",
       `Delivered a full-scale VR experience for Disney ("Star Wars: Secrets of the Empire"), owning storyboarding and animatic development that shaped the end-to-end player experience, later featured at Disneyland and Disney World.`,
@@ -99,7 +99,7 @@ export const experienceData = [
     links: [],
     description:
       "Served as a technical artist across a broad portfolio of EA titles spanning mobile, console, and PC platforms, building custom Maya/Python pipelines and toolsets that scaled asset production for teams of 60+ while contributing to games with combined sales in the tens of millions.",
-    tags: ["Software", "Video Games"],
+    tags: ["Software", "Video Games", "Highlights"],
     achievements: [
       "Engineered a custom production tool that saved the company over $150,000 by significantly reducing production time, while establishing project folder structures, naming conventions, and modeling pipelines from scratch for a 60+ person team.",
       "Built custom Python and Maya toolsets for animation, modeling, light baking, and exports, improving efficiency and consistency across multiple shipped titles including The Sims 3, Sims 4, and Minions Paradise.",
@@ -150,7 +150,7 @@ export const experienceData = [
     links: [],
     description:
       "Went to college in San Diego, California for a BS in Computer Science with a focus on animation and video game development.",
-    tags: ["Education", "Software"],
+    tags: ["Education", "Software", "Highlights"],
     achievements: [
       "Built a strong foundation in 3D modeling, animation, and game development, culminating in a BS focused on the intersection of computer science and interactive media.",
       "Gained hands-on proficiency across the industry-standard creative pipeline, including Adobe Photoshop, Maya, 3ds Max, and Unreal Engine.",
