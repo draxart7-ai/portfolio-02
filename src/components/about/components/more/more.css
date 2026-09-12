@@ -2,20 +2,25 @@
   height: 80px;
   width: 100%;
   grid-area: more;
-  .container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    > .title {
+  > div {
+    > .container {
+      height: 100%;
       display: flex;
+      flex-direction: column;
+      width: 100%;
       justify-content: center;
-    }
-    > .cards {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      font-size: var(--size-18);
+      > .title {
+        display: flex;
+        justify-content: center;
+        line-height: 32px;
+        font-weight: none;
+      }
+      > .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: var(--size-20);
+      }
     }
   }
 }
