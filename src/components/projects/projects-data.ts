@@ -1,38 +1,6 @@
 export const projectsData = [
-  // { example
-  //   id: 0,
-  //   title: "Paint Your Pixture",
-  //   media:  [
-  //     "https://www.youtube.com/embed/v_7VDm1LEqY?enablejsapi=1&rel=0",
-  //     "/images/projects/paint-your-picture/paint-your-picture-01-clip.mp4",
-  //     "/images/projects/paint-your-picture/paint-your-picture-cover.jpg",
-  //     "/images/projects/paint-your-picture/paint-your-picture-01.jpg",
-  //     "/images/projects/paint-your-picture/paint-your-picture-02.jpg",
-  //     "/images/projects/paint-your-picture/paint-your-picture-03.jpg",
-  //     "/images/projects/paint-your-picture/paint-your-picture-04.jpg",
-  // ],
-  //   links: [],
-  //   description:
-  //     "This was a site challenge to match the css style requirements from an image.",
-  //   tags: [
-  //     "React",
-  //     "CSS",
-  //     "Sass",
-  //     "Unreal Engine",
-  //     "Photoshop",
-  //     "Nodejs",
-  //     "UX",
-  //     "Vite",
-  //   ],
-  //   achievements: [
-  //     "Made functional site from static image within a given time frame.",
-  //     "Leaned new css tricks. The corner fold.",
-  //     "Side bar fades on page scroll position.",
-  //     "Used gsap to make cool staggered animations and transitions.",
-  //   ],
-  // },
   {
-    id: 16,
+    id: 1,
     title: "AI Image Reviewer",
     media: [
       "/images/projects/adobe-workfront-ai-image-reviewer/ai-image-reviewer-presentation.mp4",
@@ -48,7 +16,6 @@ export const projectsData = [
     ],
     description:
       "I architected and built an AI image reviewer. It takes an image compares it to company standards and guidelines. Then it will provide feedback to help improve accuracy and speed approval processes.",
-
     tags: [
       "AI",
       "React",
@@ -61,14 +28,14 @@ export const projectsData = [
       "TypeScript",
     ],
     achievements: [
-      "I take pride in being the inventor of this product",
-      "Grew from a garage-week project into a full product release",
-      "Adobe Summit headliner 2 years in a row",
-      "Was granted a small task force to deliver the final product",
+      "I take pride in being the inventor of this product.",
+      "Grew from a garage-week project into a full product release.",
+      "Adobe Summit headliner 2 years in a row.",
+      "Was granted a small task force to deliver the final product.",
     ],
   },
   {
-    id: 18,
+    id: 2,
     title: "Asset Approvals",
     media: [
       "/images/projects/adobe-workfront-approvals/approvals-video-with-thumbnail.mp4",
@@ -81,16 +48,16 @@ export const projectsData = [
     ],
     links: [],
     description:
-      "Created a new service and front end to track assets through the approval process, moving them from one stage to the next based on feedback and decisions",
+      "Created a new service and front end to track assets through the approval process, moving them from one stage to the next based on feedback and decisions.",
     tags: ["React", "CSS", "Nodejs", "Top 5", "Figma"],
     achievements: [
-      "Built a new microservice and micro frontend",
-      "Created reusable components to be platform agnostic",
-      "Designed approval state machine to be able to pass assets to next stage dependent on multiple decissions being made",
+      "Built a new microservice and micro frontend.",
+      "Created reusable components to be platform agnostic.",
+      "Designed approval state machine to be able to pass assets to next stage dependent on multiple decisions being made.",
     ],
   },
   {
-    id: 17,
+    id: 3,
     title: "Asset Management System",
     media: [
       "/images/projects/adobe-workfront-documents/new-docs-with-thumbnail.mp4",
@@ -113,17 +80,17 @@ export const projectsData = [
       { type: "site", url: "https://example.com" },
     ],
     description:
-      "After maintaining legacy management system for a while my team was tasked with giving the service and front end a makeover",
+      "After maintaining legacy management system for a while my team was tasked with giving the service and front end a makeover.",
     tags: ["React", "CSS", "Nodejs", "Top 5", "Figma"],
     achievements: [
-      "Created new micro frontend in react vs angular",
-      "Improved speed of page load by 50% by making clear api calls",
-      "Made new nested folder left rail system",
-      "Was on POC team to prove approach was viable",
+      "Created new micro frontend in react vs angular.",
+      "Improved speed of page load by 50% by making clear api calls.",
+      "Made new nested folder left rail system.",
+      "Was on POC team to prove approach was viable.",
     ],
   },
   {
-    id: 33,
+    id: 4,
     title: "Grō Animation",
     media: [
       "/images/projects/gro-site/gro-animated-banner-video.mp4",
@@ -131,16 +98,16 @@ export const projectsData = [
     ],
     links: [{ type: "site", url: "https://xn--gr-wra.com/home" }],
     description:
-      "Contract job to make animated banner for global leading brand dōTERRA",
+      "Contract job to make animated banner for global leading brand dōTERRA.",
     tags: ["React", "CSS", "Nodejs", "Animation", "Figma"],
     achievements: [
-      "Made fun animated banner in mid-century modern style",
-      "Looping animation",
-      "Over a dozen custom assets",
+      "Made fun animated banner in mid-century modern style.",
+      "Looping animation.",
+      "Over a dozen custom assets.",
     ],
   },
   {
-    id: 1,
+    id: 5,
     title: "Star Wars Secrets of the Empire",
     media: ["/images/projects/star-wars/star-wars-01.jpg"],
     links: [],
@@ -164,7 +131,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 2,
+    id: 6,
     title: "Ghostbusters",
     media: [
       "/images/projects/ghostbusters/ghostbusters-01.jpg",
@@ -186,12 +153,12 @@ export const projectsData = [
     achievements: [
       "Small team great results! Proud to be on a small team and achieve something this big.",
       "Learned limitations and how to work within restraints of Virtual Reality.",
-      "Built a skin-weight transferring tool, and mass obj exporter increasing productivity by 20%",
+      "Built a skin-weight transferring tool, and mass obj exporter increasing productivity by 20%.",
       "Art skills used: Story Boarding, Concept Art, 3d Modeling and Animation.",
     ],
   },
   {
-    id: 3,
+    id: 7,
     title: "Athletic Apparel Customizer",
     media: [
       "/images/projects/fsg-builder/athletic-apparel-customizer-thumbnail.png",
@@ -217,11 +184,11 @@ export const projectsData = [
     achievements: [
       "I was in charge of visual representation of the data on canvas and canvas interactions.",
       "Used Pythagorean theorem and other math formulas to match scale, detect edges and resize elements.",
-      "Organized a giant yet powerful Redux state to manage iteraction accross app and canvas.",
+      "Organized a giant yet powerful Redux state to manage interactions across app and canvas.",
     ],
   },
   {
-    id: 4,
+    id: 8,
     title: "Athletic Apparel Store",
     media: [
       "/images/projects/fsg-store/athletic-apparel-store-thumbnail.png",
@@ -236,7 +203,7 @@ export const projectsData = [
     ],
     links: [],
     description:
-      "A ecomerce store used to catalogued, displayed and purchase athletic apparel.",
+      "An E-commerce store used to catalogue, displayed and purchase athletic apparel.",
     tags: [
       "React",
       "CSS",
@@ -307,11 +274,11 @@ export const projectsData = [
       "Made custom maya toolbar to aid with modeling, rigging and exporting.",
       "Got flown out to EA Headquarters to work on project for 2 months.",
       "Updated base game assets to be more versatile for use in future expansion packs.",
-      "Part of process for designing and implementing new texture and style system",
+      "Part of process for designing and implementing new texture and style system.",
     ],
   },
   {
-    id: 5,
+    id: 11,
     title: "Minions Paradise",
     media: [
       "/images/projects/minions-paradise/minions-paradise-cover.jpg",
@@ -363,7 +330,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     title: "Sims Freeplay",
     media: [
       "/images/projects/sims-freeplay/sims-freeplay-cover.jpg",
@@ -380,7 +347,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     title: "Sims Mobile",
     media: ["/images/projects/sims-mobile/sims-mobile-cover.jpg"],
     links: [],
@@ -392,12 +359,12 @@ export const projectsData = [
     ],
   },
   {
-    id: 6,
+    id: 14,
     title: "Monopoly Streets",
     media: ["/images/projects/monopoly-streets/monopoly-streets-cover.jpg"],
     links: [],
     description:
-      "Monopoly the video game release on Xbox 360, Playstation 3, and the Wii",
+      "Monopoly the video game release on Xbox 360, Playstation 3, and the Wii.",
     tags: ["Adobe CS", "Maya", "Video Games", "Python"],
     achievements: [
       "Designed early character concepts for the roster.",
@@ -406,7 +373,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 7,
+    id: 15,
     title: "Nerf N-Strike",
     media: ["/images/projects/nerf-1/nerf-1-01.jpg"],
     links: [],
@@ -419,7 +386,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 8,
+    id: 16,
     title: "Nerf N-Strike Elite",
     media: ["/images/projects/nerf-2/nerf-2-01.jpg"],
     links: [],
@@ -432,7 +399,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 13,
+    id: 17,
     title: "Tropicana Tropolis",
     media: [
       "/images/projects/tropicana-tropolis/tropolis-cover.jpg",
@@ -469,7 +436,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 14,
+    id: 18,
     title: "Akrasia",
     media: [
       "/images/projects/akrasia/akrasia-01.jpg",
@@ -490,11 +457,11 @@ export const projectsData = [
     achievements: [
       "Created a time window using 'Moment.js' for completing, validating and closing challenges.",
       "Made detailed wireframe to keep group in alignment while in development.",
-      "Contributed in team discussions to help forsee any issues and create solutions.",
+      "Contributed in team discussions to help foresee any issues and create solutions.",
     ],
   },
   {
-    id: 15,
+    id: 19,
     title: "O Captain",
     media: ["/images/projects/o-captain/o-captain-01.jpg"],
     links: [],
@@ -511,7 +478,7 @@ export const projectsData = [
     ],
     achievements: [
       "Combined multiple tables in PostgreSQL to retrieve large amounts of data through foreign keys.",
-      "Created in depth database furthering my understanding of relations databases",
+      "Created in depth database furthering my understanding of relations databases.",
     ],
   },
 ];
