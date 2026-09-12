@@ -8,7 +8,7 @@ export const Mission = () => {
         <div className="container">
           <div className="mission">
             <p>
-              I empower people through creating intuitive, frictionless software
+              I empower people by creating intuitive, frictionless software.
             </p>
           </div>
         </div>

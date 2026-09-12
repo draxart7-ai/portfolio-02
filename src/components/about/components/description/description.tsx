@@ -14,16 +14,16 @@ export const Description = () => {
             </p>
             <ul className="list">
               <li>
-                Inventor of the Ai Image Reviewer to analyze images and give
-                feedback based off brand guidelines (featured twice at Adobe
+                Inventor of the AI Image Reviewer to analyze images and give
+                feedback based on brand guidelines (featured twice at Adobe
                 Summit)
               </li>
               <li>
-                Used pythagoras theorem to determine if rotated object fits
+                Used the Pythagorean theorem to determine if rotated object fits
                 inside a bounding box for image manipulation
               </li>
               <li>
-                Created pipeline tool saving company over $150,000 a year by
+                Created pipeline tool saving the company over $150,000 a year by
                 reducing time to import assets into the game
               </li>
               <li>
@@ -34,8 +34,8 @@ export const Description = () => {
           </div>
           <div className="wrap-up">
             <p>
-              I will identify bottlenecks and make the best experience for the
-              customers
+              Skilled at identifying bottlenecks and delivering the best
+              possible experience for customers
             </p>
           </div>
         </div>
